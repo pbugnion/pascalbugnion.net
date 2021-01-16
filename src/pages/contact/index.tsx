@@ -3,9 +3,7 @@ import rot13 from "../../services/rot-13"
 import Tooltip from 'react-bootstrap/Tooltip'
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger'
 
-import "bootstrap/dist/css/bootstrap.min.css"
-import "../../styles/main.css"
-import "./index.css"
+import Layout from "../../components/layout"
 
 import headshot from "./images/Headshot-Pascal-1.jpg"
 import mailIcon from "./images/mail-icon.png"
@@ -14,9 +12,11 @@ import githubIcon from "./images/github-icon.png"
 import twitterIcon from "./images/twitter-icon.png"
 import stackOverflowIcon from "./images/stackoverflow-icon.png"
 
+import styles from "./index.module.css"
+
 const ContactEntryLink = ({ iconContent, href, title, value }) => {
   return (
-    <p className="contact-row">
+    <p className={styles.contactRow}>
       <OverlayTrigger
         key="title"
         placement="top"
@@ -24,7 +24,7 @@ const ContactEntryLink = ({ iconContent, href, title, value }) => {
       >
         {({ ref, ...triggerHandler }) => (
           <>
-            <span className="contact-key" {...triggerHandler}>
+            <span className={styles.contactKey} {...triggerHandler}>
               <img src={iconContent} height="36" width="36" alt={title} />
             </span>
             <a href={href} ref={ref} {...triggerHandler}>
@@ -48,10 +48,10 @@ const ContactEntryEmail = () => {
 // styles
 const IndexPage = () => {
   return (
-    <>
+    <Layout>
       <header>
         <nav className="navbar navbar-expand-md navbar-light fixed-top" id="top-navbar">
-          <div className="container">
+          <div className={`container ${styles.maxWidthContainer}`}>
             <a className="navbar-brand" href="/index.html">Pascal Bugnion</a>
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-navigation">
               <span className="navbar-toggler-icon"></span>
@@ -69,12 +69,12 @@ const IndexPage = () => {
         </nav>
       </header>
       <main>
-        <div className="container content-container">
+        <div className={`container content-container ${styles.maxWidthContainer}`}>
           <div className="page-header">
             <h1>About me</h1>
           </div>
           <div className="row">
-            <div className="col-md-7 col-lg-8 contact-text">
+            <div className={`col-md-7 col-lg-8 ${styles.contactText}`}>
               <p>
                 I am a software engineering technical lead.
               </p>
@@ -88,11 +88,11 @@ const IndexPage = () => {
                 I hold a PhD from Cambridge University in <a href="https://www.tcm.phy.cam.ac.uk/people/staff.html">theoretical solid state physics</a>, working on <a href="https://en.wikipedia.org/wiki/Quantum_Monte_Carlo">quantum Monte Carlo</a> methods.
               </p>
             </div>
-            <div className="col-md-5 col-lg-4 order-first order-md-last headshot-img-container">
+            <div className={`col-md-5 col-lg-4 order-first order-md-last ${styles.headshotImgContainer}`}>
               <img src={headshot} alt="Pascal Bugnion" width="100%" />
             </div>
           </div>
-          <div className="row contact-links-row">
+          <div className={`row ${styles.contactLinksRow}`}>
             <div className="col-md-7 col-lg-8">
               <ContactEntryEmail />
               <ContactEntryLink iconContent={linkedInIcon} title="LinkedIn" href="https://uk.linkedin.com/in/pbugnion" value="pbugnion" />
@@ -105,7 +105,7 @@ const IndexPage = () => {
           </div>
         </div>
       </main>
-    </>
+    </Layout>
   )
 }
 
