@@ -27,7 +27,7 @@ const ContactEntryLink = ({iconContent, href, title, value}) => {
             <span className="contact-key" {...triggerHandler}>
               <img src={iconContent} height="36" width="36" alt={title} />
             </span>
-            <a href={href} dataToggle="tooltip" ref={ref} {...triggerHandler}>
+            <a href={href} ref={ref} {...triggerHandler}>
               {value}
             </a>
           </>
@@ -50,19 +50,19 @@ const IndexPage = () => {
   return (
     <>
     <header>
-      <nav class="navbar navbar-expand-md navbar-light fixed-top" id="top-navbar">
-      <div class="container">
-        <a class="navbar-brand" href="/index.html">Pascal Bugnion</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-navigation">
-          <span class="navbar-toggler-icon"></span>
+      <nav className="navbar navbar-expand-md navbar-light fixed-top" id="top-navbar">
+      <div className="container">
+        <a className="navbar-brand" href="/index.html">Pascal Bugnion</a>
+        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-navigation">
+          <span className="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbar-navigation">
-          <ul class="navbar-nav">
-            <li class="nav-item"><a href="code.html" class="nav-link">Code</a></li>
-            <li class="nav-item"><a href="talks.html" class="nav-link">Talks</a></li>
-            <li class="nav-item"><a href="http://www.scala4datascience.com" class="nav-link">Book</a></li>
-            <li class="nav-item"><a href="blog/index.html" class="nav-link">Blog</a></li>
-            <li class="nav-item active"><a href="#" class="nav-link">About</a></li>
+        <div className="collapse navbar-collapse" id="navbar-navigation">
+          <ul className="navbar-nav">
+            <li className="nav-item"><a href="code.html" className="nav-link">Code</a></li>
+            <li className="nav-item"><a href="talks.html" className="nav-link">Talks</a></li>
+            <li className="nav-item"><a href="http://www.scala4datascience.com" className="nav-link">Book</a></li>
+            <li className="nav-item"><a href="blog/index.html" className="nav-link">Blog</a></li>
+            <li className="nav-item active"><a href="#" className="nav-link">About</a></li>
           </ul>
         </div>
       </div>
@@ -73,8 +73,8 @@ const IndexPage = () => {
       <div className="page-header">
         <h1>About me</h1>
       </div>
-      <div class="row">
-            <div class="col-md-7 col-lg-8 contact-text">
+      <div className="row">
+            <div className="col-md-7 col-lg-8 contact-text">
               <p>
                 I am a software engineering technical lead.
               </p>
@@ -89,17 +89,17 @@ const IndexPage = () => {
                 </p>
 
             </div>
-            <div class="col-md-5 col-lg-4 order-first order-md-last headshot-img-container">
+            <div className="col-md-5 col-lg-4 order-first order-md-last headshot-img-container">
               <img src={headshot} alt="Pascal Bugnion" width="100%"/>
             </div>
         </div>
-        <div class="row contact-links-row">
-          <div class="col-md-7 col-lg-8">
+        <div className="row contact-links-row">
+          <div className="col-md-7 col-lg-8">
             <ContactEntryEmail />
             <ContactEntryLink iconContent={linkedInIcon} title="LinkedIn" href="https://uk.linkedin.com/in/pbugnion" value="pbugnion" />
             <ContactEntryLink iconContent={githubIcon} title="GitHub" href="https://github.com/pbugnion" value="pbugnion" />
           </div>
-          <div class="col-md-5 col-lg-3">
+          <div className="col-md-5 col-lg-3">
             <ContactEntryLink iconContent={twitterIcon} title="Twitter" href="https://twitter.com/pascalbugnion" value="@pascalbugnion" />
             <ContactEntryLink iconContent={stackOverflowIcon} title="Stack Overflow" href="https://stackoverflow.com/users/827862/pascal-bugnion" value="pascal-bugnion" />
           </div>
