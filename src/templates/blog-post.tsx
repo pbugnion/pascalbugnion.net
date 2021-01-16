@@ -1,13 +1,20 @@
 import * as React from "react"
 import { graphql } from "gatsby"
+import Helmet from "react-helmet"
 
 import Layout from "../components/layout"
 
 import styles from "./blog.module.css"
 
+
 export default ({ data }) => {
+    const { frontmatter, html } = data.markdownRemark
     return (
         <Layout>
+            <Helmet>
+                <title>{frontmatter.pageTitle}</title>
+                <meta name="description" content={frontmatter.summary} />
+            </Helmet>
             <header>
                 <nav className="navbar navbar-expand-md navbar-light fixed-top" id="top-navbar">
                     <div className={`container ${styles.blogNavbarContainer}`}>
@@ -30,12 +37,12 @@ export default ({ data }) => {
             <main>
                 <div className={`container ${styles.articleContainer}`}>
                     <div className="page-header">
-                        <h1 className={styles.articleEntryTitle}>{data.markdownRemark.frontmatter.title}</h1>
+                        <h1 className={styles.articleEntryTitle}>{frontmatter.contentTitle}</h1>
                     </div>
                     <div className={styles.lastUpdatedDate}>
-                        Last updated on the {data.markdownRemark.frontmatter.lastUpdatedDate}.
+                        Last updated on the {frontmatter.lastUpdatedDate}.
                         </div>
-                    <div className={styles.articleEntryContent} dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
+                    <div className={styles.articleEntryContent} dangerouslySetInnerHTML={{ __html: html }} />
                 </div>
             </main>
         </Layout>
@@ -47,8 +54,10 @@ export const query = graphql`
       markdownRemark(frontmatter: { slug: {eq: $slug }}) {
           html
           frontmatter {
-              title
+              contentTitle
+              pageTitle
               lastUpdatedDate(formatString: "Do MMMM YYYY")
+              summary
           }
       }
   }

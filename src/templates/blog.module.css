@@ -14,26 +14,27 @@
     font-family: 'EB Garamond', serif;
 }
 
-.articleEntryContent {
-    margin-top : 1.5em ;
-}
 
 .lastUpdatedDate {
-    margin-top: 1em;
-    margin-bottom: 1em;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
     font-size: 14px;
     font-style: italic;
 }
 
-/*
+.articleEntryContent code {
+    color: #555;
+    font-size: 75%;
+}
 
-.article-entry-content blockquote {
+
+.articleEntryContent blockquote {
     border-left: 4px solid #eee;
     padding-left: 2em;
     font-size: 0.9em;
 }
 
-.article-entry-content pre {
+.articleEntryContent pre {
     padding: 9.5px;
     margin: 0 0 1rem;
     font-size: 13px;
@@ -43,11 +44,11 @@
     border-radius: 4px;
 }
 
-.article-entry-content code {
+.articleEntryContent pre code {
     color: #555;
-    font-size: 75%;
+    font-size: 100%;
 }
 
-.article-entry-content h2 {
+.articleEntryContent h2 {
     padding-top: 0.4em;
-} */
+}
