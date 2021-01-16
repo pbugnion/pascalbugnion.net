@@ -1,6 +1,7 @@
 module.exports = {
   plugins: [
     "gatsby-plugin-react-helmet",
+    "gatsby-transformer-remark",
     {
       resolve: "gatsby-plugin-google-fonts",
       options: {
@@ -10,5 +11,12 @@ module.exports = {
         display: "swap"
       },
     },
+    {
+        resolve: "gatsby-source-filesystem",
+        options: {
+            name: "blog",
+            path: `${__dirname}/src/blog-content/`
+        }
+    }
   ],
 };
