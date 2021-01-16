@@ -1,149 +1,113 @@
 import * as React from "react"
+import rot13 from "../services/rot-13"
+import Tooltip from 'react-bootstrap/Tooltip'
+import OverlayTrigger from 'react-bootstrap/OverlayTrigger'
+
+import "bootstrap/dist/css/bootstrap.min.css"
+import "../styles/fonts.css"
+import "../styles/main.css"
+import "../styles/contact.css"
+
+import headshot from "../images/Headshot-Pascal-1.jpg"
+import mailIcon from "../images/mail-icon.png"
+import linkedInIcon from "../images/linkedin-icon.png"
+import githubIcon from "../images/github-icon.png"
+import twitterIcon from "../images/twitter-icon.png"
+import stackOverflowIcon from "../images/stackoverflow-icon.png"
+
+const ContactEntryLink = ({iconContent, href, title, value}) => {
+  return (
+    <p className="contact-row">
+      <OverlayTrigger
+        key="title"
+        placement="top"
+        overlay={<Tooltip id={`tooltip-${title}`}>{title}</Tooltip>}
+      >
+        {({ ref, ...triggerHandler }) => (
+          <>
+            <span className="contact-key" {...triggerHandler}>
+              <img src={iconContent} height="36" width="36" alt={title} />
+            </span>
+            <a href={href} dataToggle="tooltip" ref={ref} {...triggerHandler}>
+              {value}
+            </a>
+          </>
+        )}
+      </OverlayTrigger>
+    </p>
+  );
+}
+
+const ContactEntryEmail = () => {
+  const email = rot13("cnfpny@ohtavba.bet")
+  const href = `mailto:${email}`
+  return (
+    <ContactEntryLink iconContent={mailIcon} href={href} title="email" value={email} />
+  )
+}
 
 // styles
-const pageStyles = {
-  color: "#232129",
-  padding: "96px",
-  fontFamily: "-apple-system, Roboto, sans-serif, serif",
-}
-const headingStyles = {
-  marginTop: 0,
-  marginBottom: 64,
-  maxWidth: 320,
-}
-const headingAccentStyles = {
-  color: "#663399",
-}
-const paragraphStyles = {
-  marginBottom: 48,
-}
-const codeStyles = {
-  color: "#8A6534",
-  padding: 4,
-  backgroundColor: "#FFF4DB",
-  fontSize: "1.25rem",
-  borderRadius: 4,
-}
-const listStyles = {
-  marginBottom: 96,
-  paddingLeft: 0,
-}
-const listItemStyles = {
-  fontWeight: "300",
-  fontSize: "24px",
-  maxWidth: "560px",
-}
-
-const linkStyle = {
-  color: "#8954A8",
-  fontWeight: "bold",
-  fontSize: "16px",
-  verticalAlign: "5%",
-}
-
-const docLinkStyle = {
-  ...linkStyle,
-  listStyleType: "none",
-  marginBottom: 24,
-}
-
-const descriptionStyle = {
-  color: "#232129",
-  fontSize: "14px",
-}
-
-const docLink = {
-  text: "Documentation",
-  url: "https://www.gatsbyjs.com/docs/",
-  color: "#8954A8",
-}
-// data
-const links = [
-  {
-    text: "Tutorial",
-    url: "https://www.gatsbyjs.com/docs/tutorial/",
-    description:
-      "A great place to get started if you're new to web development. Designed to guide you through setting up your first Gatsby site.",
-    color: "#E95800",
-  },
-  {
-    text: "How to Guides",
-    url: "https://www.gatsbyjs.com/docs/how-to/",
-    description:
-      "Practical step-by-step guides to help you achieve a specific goal. Most useful when you're trying to get something done.",
-    color: "#1099A8",
-  },
-  {
-    text: "Reference Guides",
-    url: "https://www.gatsbyjs.com/docs/reference/",
-    description:
-      "Nitty-gritty technical descriptions of how Gatsby works. Most useful when you need detailed information about Gatsby's APIs.",
-    color: "#BC027F",
-  },
-  {
-    text: "Conceptual Guides",
-    url: "https://www.gatsbyjs.com/docs/conceptual/",
-    description:
-      "Big-picture explanations of higher-level Gatsby concepts. Most useful for building understanding of a particular topic.",
-    color: "#0D96F2",
-  },
-  {
-    text: "Plugin Library",
-    url: "https://www.gatsbyjs.com/plugins",
-    description:
-      "Add functionality and customize your Gatsby site or app with thousands of plugins built by our amazing developer community.",
-    color: "#000000",
-  },
-]
-
-// markup
 const IndexPage = () => {
   return (
-    <main style={pageStyles}>
-      <title>Home Page</title>
-      <h1 style={headingStyles}>
-        Congratulations
-        <br />
-        <span style={headingAccentStyles}>— you just made a Gatsby site! </span>
-        <span role="img" aria-label="Party popper emojis">
-          🎉🎉🎉
-        </span>
-      </h1>
-      <p style={paragraphStyles}>
-        Edit <code style={codeStyles}>src/pages/index.js</code> to see this page
-        update in real-time.{" "}
-        <span role="img" aria-label="Sunglasses smiley emoji">
-          😎
-        </span>
-      </p>
-      <ul style={listStyles}>
-        <li style={docLinkStyle}>
-          <a
-            style={linkStyle}
-            href={`${docLink.url}?utm_source=starter&utm_medium=start-page&utm_campaign=minimal-starter`}
-          >
-            {docLink.text}
-          </a>
-        </li>
-        {links.map(link => (
-          <li style={{ ...listItemStyles, color: link.color }}>
-            <span>
-              <a
-                style={linkStyle}
-                href={`${link.url}?utm_source=starter&utm_medium=start-page&utm_campaign=minimal-starter`}
-              >
-                {link.text}
-              </a>
-              <p style={descriptionStyle}>{link.description}</p>
-            </span>
-          </li>
-        ))}
-      </ul>
-      <img
-        alt="Gatsby G Logo"
-        src="data:image/svg+xml,%3Csvg width='24' height='24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 2a10 10 0 110 20 10 10 0 010-20zm0 2c-3.73 0-6.86 2.55-7.75 6L14 19.75c3.45-.89 6-4.02 6-7.75h-5.25v1.5h3.45a6.37 6.37 0 01-3.89 4.44L6.06 9.69C7 7.31 9.3 5.63 12 5.63c2.13 0 4 1.04 5.18 2.65l1.23-1.06A7.959 7.959 0 0012 4zm-8 8a8 8 0 008 8c.04 0 .09 0-8-8z' fill='%23639'/%3E%3C/svg%3E"
-      />
+    <>
+    <header>
+      <nav class="navbar navbar-expand-md navbar-light fixed-top" id="top-navbar">
+      <div class="container">
+        <a class="navbar-brand" href="/index.html">Pascal Bugnion</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-navigation">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a href="code.html" class="nav-link">Code</a></li>
+            <li class="nav-item"><a href="talks.html" class="nav-link">Talks</a></li>
+            <li class="nav-item"><a href="http://www.scala4datascience.com" class="nav-link">Book</a></li>
+            <li class="nav-item"><a href="blog/index.html" class="nav-link">Blog</a></li>
+            <li class="nav-item active"><a href="#" class="nav-link">About</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div className="container content-container">
+      <div className="page-header">
+        <h1>About me</h1>
+      </div>
+      <div class="row">
+            <div class="col-md-7 col-lg-8 contact-text">
+              <p>
+                I am a software engineering technical lead.
+              </p>
+              <p>
+                I build tools for data science and machine learning. I live in London and work at <a href="https://faculty.ai/">Faculty</a>, as part of the <a href="https://faculty.ai/products-services/platform/">Faculty Platform</a> team.
+                </p>
+                <p>
+                  Outside of my day job, I am a contributor to open source, specially in the Jupyter and Plotly ecosystems. I am a core contributor to <a href="https://jupyter.org/widgets">Jupyter widgets</a> and the main author of <a href="/code.html">several Python libraries</a>.
+                </p>
+                <p>
+                  I hold a PhD from Cambridge University in <a href="https://www.tcm.phy.cam.ac.uk/people/staff.html">theoretical solid state physics</a>, working on <a href="https://en.wikipedia.org/wiki/Quantum_Monte_Carlo">quantum Monte Carlo</a> methods.
+                </p>
+
+            </div>
+            <div class="col-md-5 col-lg-4 order-first order-md-last headshot-img-container">
+              <img src={headshot} alt="Pascal Bugnion" width="100%"/>
+            </div>
+        </div>
+        <div class="row contact-links-row">
+          <div class="col-md-7 col-lg-8">
+            <ContactEntryEmail />
+            <ContactEntryLink iconContent={linkedInIcon} title="LinkedIn" href="https://uk.linkedin.com/in/pbugnion" value="pbugnion" />
+            <ContactEntryLink iconContent={githubIcon} title="GitHub" href="https://github.com/pbugnion" value="pbugnion" />
+          </div>
+          <div class="col-md-5 col-lg-3">
+            <ContactEntryLink iconContent={twitterIcon} title="Twitter" href="https://twitter.com/pascalbugnion" value="@pascalbugnion" />
+            <ContactEntryLink iconContent={stackOverflowIcon} title="Stack Overflow" href="https://stackoverflow.com/users/827862/pascal-bugnion" value="pascal-bugnion" />
+          </div>
+        </div>
+    </div>
     </main>
+  </>
   )
 }
 
