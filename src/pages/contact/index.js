@@ -1,19 +1,18 @@
 import * as React from "react"
-import rot13 from "../services/rot-13"
+import rot13 from "../../services/rot-13"
 import Tooltip from 'react-bootstrap/Tooltip'
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger'
 
 import "bootstrap/dist/css/bootstrap.min.css"
-import "../styles/fonts.css"
-import "../styles/main.css"
-import "../styles/contact.css"
+import "../../styles/main.css"
+import "./index.css"
 
-import headshot from "../images/Headshot-Pascal-1.jpg"
-import mailIcon from "../images/mail-icon.png"
-import linkedInIcon from "../images/linkedin-icon.png"
-import githubIcon from "../images/github-icon.png"
-import twitterIcon from "../images/twitter-icon.png"
-import stackOverflowIcon from "../images/stackoverflow-icon.png"
+import headshot from "./images/Headshot-Pascal-1.jpg"
+import mailIcon from "./images/mail-icon.png"
+import linkedInIcon from "./images/linkedin-icon.png"
+import githubIcon from "./images/github-icon.png"
+import twitterIcon from "./images/twitter-icon.png"
+import stackOverflowIcon from "./images/stackoverflow-icon.png"
 
 const ContactEntryLink = ({iconContent, href, title, value}) => {
   return (
