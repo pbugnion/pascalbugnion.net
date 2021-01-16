@@ -7,6 +7,7 @@ module.exports = {
       options: {
         fonts: [
             "Josefin Sans\:300,400",
+            "EB Garamond"
         ],
         display: "swap"
       },
