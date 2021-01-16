@@ -80,14 +80,13 @@ const IndexPage = () => {
               </p>
               <p>
                 I build tools for data science and machine learning. I live in London and work at <a href="https://faculty.ai/">Faculty</a>, as part of the <a href="https://faculty.ai/products-services/platform/">Faculty Platform</a> team.
-                </p>
+              </p>
               <p>
                 Outside of my day job, I am a contributor to open source, specially in the Jupyter and Plotly ecosystems. I am a core contributor to <a href="https://jupyter.org/widgets">Jupyter widgets</a> and the main author of <a href="/code.html">several Python libraries</a>.
-                </p>
+              </p>
               <p>
                 I hold a PhD from Cambridge University in <a href="https://www.tcm.phy.cam.ac.uk/people/staff.html">theoretical solid state physics</a>, working on <a href="https://en.wikipedia.org/wiki/Quantum_Monte_Carlo">quantum Monte Carlo</a> methods.
-                </p>
-
+              </p>
             </div>
             <div className="col-md-5 col-lg-4 order-first order-md-last headshot-img-container">
               <img src={headshot} alt="Pascal Bugnion" width="100%" />
