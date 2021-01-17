@@ -2,8 +2,8 @@ import * as React from "react"
 
 import "bootstrap/dist/css/bootstrap.min.css"
 import "prismjs/themes/prism-solarizedlight.css"
-import "../../styles/global.css"
+import pageStyles from "../../styles/page.module.css"
 
 export default ({ children }) => {
-  return <div>{children}</div>
+  return <div id={pageStyles.page}>{children}</div>
 }

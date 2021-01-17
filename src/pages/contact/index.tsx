@@ -13,6 +13,7 @@ import githubIcon from "./images/github-icon.png"
 import twitterIcon from "./images/twitter-icon.png"
 import stackOverflowIcon from "./images/stackoverflow-icon.png"
 
+import pageStyles from "../../styles/page.module.css"
 import styles from "./index.module.css"
 
 const ContactEntryLink = ({ iconContent, href, title, value }) => {
@@ -55,7 +56,7 @@ const IndexPage = () => {
       </header>
       <main>
         <div className={`container content-container ${styles.maxWidthContainer}`}>
-          <div className="page-header">
+          <div className={pageStyles.pageHeader}>
             <h1>About me</h1>
           </div>
           <div className="row">

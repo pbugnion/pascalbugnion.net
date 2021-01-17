@@ -6,6 +6,7 @@ import Layout from "../../components/layout"
 import Navbar from "../../components/navbar"
 
 import styles from "./index.module.css"
+import pageStyles from "../../styles/page.module.css"
 
 export default ({ data }) => {
     const { frontmatter, html } = data.markdownRemark
@@ -20,7 +21,7 @@ export default ({ data }) => {
             </header>
             <main>
                 <div className={`container ${styles.articleContainer}`}>
-                    <div className="page-header">
+                    <div className={pageStyles.pageHeader}>
                         <h1 className={styles.articleEntryTitle}>{frontmatter.contentTitle}</h1>
                     </div>
                     <div className={styles.lastUpdatedDate}>
