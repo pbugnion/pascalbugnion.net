@@ -2,9 +2,9 @@ import * as React from "react"
 import { graphql } from "gatsby"
 import Helmet from "react-helmet"
 
-import Layout from "../components/layout"
+import Layout from "../../components/layout"
 
-import styles from "./blog.module.css"
+import styles from "./index.module.css"
 
 
 export default ({ data }) => {
