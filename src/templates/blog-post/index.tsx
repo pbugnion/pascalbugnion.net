@@ -4,6 +4,7 @@ import { Helmet } from "react-helmet"
 
 import Layout from "../../components/layout"
 import Navbar from "../../components/navbar"
+import PageHeader from "../../components/page-header"
 
 import styles from "./index.module.css"
 import pageStyles from "../../styles/page.module.css"
@@ -21,9 +22,7 @@ export default ({ data }) => {
             </header>
             <main>
                 <div className={`container ${styles.articleContainer}`}>
-                    <div className={pageStyles.pageHeader}>
-                        <h1 className={styles.articleEntryTitle}>{frontmatter.contentTitle}</h1>
-                    </div>
+                    <PageHeader>{frontmatter.contentTitle}</PageHeader>
                     <div className={styles.lastUpdatedDate}>
                         Last updated on the {frontmatter.lastUpdatedDate}.
                         </div>

@@ -30,15 +30,3 @@
 #page :global(.link-array) a + a {
     padding: 1rem;
 }
-
-/* Page headers */
-
-.pageHeader {
-    border-bottom: 1px solid #eee;
-    margin-bottom: 20px;
-    padding-bottom: 9px;
-}
-
-.pageHeader h1 {
-    font-size: 2.3rem;
-}

@@ -5,6 +5,7 @@ import OverlayTrigger from 'react-bootstrap/OverlayTrigger'
 
 import Layout from "../../components/layout"
 import Navbar from "../../components/navbar"
+import PageHeader from "../../components/page-header"
 
 import headshot from "./images/Headshot-Pascal-1.jpg"
 import mailIcon from "./images/mail-icon.png"
@@ -56,9 +57,7 @@ const IndexPage = () => {
       </header>
       <main>
         <div className={`container content-container ${styles.maxWidthContainer}`}>
-          <div className={pageStyles.pageHeader}>
-            <h1>About me</h1>
-          </div>
+          <PageHeader>About me</PageHeader>
           <div className="row">
             <div className={`col-md-7 col-lg-8 ${styles.contactText}`}>
               <p>
