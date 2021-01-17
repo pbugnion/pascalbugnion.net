@@ -33,6 +33,10 @@ export default ({ data }) => {
         <Layout>
             <Helmet>
                 <title>Data diversions | Pascal Bugnion's blog</title>
+                <meta 
+                  name="description" 
+                  content="This is Pascal Bugnion's personal blog. It contains tutorials and opinions on engineering leadership, programming, and artificial intelligence."
+                />
             </Helmet>
             <header>
                 <Navbar containerAdditionalStyles={[styles.navbarContainer]}/>
