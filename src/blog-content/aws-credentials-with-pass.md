@@ -97,10 +97,6 @@ My prompt now contains information about the profile:
 
 <div class="gatsby-highlight"><pre class="language-fish"><span class="token deleted">[my-profile]</span> ~ $</pre></div>
 
-<!-- <img width="100%"
-  style="display:block;margin-top:1em;margin-bottom:1em;"
-  src="images/aws-vault-1.jpg" /> -->
-
 ![](./images/aws-vault-1.jpg)
 
 ## A comparison with AWS vault
