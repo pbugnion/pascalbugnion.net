@@ -1,0 +1,63 @@
+
+#topNavbar {
+    font-size : 20px ;
+    background-color : white ;
+    box-shadow : 0px 3px 3px #aaa ;
+
+    /* Override base navbar padding so container controls size.
+       Only affects xs- screens. */
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#topNavbar :global(.container) {
+    padding: 0;
+}
+
+#topNavbar :global(.navbar-brand) {
+    font-size : 20px ;
+    font-weight : 400 ;
+    color : black ;
+    padding-top : 8px ;
+    padding-bottom : 8px ;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius : 5px ;
+    margin-right : 20px ;
+}
+
+
+#topNavbar a:global(.nav-link) {
+    color : black ;
+    border-radius : 5px ;
+    padding-top : 12px ;
+    padding-bottom : 10px ;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: 10px;
+}
+
+#topNavbar a:global(.nav-link):hover,
+#topNavbar a:global(.nav-link):focus,
+#topNavbar a:global(.navbar-brand):hover,
+#topNavbar a:global(.navbar-brand):focus {
+    color : white ;
+    background-color : #222 ;
+
+}
+
+#topNavbar :global(.navbar-toggler) {
+    border: 0;
+}
+
+#topNavbar :global(.navbar-toggler):hover {
+    background-color: black;
+}
+
+#topNavbar :global(.navbar-toggler):focus {
+    outline: none;
+}
+
+#topNavbar :global(.navbar-toggler):hover :global(.navbar-toggler-icon) {
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(255,255,255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
