@@ -1,22 +1,41 @@
 import * as React from "react"
-import { graphql } from "gatsby"
 import { Helmet } from "react-helmet"
 
 import Layout from "../../components/layout"
+import { graphql } from "gatsby"
 
 import styles from "./index.module.css"
 
+const PostCard = ({post}) => {
+    const { contentTitle, slug, lastUpdatedDate, summary} = post
+    return (
+        <li>
+            <article class={styles.postCard}>
+                <header>
+                    <h2>
+                        <a href={slug} rel="bookmark">{contentTitle}</a>
+                    </h2>
+                </header>
+                <footer>
+                    <abbr className={styles.postCardDate}>{lastUpdatedDate}</abbr>
+                </footer>
+                <p className={styles.postCardSummary}>{summary}</p>
+            </article>
+        </li>
+    )
+}
+
 export default ({ data }) => {
-    const { frontmatter, html } = data.markdownRemark
+    const posts = data.allMarkdownRemark.nodes.map(post => post.frontmatter)
+    console.log(posts)
     return (
         <Layout>
             <Helmet>
-                <title>{frontmatter.pageTitle}</title>
-                <meta name="description" content={frontmatter.summary} />
+                <title>Data diversions | Pascal Bugnion's blog</title>
             </Helmet>
             <header>
                 <nav className="navbar navbar-expand-md navbar-light fixed-top" id="top-navbar">
-                    <div className={`container ${styles.blogNavbarContainer}`}>
+                    <div className="container">
                         <a className="navbar-brand" href="/index.html">Pascal Bugnion</a>
                         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-navigation">
                             <span className="navbar-toggler-icon"></span>
@@ -33,15 +52,11 @@ export default ({ data }) => {
                     </div>
                 </nav>
             </header>
-            <main>
-                <div className={`container ${styles.articleContainer}`}>
-                    <div className="page-header">
-                        <h1 className={styles.articleEntryTitle}>{frontmatter.contentTitle}</h1>
-                    </div>
-                    <div className={styles.lastUpdatedDate}>
-                        Last updated on the {frontmatter.lastUpdatedDate}.
-                        </div>
-                    <div className={styles.articleEntryContent} dangerouslySetInnerHTML={{ __html: html }} />
+            <main className={styles.postListBackground}>
+                <div className={`container ${styles.articleIndexContainer}`}>
+                    <ol className={styles.postList}>
+                        {posts.map(post => <PostCard post={post} />)}
+                    </ol>
                 </div>
             </main>
         </Layout>
@@ -49,15 +64,16 @@ export default ({ data }) => {
 }
 
 export const query = graphql`
-  query($slug: String!) {
-      markdownRemark(frontmatter: { slug: {eq: $slug }}) {
-          html
-          frontmatter {
-              contentTitle
-              pageTitle
-              lastUpdatedDate(formatString: "Do MMMM YYYY")
-              summary
-          }
+query MyQuery {
+    allMarkdownRemark {
+      nodes {
+        frontmatter {
+          slug
+          contentTitle
+          lastUpdatedDate(formatString: "Do MMMM YYYY")
+          summary
+        }
       }
+    }
   }
 `
