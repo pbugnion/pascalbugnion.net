@@ -1,0 +1,48 @@
+import * as React from "react"
+import { graphql } from "gatsby"
+import { Helmet } from "react-helmet"
+
+import Layout from "../../components/layout"
+import Navbar from "../../components/navbar"
+
+import styles from "./index.module.css"
+
+export default ({ data }) => {
+    const { frontmatter, html } = data.markdownRemark
+    return (
+        <Layout>
+            <Helmet>
+                <title>{frontmatter.pageTitle}</title>
+                <meta name="description" content={frontmatter.summary} />
+            </Helmet>
+            <header>
+                <Navbar containerAdditionalStyles={[styles.blogNavbarContainer]} />
+            </header>
+            <main>
+                <div className={`container ${styles.articleContainer}`}>
+                    <div className="page-header">
+                        <h1 className={styles.articleEntryTitle}>{frontmatter.contentTitle}</h1>
+                    </div>
+                    <div className={styles.lastUpdatedDate}>
+                        Last updated on the {frontmatter.lastUpdatedDate}.
+                        </div>
+                    <div className={styles.articleEntryContent} dangerouslySetInnerHTML={{ __html: html }} />
+                </div>
+            </main>
+        </Layout>
+    )
+}
+
+export const query = graphql`
+  query($slug: String!) {
+      markdownRemark(frontmatter: { slug: {eq: $slug }}) {
+          html
+          frontmatter {
+              contentTitle
+              pageTitle
+              lastUpdatedDate(formatString: "Do MMMM YYYY")
+              summary
+          }
+      }
+  }
+`

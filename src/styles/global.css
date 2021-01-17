@@ -1,0 +1,110 @@
+
+
+body {
+    font-family : "Josefin Sans", sans-serif ;
+    font-weight : 300 ;
+}
+
+h1 {
+    font-weight : 400 ;
+}
+
+h2 {
+    font-weight : 400 ;
+    padding-bottom : 0.3em ;
+}
+
+a {
+    color: #428bca;
+}
+
+.lead {
+    font-size : 1.2em ;
+}
+
+.content-container {
+    padding-top: 110px;
+    font-size : 18px ;
+    padding-bottom : 2em ;
+}
+
+.link-array a + a {
+    padding: 1rem;
+}
+
+/* Page headers */
+
+.page-header {
+    border-bottom: 1px solid #eee;
+    margin-bottom: 20px;
+    padding-bottom: 9px;
+}
+
+.page-header h1 {
+    font-size: 2.3rem;
+}
+
+/* Navbar */
+
+#top-navbar {
+    font-size : 20px ;
+    background-color : white ;
+    box-shadow : 0px 3px 3px #aaa ;
+
+    /* Override base navbar padding so container controls size.
+       Only affects xs- screens. */
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#top-navbar .container {
+    padding: 0;
+}
+
+#top-navbar .navbar-brand {
+    font-size : 20px ;
+    font-weight : 400 ;
+    color : black ;
+    padding-top : 8px ;
+    padding-bottom : 8px ;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius : 5px ;
+    margin-right : 20px ;
+}
+
+
+#top-navbar a.nav-link  {
+    color : black ;
+    border-radius : 5px ;
+    padding-top : 12px ;
+    padding-bottom : 10px ;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: 10px;
+}
+
+#top-navbar a.nav-link:hover,
+#top-navbar a.nav-link:focus,
+#top-navbar a.navbar-brand:hover,
+#top-navbar a.navbar-brand:focus {
+    color : white ;
+    background-color : #222 ;
+
+}
+
+#top-navbar .navbar-toggler {
+    border: 0;
+}
+
+#top-navbar .navbar-toggler:hover {
+    background-color: black;
+}
+
+#top-navbar .navbar-toggler:focus {
+    outline: none;
+}
+
+#top-navbar .navbar-toggler:hover .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(255,255,255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}

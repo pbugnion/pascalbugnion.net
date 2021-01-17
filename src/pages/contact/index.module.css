@@ -1,0 +1,26 @@
+.contactKey {
+   padding-right: 1.5em ;
+}
+
+.contactRow {
+  margin-bottom: 1.2em ;
+}
+
+.contactLinksRow {
+  margin-top: 1em;
+}
+
+.contactText p {
+  margin-bottom: 1.2em;
+}
+
+.headshotImgContainer {
+  margin-bottom: 1em;
+}
+
+/* Disable the xl- part of boostrap */
+@media (min-width: 992px) {
+  .maxWidthContainer {
+    max-width: 960px;
+  }
+}
