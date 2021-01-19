@@ -25,7 +25,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-google-fonts",
       options: {
-        fonts: ["Josefin Sans:300,400", "EB Garamond"],
+        fonts: ["Josefin Sans:300,400", "EB Garamond", "Open Sans"],
         display: "swap",
       },
     },
