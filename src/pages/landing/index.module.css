@@ -1,27 +1,28 @@
 .backgroundImage {
-    height: 100vh;
+    min-height: 100vh;
     width: 100vw;
     background: url("./images/landing.jpg") no-repeat center fixed;
     background-size: cover;
 }
 
 .contentContainer {
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    min-height: 100vh;
     color: white;
 
     display: flex;
-    align-items: center;
+    align-items: stretch;
     justify-content: center;
-
 }
 
 .inside {
     max-width: 700px;
-    padding: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
 
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
 }
 
 .lead {
@@ -29,7 +30,7 @@
     font-size: 50pt;
     text-align: center;
 
-    margin-bottom: 1em;
+    padding-bottom: 1em;
 }
 
 
@@ -65,4 +66,48 @@
     .descriptionParagraph {
         font-size: 18pt
     }
+}
+
+.topSpacer {
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+.bottomSpacer {
+    flex-grow: 2;
+    flex-shrink: 1;
+}
+
+#landingNavbar {
+    font-family: "Open Sans", sans-serif;
+    text-shadow: 0 1px 3px rgba(0,0,0,.5);
+
+    min-height: 80px;
+    padding: 20px 0 20px 0;
+}
+
+#landingNavbar .landingNavbarBrand {
+    color: white;
+    border-bottom: 3px solid transparent;
+}
+
+#landingNavbar .landingNavbarBrand:hover {
+    border-bottom-color: white;
+    text-shadow: none;
+}
+
+#landingNavbar .landingNavLink {
+    color: white;
+    margin-left: 1.3em;
+    margin-right: 1.3em;
+
+    padding-left: 0.1em;
+    padding-right: 0.1em;
+    
+    border-bottom: 3px solid transparent;
+}
+
+#landingNavbar .landingNavLink:hover {
+    border-bottom-color: white;
+    text-shadow: none;
 }
