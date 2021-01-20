@@ -42,6 +42,11 @@
     padding-bottom: 1em;
 }
 
+.descriptionParagraph a {
+    text-decoration: underline;
+    color: white;
+}
+
 @media screen and (max-height: 700px) {
     .lead {
         font-size: 30pt
