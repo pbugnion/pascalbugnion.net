@@ -1,12 +1,14 @@
 import * as React from "react"
 
+import styles from "./index.module.css"
+
 export interface NavbarProps {
     containerAdditionalStyles: Array<string>
 }
 
 const Navbar = ({ containerAdditionalStyles }) => {
     return (
-        <nav className="navbar navbar-expand-md navbar-light fixed-top" id="top-navbar">
+        <nav className={`navbar navbar-expand-md navbar-light fixed-top`} id={styles.topNavbar}>
             <div className={["container", ...containerAdditionalStyles].join(" ")}>
                 <a className="navbar-brand" href="/index.html">Pascal Bugnion</a>
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-navigation">

@@ -5,6 +5,7 @@ import OverlayTrigger from 'react-bootstrap/OverlayTrigger'
 
 import Layout from "../../components/layout"
 import Navbar from "../../components/navbar"
+import PageHeader from "../../components/page-header"
 
 import headshot from "./images/Headshot-Pascal-1.jpg"
 import mailIcon from "./images/mail-icon.png"
@@ -13,6 +14,7 @@ import githubIcon from "./images/github-icon.png"
 import twitterIcon from "./images/twitter-icon.png"
 import stackOverflowIcon from "./images/stackoverflow-icon.png"
 
+import pageStyles from "../../styles/page.module.css"
 import styles from "./index.module.css"
 
 const ContactEntryLink = ({ iconContent, href, title, value }) => {
@@ -55,9 +57,7 @@ const IndexPage = () => {
       </header>
       <main>
         <div className={`container content-container ${styles.maxWidthContainer}`}>
-          <div className="page-header">
-            <h1>About me</h1>
-          </div>
+          <PageHeader>About me</PageHeader>
           <div className="row">
             <div className={`col-md-7 col-lg-8 ${styles.contactText}`}>
               <p>
