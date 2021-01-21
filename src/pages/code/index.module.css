@@ -1,0 +1,58 @@
+
+.cardContainer {
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 0;
+    box-shadow: 0 3px 8px 0px #ccc;
+    margin-bottom: 30px;
+}
+
+.cardContainer :global(.card-body) {
+    padding-top: 20px;
+    padding-left: 25px;
+    padding-right: 25px; 
+}
+
+.cardContainer :global(.heading) {
+    font-size: 24px
+}
+
+.cardContainer :global(.lead) {
+    font-size: 20px;
+}
+
+.cardContainer img {
+    margin-bottom: 16px;
+}
+
+.cardContainer .collapseWrapper {
+    margin: 0;
+    padding: 0;
+}
+
+.cardContainer :global(.card-footer) {
+    border-top: 1px solid #ccc;
+    background: #fff;
+    padding: 15px 20px 15px 20px;
+  }
+
+.cardContainer .expandButton {
+    color: black;
+    background: white;
+    font-size: 18px;
+    font-weight: 300;
+    border: 0;
+    border-radius : 5px ;
+    padding: 10px;
+}
+
+.cardContainer .expandButton:not(:disabled):hover,
+.cardContainer .expandButton:not(:disabled):active {
+    color: white;
+    background-color: #222;
+    text-decoration: none;
+}
+
+.cardContainer .expandButton:focus {
+    box-shadow: none;
+}
