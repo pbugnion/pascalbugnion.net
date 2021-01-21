@@ -5,7 +5,7 @@ import { Link } from "gatsby"
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 
-import styles from "./index.module.css"
+import styles from "./landing/index.module.css"
 
 const NavbarInternalLink = ({to, children}) => (
     <Nav.Link as={Link} to={to} className={styles.landingNavLink}>{children}</Nav.Link>
