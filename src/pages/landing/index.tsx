@@ -4,6 +4,7 @@ import { Link } from "gatsby"
 
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
+import Container from "react-bootstrap/Container";
 
 import styles from "./index.module.css"
 
@@ -13,17 +14,17 @@ const NavbarInternalLink = ({to, children}) => (
 
 const LandingNavbar = () => {
     return (
-        <Navbar expand="sm" id={styles.landingNavbar}>
-            <Navbar.Brand href="/" className={styles.landingNavbarBrand}>Pascal Bugnion</Navbar.Brand>
-            <Navbar.Toggle aria-controls="basic-navbar-collapse-toggle" />
-            <Navbar.Collapse id="landing-navbar-collapse-toggle" className="justify-content-end">
-                <Nav>
-                    <NavbarInternalLink to="/code">Code</NavbarInternalLink>
-                    <Nav.Link href="http://www.scala4datascience.com/" className={styles.landingNavLink}>Book</Nav.Link>
-                    <NavbarInternalLink to="/blog">Blog</NavbarInternalLink>
-                    <NavbarInternalLink to="/contact">About</NavbarInternalLink>
-                </Nav>
-            </Navbar.Collapse>
+        <Navbar expand="sm" id={styles.landingNavbar} variant="dark">
+                <Navbar.Brand href="/" className={styles.landingNavbarBrand}>Pascal Bugnion</Navbar.Brand>
+                <Navbar.Toggle aria-controls="basic-navbar-collapse-toggle" className={styles.landingNavbarToggle} />
+                <Navbar.Collapse id="landing-navbar-collapse-toggle" className="justify-content-end">
+                    <Nav>
+                        <NavbarInternalLink to="/code">Code</NavbarInternalLink>
+                        <Nav.Link href="http://www.scala4datascience.com/" className={styles.landingNavLink}>Book</Nav.Link>
+                        <NavbarInternalLink to="/blog">Blog</NavbarInternalLink>
+                        <NavbarInternalLink to="/contact">About</NavbarInternalLink>
+                    </Nav>
+                </Navbar.Collapse>
         </Navbar>
     )
 }
