@@ -38,5 +38,13 @@ module.exports = {
         path: `${__dirname}/src/blog-content/`,
       },
     },
+    {
+      resolve: "gatsby-plugin-s3",
+      options: {
+        bucketName: "pascalbugnion.net",
+        protocol: "https",
+        hostname: "pascalbugnion.net"
+      }
+    }
   ],
 };
