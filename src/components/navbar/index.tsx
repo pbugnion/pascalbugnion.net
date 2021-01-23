@@ -12,7 +12,7 @@ const Navbar = ({ containerAdditionalStyles }) => {
     return (
         <nav className={`navbar navbar-expand-md navbar-light fixed-top`} id={styles.topNavbar}>
             <div className={["container", ...containerAdditionalStyles].join(" ")}>
-                <Link className="navbar-brand" to="/index.html">Pascal Bugnion</Link>
+                <Link className="navbar-brand" to="/">Pascal Bugnion</Link>
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
