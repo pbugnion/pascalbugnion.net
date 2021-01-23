@@ -31,7 +31,7 @@ const createBlogPages = async ({ graphql, actions }) => {
 const createHtmlRedirects = async({ actions }) => {
   const baseRules = [
     ["/code.html", "/code/"],
-    ["/contact.html", "/contact/"]
+    ["/contact.html", "/contact/"],
   ]
   const blogRules = [
     ["editor-hacking-how-i-learnt-to-stop-worrying-and-love-my-emacs-configuration.html", "editor-hacking"],
@@ -59,7 +59,18 @@ const createHtmlRedirects = async({ actions }) => {
   })
 }
 
+const createRedirectAboutContact = async({actions}) => {
+  actions.createRedirect(
+    {
+      fromPath: "/about",
+      toPath: "/contact",
+      isPermanent: true,
+    }
+  )
+}
+
 exports.createPages = async ({ graphql, actions }) => {
   await createHtmlRedirects({actions})
+  await createRedirectAboutContact({actions})
   await createBlogPages({ graphql, actions });
 };
