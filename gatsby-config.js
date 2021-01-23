@@ -19,6 +19,8 @@ module.exports = {
                 wrapperStyle: "display:block;margin-top:1em;margin-bottom:1em;"
             },
           },
+          "gatsby-remark-copy-linked-files",
+          "gatsby-plugin-catch-links",
         ],
       },
     },
