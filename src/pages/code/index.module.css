@@ -30,6 +30,17 @@
     padding: 0;
 }
 
+.cardContainer .linkArray {
+    height: 2em;
+    display: flex;
+    align-items: center;
+}
+
+.cardContainer .linkArray a {
+    padding-right: 1.5em;
+
+}
+
 .cardContainer :global(.card-footer) {
     border-top: 1px solid #ccc;
     background: #fff;
