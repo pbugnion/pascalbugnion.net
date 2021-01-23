@@ -14,7 +14,14 @@ import jupyterWidgetsImage from "./images/wealth_of_nations.png"
 
 import styles from "./index.module.css"
 
-const Card = ({heading, lead, imageSource, children}) => {
+type CardProps = {
+    heading: string,
+    lead: string,
+    imageSource?: string,
+    children: React.ReactNode
+}
+
+const Card = ({heading, lead, imageSource, children}: CardProps) => {
     const [descriptionExpanded, setDescriptionExpanded] = React.useState(false)
 
     return (
