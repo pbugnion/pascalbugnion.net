@@ -13,7 +13,7 @@
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "deploy": "gatsby-plugin-s3 deploy"
+    "deploy": "gatsby-plugin-s3 deploy --yes && aws cloudfront create-invalidation --distribution-id E25ATTESSRHYRX --paths \"/*\""
   },
   "dependencies": {
     "bootstrap": "^4.5.3",
