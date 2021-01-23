@@ -1,7 +1,7 @@
 import * as React from "react"
 import { Helmet } from "react-helmet"
 
-import { graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 
 import Layout from "../../components/layout"
 import Navbar from "../../components/navbar"
@@ -16,7 +16,7 @@ const PostCard = ({post}) => {
             <article class={styles.postCard}>
                 <header>
                     <h2>
-                        <a href={slug} rel="bookmark">{contentTitle}</a>
+                        <Link to={slug} rel="bookmark">{contentTitle}</Link>
                     </h2>
                 </header>
                 <footer>
