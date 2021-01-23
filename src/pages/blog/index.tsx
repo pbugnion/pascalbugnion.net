@@ -56,8 +56,13 @@ export default ({ data }) => {
 }
 
 export const query = graphql`
-query MyQuery {
-    allMarkdownRemark {
+query BlogPostIndexQuery {
+    allMarkdownRemark(
+        sort: {
+            fields: [frontmatter___lastUpdatedDate]
+            order: DESC
+        }
+    ) {
       nodes {
         frontmatter {
           slug
