@@ -389,7 +389,7 @@ val postcodeResponses: Source[PostcodeRestaurants] =
 
 Our pipeline will now print log messages for every 1000 elements it has processed:
 
-```
+```none
 > runMain Sprint4
 [info] Running Sprint4
 [info] 2017-02-26 11:30:54,933 INFO [Sprint4] - Found 249304 unique postcodes.

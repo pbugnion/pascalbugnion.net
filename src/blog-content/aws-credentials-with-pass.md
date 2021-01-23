@@ -37,7 +37,7 @@ export AWS_SECRET_ACCESS_KEY=...
 
 To then enter that environment, I can run the following command in the [fish shell](https://fishshell.com/):
 
-```fish
+```none
 pass aws-profiles/my-profile | source
 ```
 
@@ -53,7 +53,7 @@ To avoid having to remember this command, I created a shell function called `aws
 
 Skipping argument validation, these look like the following snippets for Fish. The full source code, and corresponding examples for Bash are available in [this gist](https://gist.github.com/pbugnion/8e0e2b40ef3160b1eadaea2f4b901def):
 
-```fish
+```none
 # ~/.config/fish/functions/aws-activate.fish
 function aws-activate -d 'Activate an AWS profile stored in pass' --argument profile
   # Skip argument validation
@@ -76,7 +76,7 @@ I need to know which AWS account I am currently running commands against. I live
 
 I therefore include the current value of the `AWS_PROFILE` variable in my prompt. For fish users, this looks like having the following lines in [`fish_prompt.fish`](https://fishshell.com/docs/current/commands.html#fish_prompt):
 
-```fish
+```none
 # ~/.config/fish/functions/fish_prompt.fish
 
 function fish_prompt --description 'Write out the prompt'

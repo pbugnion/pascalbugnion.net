@@ -176,7 +176,7 @@ object Sprint5 extends App {
 
 Running this reveals three 400 error and, after about 20,000 requests, we just get seven 429 status codes in a row, at which point our stream shuts down. The body of the responses contains the error code `ACCESS_LIMIT_REACHED`. We have to then wait several hours before the API returns anything other than 429 errors:
 
-```
+```none
 > runMain Sprint5
 [info] Running Sprint5
 [info] 2017-02-26 11:43:53,080 INFO [Sprint5] - Found 249304 unique postcodes.
