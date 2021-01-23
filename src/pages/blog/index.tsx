@@ -5,6 +5,7 @@ import { graphql } from "gatsby"
 
 import Layout from "../../components/layout"
 import Navbar from "../../components/navbar"
+import CanvasBackground from "../../components/canvas-background"
 
 import styles from "./index.module.css"
 
@@ -38,16 +39,18 @@ export default ({ data }) => {
                   content="This is Pascal Bugnion's personal blog. It contains tutorials and opinions on engineering leadership, programming, and artificial intelligence."
                 />
             </Helmet>
-            <header>
-                <Navbar containerAdditionalStyles={[styles.navbarContainer]}/>
-            </header>
-            <main className={styles.postListBackground}>
-                <div className={`container ${styles.articleIndexContainer}`}>
-                    <ol className={styles.postList}>
-                        {posts.map(post => <PostCard post={post} />)}
-                    </ol>
-                </div>
-            </main>
+            <CanvasBackground>
+                <header>
+                    <Navbar containerAdditionalStyles={[styles.navbarContainer]}/>
+                </header>
+                <main>
+                    <div className={`container ${styles.articleIndexContainer}`}>
+                        <ol className={styles.postList}>
+                            {posts.map(post => <PostCard post={post} />)}
+                        </ol>
+                    </div>
+                </main>
+            </CanvasBackground>
         </Layout>
     )
 }

@@ -14,7 +14,6 @@ import githubIcon from "./images/github-icon.png"
 import twitterIcon from "./images/twitter-icon.png"
 import stackOverflowIcon from "./images/stackoverflow-icon.png"
 
-import pageStyles from "../../styles/page.module.css"
 import styles from "./index.module.css"
 
 const ContactEntryLink = ({ iconContent, href, title, value }) => {
@@ -48,8 +47,7 @@ const ContactEntryEmail = () => {
   )
 }
 
-// styles
-const IndexPage = () => {
+export default () => {
   return (
     <Layout>
       <header>
@@ -93,5 +91,3 @@ const IndexPage = () => {
     </Layout>
   )
 }
-
-export default IndexPage
