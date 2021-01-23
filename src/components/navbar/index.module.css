@@ -38,9 +38,7 @@
 }
 
 #topNavbar a:global(.nav-link):hover,
-#topNavbar a:global(.nav-link):focus,
-#topNavbar a:global(.navbar-brand):hover,
-#topNavbar a:global(.navbar-brand):focus {
+#topNavbar a:global(.navbar-brand):hover {
     color : white ;
     background-color : #222 ;
 
