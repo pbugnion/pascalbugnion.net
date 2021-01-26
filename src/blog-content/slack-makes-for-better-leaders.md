@@ -30,6 +30,10 @@ Time affluence matters at work: for me, it’s the difference between enjoying m
 
 Feeling time affluent at work is important for everyone, but it’s particularly important for people leaders.
 
+<!-- Stephen Meyers on Unsplash -->
+
+![](./images/slack-time-1.jpg)
+
 ## Good leaders have enough time
 
 [Effective leaders](/blog/making-yourself-useful-as-a-middle-manager) will take the time to listen actively to their colleagues and their team. They will spend time being strategic and sharpening the saw.
@@ -52,6 +56,10 @@ Time poor managers spend less time being strategic. Taking the time to criticall
 
 In a similar vein, having a schedule that's too packed means less time to learn. This is particularly insidious because, day-to-day, you don't really notice your gradual obsolescence, until you wake up one day asking about [running the inventory database over email](https://dilbert.com/search_results?action=search_results&controller=search&page=1&sort=&terms=Inventory+Database).
 
+<!-- Jerry Zhang on Unsplash -->
+
+![](./images/slack-time-2.jpg)
+
 ## Becoming more time affluent
 
 So having enough time is important. How do we make sure that happens?
@@ -66,7 +74,7 @@ Beyond short-term fixes, the most effective way to feel time affluent has been t
 
 Explicit scheduling also lets me prioritise time affluence against getting particular tasks done. In practice, this means explicitly scheduling “slack” time in my schedule. I schedule time blocks that are not allocated to a task. If unexpected things come up, as always happens, I use up my slack time, rather than this extra task tipping me into feeling overwhelmed. This also encourages more delegation.
 
-Besides more deliberate planning and scheduling slack time, there are several other tools to feel more time affluent. In this excellent [blog post](https://smallbigideas.substack.com/p/a-proactive-approach-to-time-scarcity-1771e000bf91_), Padmini talks about protected time blocks, a zero-based budgeting approach to scheduling meetings, and the effectiveness of delegating. These have all helped me get my schedule under control.
+Besides more deliberate planning and scheduling slack time, there are several other tools to feel more time affluent. In this excellent [blog post](https://smallbigideas.substack.com/p/a-proactive-approach-to-time-scarcity-1771e000bf91_), [Padmini](https://smallbigideas.substack.com/) talks about protected time blocks, a zero-based budgeting approach to scheduling meetings, and the effectiveness of delegating. These have all helped me get my schedule under control.
 
 ## Conclusion
 
