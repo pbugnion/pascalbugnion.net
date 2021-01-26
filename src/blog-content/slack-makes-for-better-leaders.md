@@ -9,7 +9,7 @@ summary: bla bla bla
 
 Time pressure turns us into jerks.
 
-In one of my favourite psychology experiments [^1], students training to be priests at the Theological Seminary in Princeton were asked to prepare a brief talk on the [Good Samaritan](https://en.wikipedia.org/wiki/Parable_of_the_Good_Samaritan). They were then told to walk to a building across campus to deliver that talk.
+In one of my favourite psychology experiments[^1], students training to be priests at the Theological Seminary in Princeton were asked to prepare a brief talk on the [Good Samaritan](https://en.wikipedia.org/wiki/Parable_of_the_Good_Samaritan). They were then told to walk to a building across campus to deliver that talk.
 
 As they walked across campus, an actor simulated having a fit in their path, giving the prospective priest a chance to re-enact the exact story they were about to deliver a sermon on. The fit occurred in a narrow alleyway, so the students had to either help the victim or literally step over them to go give their talk.
 
