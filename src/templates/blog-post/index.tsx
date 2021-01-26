@@ -21,12 +21,14 @@ export default ({ data }) => {
                 <Navbar containerAdditionalStyles={[styles.blogNavbarContainer]} />
             </header>
             <main>
-                <div className={`container ${styles.articleContainer}`}>
-                    <PageHeader>{frontmatter.contentTitle}</PageHeader>
-                    <div className={styles.lastUpdatedDate}>
-                        Last updated on the {frontmatter.lastUpdatedDate}.
-                        </div>
-                    <div className={styles.articleEntryContent} dangerouslySetInnerHTML={{ __html: html }} />
+                <div className={styles.bodyContainer}>
+                    <div className={`container ${styles.articleContainer}`}>
+                        <PageHeader>{frontmatter.contentTitle}</PageHeader>
+                        <div className={styles.lastUpdatedDate}>
+                            Last updated on the {frontmatter.lastUpdatedDate}.
+                            </div>
+                        <div className={styles.articleEntryContent} dangerouslySetInnerHTML={{ __html: html }} />
+                    </div>
                 </div>
             </main>
         </Layout>
