@@ -39,6 +39,14 @@ module.exports = {
       },
     },
     {
+      resolve: "gatsby-plugin-google-gtag",
+      options: {
+        trackingIds: [
+          "UA-74417633-1"
+        ]
+      }
+    },
+    {
       resolve: "gatsby-plugin-s3",
       options: {
         bucketName: "pascalbugnion.net",
