@@ -82,7 +82,7 @@ The good samaritan experiment shows that time pressure makes us act in ways we r
 
 So next time you sign up to do just that one extra thing, or next time you think you can’t possibly delegate that task, consider the cost: feeling time affluent will make you more present, make better decisions and lead to happier teams.
 
-*I'd love to hear feedback on this post. Contact me on Twitter or via email and let me know what was helpful and what wasn't.*
+*I'd love to hear feedback on this post. [Contact me](/contact) on [Twitter](https://twitter.com/pascalbugnion) or via email and let me know what was helpful and what wasn't.*
 
 *Thanks to [Padmini Pyapali](https://smallbigideas.substack.com/) for feedback on the draft, and to my colleagues at [Faculty](https://faculty.ai) for inspiring the narrative.*
 
