@@ -3,7 +3,7 @@ contentTitle: How slack time makes for better leaders
 pageTitle: Data diversions | How slack time makes for better leaders
 slug: /blog/slack-makes-better-leaders
 createdDate: 2021-01-26
-lastUpdatedDate: 2021-01-26
+lastUpdatedDate: 2021-01-27
 summary: Time pressure turns us into jerks. Leaders who prioritise time affluence take better decisions and develop better relationships with their teams. How can we prioritise having enough time?
 ---
 
@@ -81,6 +81,10 @@ Besides more deliberate planning and scheduling slack time, there are several ot
 The good samaritan experiment shows that time pressure makes us act in ways we regret. But it also shows that we are just really bad at taking decisions under time pressure. 
 
 So next time you sign up to do just that one extra thing, or next time you think you can’t possibly delegate that task, consider the cost: feeling time affluent will make you more present, make better decisions and lead to happier teams.
+
+*I'd love to hear feedback on this post. Contact me on Twitter or via email and let me know what was helpful and what wasn't.*
+
+*Thanks to [Padmini Pyapali](https://smallbigideas.substack.com/) for feedback on the draft, and to my colleagues at [Faculty](https://faculty.ai) for inspiring the narrative.*
 
 
 [^1]: The study is reported in Darley, John M., and C. Daniel Batson. ‘“From Jerusalem to Jericho”: A Study of Situational and Dispositional Variables in Helping Behavior’. Journal of Personality and Social Psychology 27, no. 1 (1973): 100–108. https://doi.org/10.1037/h0034449. I first heard about it in the excellent Happiness Lab podcast.
