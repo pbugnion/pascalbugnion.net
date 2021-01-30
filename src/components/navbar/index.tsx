@@ -25,7 +25,7 @@ const SiteNavbar = ({ containerAdditionalStyles }) => {
                 <Navbar.Collapse id="basic-navbar-collapse-toggle">
                     <Nav>
                         <NavbarInternalLink to="/code">Code</NavbarInternalLink>
-                        <Nav.Link className={styles.topNavLink}>Book</Nav.Link>
+                        <Nav.Link className={styles.topNavLink} href="http://scala4datascience.com">Book</Nav.Link>
                         <NavbarInternalLink to="/blog">Blog</NavbarInternalLink>
                         <NavbarInternalLink to="/contact">About</NavbarInternalLink>
                     </Nav>
