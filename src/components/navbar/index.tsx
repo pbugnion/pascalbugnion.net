@@ -8,6 +8,10 @@ import Nav from "react-bootstrap/Nav"
 
 import styles from "./index.module.css"
 
+const NavbarInternalLink = ({to, children}) => (
+    <Nav.Link as={Link} to={to}>{children}</Nav.Link>
+)
+
 export interface NavbarProps {
     containerAdditionalStyles: Array<string>
 }
@@ -19,12 +23,12 @@ const SiteNavbar = ({ containerAdditionalStyles }) => {
                 <Navbar.Brand as={Link} to="/">Pascal Bugnion</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-collapse-toggle" />
                 <Navbar.Collapse id="basic-navbar-collapse-toggle">
-                    <ul className="navbar-nav">
-                        <li className="nav-item"><Link to="/code" className="nav-link">Code</Link></li>
-                        <li className="nav-item"><a href="http://www.scala4datascience.com" className="nav-link">Book</a></li>
-                        <li className="nav-item"><Link to="/blog" className="nav-link">Blog</Link></li>
-                        <li className="nav-item"><Link to="/contact" className="nav-link">About</Link></li>
-                    </ul>
+                    <Nav>
+                        <NavbarInternalLink to="/code">Code</NavbarInternalLink>
+                        <Nav.Link>Book</Nav.Link>
+                        <NavbarInternalLink to="/blog">Blog</NavbarInternalLink>
+                        <NavbarInternalLink to="/contact">About</NavbarInternalLink>
+                    </Nav>
                 </Navbar.Collapse>
             </Container>
         </Navbar>
