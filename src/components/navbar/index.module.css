@@ -14,7 +14,7 @@
     padding: 0;
 }
 
-#topNavbar :global(.navbar-brand) {
+#topNavbar .topNavbarBrand {
     font-size : 20px ;
     font-weight : 400 ;
     color : black ;
@@ -27,7 +27,7 @@
 }
 
 
-#topNavbar a:global(.nav-link) {
+#topNavbar a.topNavLink {
     color : black ;
     border-radius : 5px ;
     padding-top : 12px ;
@@ -37,25 +37,30 @@
     margin-left: 10px;
 }
 
-#topNavbar a:global(.nav-link):hover,
-#topNavbar a:global(.navbar-brand):hover {
+#topNavbar a.topNavLink:hover,
+#topNavbar a.topNavbarBrand:hover {
     color : white ;
     background-color : #222 ;
 
 }
 
-#topNavbar :global(.navbar-toggler) {
+#topNavbar .topNavbarToggle {
     border: 0;
+    margin-right: 15px;
 }
 
-#topNavbar :global(.navbar-toggler):hover {
+#topNavbar .topNavbarToggle:hover {
     background-color: black;
 }
 
-#topNavbar :global(.navbar-toggler):focus {
+#topNavbar .topNavbarToggle:focus {
     outline: none;
 }
 
-#topNavbar :global(.navbar-toggler):hover :global(.navbar-toggler-icon) {
+#topNavbar .topNavbarToggle :global(.navbar-toggler-icon) {
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(0,0,0)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+#topNavbar .topNavbarToggle:hover :global(.navbar-toggler-icon) {
     background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(255,255,255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }

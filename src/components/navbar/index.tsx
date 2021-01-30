@@ -2,35 +2,41 @@ import * as React from "react"
 
 import { Link } from "gatsby"
 
+import Container from "react-bootstrap/Container"
+import Navbar from "react-bootstrap/Navbar"
+import Nav from "react-bootstrap/Nav"
+
 import styles from "./index.module.css"
+
+const NavbarInternalLink = ({to, children}) => (
+    <Nav.Link as={Link} to={to} className={styles.topNavLink}>{children}</Nav.Link>
+)
 
 export interface NavbarProps {
     containerAdditionalStyles: Array<string>
 }
 
-const Navbar = ({ containerAdditionalStyles }) => {
+const SiteNavbar = ({ containerAdditionalStyles }) => {
     return (
-        <nav className={`navbar navbar-expand-md navbar-light fixed-top`} id={styles.topNavbar}>
-            <div className={["container", ...containerAdditionalStyles].join(" ")}>
-                <Link className="navbar-brand" to="/">Pascal Bugnion</Link>
-                <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-navigation">
-                    <span className="navbar-toggler-icon"></span>
-                </button>
-                <div className="collapse navbar-collapse" id="navbar-navigation">
-                    <ul className="navbar-nav">
-                        <li className="nav-item"><Link to="/code" className="nav-link">Code</Link></li>
-                        <li className="nav-item"><a href="http://www.scala4datascience.com" className="nav-link">Book</a></li>
-                        <li className="nav-item"><Link to="/blog" className="nav-link">Blog</Link></li>
-                        <li className="nav-item"><Link to="/contact" className="nav-link">About</Link></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+        <Navbar expand="sm" variant="light" fixed="top" id={styles.topNavbar}>
+            <Container className={containerAdditionalStyles.join(" ")}>
+                <Navbar.Brand as={Link} to="/" className={styles.topNavbarBrand}>Pascal Bugnion</Navbar.Brand>
+                <Navbar.Toggle aria-controls="basic-navbar-collapse-toggle" className={styles.topNavbarToggle} />
+                <Navbar.Collapse id="basic-navbar-collapse-toggle">
+                    <Nav>
+                        <NavbarInternalLink to="/code">Code</NavbarInternalLink>
+                        <Nav.Link className={styles.topNavLink}>Book</Nav.Link>
+                        <NavbarInternalLink to="/blog">Blog</NavbarInternalLink>
+                        <NavbarInternalLink to="/contact">About</NavbarInternalLink>
+                    </Nav>
+                </Navbar.Collapse>
+            </Container>
+        </Navbar>
     )
 }
 
-Navbar.defaultProps = {
+SiteNavbar.defaultProps = {
     containerAdditionalStyles: []
 }
 
-export default Navbar
+export default SiteNavbar
