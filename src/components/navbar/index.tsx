@@ -9,7 +9,7 @@ import Nav from "react-bootstrap/Nav"
 import styles from "./index.module.css"
 
 const NavbarInternalLink = ({to, children}) => (
-    <Nav.Link as={Link} to={to}>{children}</Nav.Link>
+    <Nav.Link as={Link} to={to} className={styles.topNavLink}>{children}</Nav.Link>
 )
 
 export interface NavbarProps {
@@ -20,12 +20,12 @@ const SiteNavbar = ({ containerAdditionalStyles }) => {
     return (
         <Navbar expand="sm" variant="light" fixed="top" id={styles.topNavbar}>
             <Container className={containerAdditionalStyles.join(" ")}>
-                <Navbar.Brand as={Link} to="/">Pascal Bugnion</Navbar.Brand>
+                <Navbar.Brand as={Link} to="/" className={styles.topNavbarBrand}>Pascal Bugnion</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-collapse-toggle" className={styles.topNavbarToggle} />
                 <Navbar.Collapse id="basic-navbar-collapse-toggle">
                     <Nav>
                         <NavbarInternalLink to="/code">Code</NavbarInternalLink>
-                        <Nav.Link>Book</Nav.Link>
+                        <Nav.Link className={styles.topNavLink}>Book</Nav.Link>
                         <NavbarInternalLink to="/blog">Blog</NavbarInternalLink>
                         <NavbarInternalLink to="/contact">About</NavbarInternalLink>
                     </Nav>

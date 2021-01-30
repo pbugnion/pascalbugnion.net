@@ -14,7 +14,7 @@
     padding: 0;
 }
 
-#topNavbar :global(.navbar-brand) {
+#topNavbar .topNavbarBrand {
     font-size : 20px ;
     font-weight : 400 ;
     color : black ;
@@ -27,7 +27,7 @@
 }
 
 
-#topNavbar a:global(.nav-link) {
+#topNavbar a.topNavLink {
     color : black ;
     border-radius : 5px ;
     padding-top : 12px ;
@@ -37,8 +37,8 @@
     margin-left: 10px;
 }
 
-#topNavbar a:global(.nav-link):hover,
-#topNavbar a:global(.navbar-brand):hover {
+#topNavbar a.topNavLink:hover,
+#topNavbar a.topNavbarBrand:hover {
     color : white ;
     background-color : #222 ;
 
