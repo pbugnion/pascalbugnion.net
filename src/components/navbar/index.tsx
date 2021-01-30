@@ -21,7 +21,7 @@ const SiteNavbar = ({ containerAdditionalStyles }) => {
         <Navbar expand="sm" variant="light" fixed="top" id={styles.topNavbar}>
             <Container className={containerAdditionalStyles.join(" ")}>
                 <Navbar.Brand as={Link} to="/">Pascal Bugnion</Navbar.Brand>
-                <Navbar.Toggle aria-controls="basic-navbar-collapse-toggle" />
+                <Navbar.Toggle aria-controls="basic-navbar-collapse-toggle" className={styles.topNavbarToggle} />
                 <Navbar.Collapse id="basic-navbar-collapse-toggle">
                     <Nav>
                         <NavbarInternalLink to="/code">Code</NavbarInternalLink>
