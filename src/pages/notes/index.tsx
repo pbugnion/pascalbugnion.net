@@ -27,7 +27,7 @@ const PostCard = ({ post }) => {
 }
 
 export default ({ data }) => {
-  const posts = data.allMarkdownRemark.nodes.map(post => post.frontmatter)
+  const posts = data.allMarkdownRemark.nodes.map(post => post.frontmatter).slice(0, 6)
   return (
     <Layout>
       <header>
