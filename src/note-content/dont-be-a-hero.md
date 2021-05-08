@@ -1,5 +1,6 @@
 ---
 contentTitle: Don't be a hero
+slug: dont-be-a-hero
 ---
 
 My team is a platform team. It provides tools and services to other teams in the organisation. One of our responsibilities is helping data scientists use the tools we provide.

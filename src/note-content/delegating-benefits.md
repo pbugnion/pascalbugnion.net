@@ -1,5 +1,6 @@
 ---
 contentTitle: Delegation also benefits the people delegated to
+slug: delegating-benefits
 ---
 
 The benefits of delegation are often phrased in terms of time savings for the person delegating. But that misses the point. In fact, delegating well often requires a substantial time investment, at least at the start (link to "salvaging a project you delegated").

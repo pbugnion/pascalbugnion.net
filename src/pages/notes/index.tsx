@@ -9,7 +9,7 @@ import PageHeader from "../../components/page-header"
 import styles from "./index.module.css"
 
 const PostCard = ({ post }) => {
-  const { contentTitle, slug, lastUpdatedDate } = post
+  const { contentTitle, slug } = post
   return (
     <li>
       <article class={styles.postCard}>
@@ -19,19 +19,15 @@ const PostCard = ({ post }) => {
           </h2>
         </header>
         <footer>
-          <abbr className={styles.postCardDate}>{lastUpdatedDate}</abbr>
+          <abbr className={styles.postCardDate}>10th January 2021</abbr>
         </footer>
       </article>
     </li>
   )
 }
 
-export default () => {
-  const post = {
-    contentTitle: "hello",
-    slug: "/hello",
-    lastUpdatedDate: "10th January 2021"
-  }
+export default ({ data }) => {
+  const posts = data.allMarkdownRemark.nodes.map(post => post.frontmatter)
   return (
     <Layout>
       <header>
@@ -43,7 +39,7 @@ export default () => {
           Something something something
           <div>
             <ol className={styles.postList}>
-              <PostCard post={post} />
+              {posts.map(post => <PostCard post={post} />)}
             </ol>
           </div>
         </div>
@@ -51,3 +47,16 @@ export default () => {
     </Layout>
   )
 }
+
+export const query = graphql`
+  query BlogPostIndexQuery {
+    allMarkdownRemark {
+      nodes {
+        frontmatter {
+          slug
+          contentTitle
+        }
+      }
+    }
+  }
+`

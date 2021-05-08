@@ -1,5 +1,6 @@
 ---
 contentTitle: My approach to Zettelkasten
+slug: my-approach-to-zettelkasten
 ---
 
 Zettelkastens[^5] seem to be in vogue, at least in the corners of the Internet that I frequent. I started mine in July 2020, soon after I stumbled upon the concept. Surprisingly, the practice stuck, and I have been growing the archive at the rate of a handful of notes per week to reach the dizzying height of 374 notes.

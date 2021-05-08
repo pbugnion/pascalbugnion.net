@@ -1,5 +1,6 @@
 ---
 contentTitle: Don't try to be both a coach and a judge
+slug: split-coach-judge-role
 ---
 
 In most organisations, the manager is expected to work as a coach almost all the time, until it gets to performance season, or if there is a performance issue. They are then expected to magically transform into an impartial judge, responsible for communicating the need for improvement to a bewildered report.
