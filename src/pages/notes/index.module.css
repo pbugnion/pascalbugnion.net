@@ -8,11 +8,15 @@
     box-shadow: 0px 3px 8px 0px #ccc;
 }
 
-.postCardSummary {
-    font-size: 18px;
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
+.postCardTitle {
+    font-size: 22px;
+    font-weight: 100;
 }
+
+.postCardTitle a {
+    color: black;
+}
+    
 
 .postCardDate {
     font-size: 14px;

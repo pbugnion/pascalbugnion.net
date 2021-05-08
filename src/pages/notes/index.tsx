@@ -12,9 +12,9 @@ const PostCard = ({ post }) => {
   const { contentTitle, slug } = post
   return (
     <li>
-      <article class={styles.postCard}>
+      <article className={styles.postCard}>
         <header>
-          <h2>
+          <h2 className={styles.postCardTitle}>
             <Link to={slug} rel="bookmark">{contentTitle}</Link>
           </h2>
         </header>
