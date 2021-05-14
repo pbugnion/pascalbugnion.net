@@ -11,6 +11,7 @@
     flex-direction: row;
 
     transition: box-shadow 200ms ease-in-out;
+    font-family: "Open Sans", sans-serif;
 }
 
 .postCard:hover {
@@ -33,10 +34,11 @@
 }
 
 .postCardTitle {
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 100;
     margin-top: 5px;
     margin-bottom: 0;
+    color: #444;
 }
 
 .postCard:hover .postCardTitle a {
@@ -45,13 +47,14 @@
 }
 
 .postCardTitle a {
-    color: black;
+    color: inherit;
 }
     
 
 .postCardDate {
     font-size: 14px;
     font-style: italic;
+    color: #666;
 }
 
 .postList {
