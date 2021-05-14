@@ -59,7 +59,13 @@ export default ({ data }) => {
 
 export const query = graphql`
   query BlogPostIndexQuery {
-    allMarkdownRemark {
+    allMarkdownRemark(filter: {
+      frontmatter: {
+        onTOC: {
+          eq: "yes"
+        }
+      }
+    }) {
       nodes {
         frontmatter {
           slug
