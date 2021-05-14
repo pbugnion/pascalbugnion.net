@@ -1,6 +1,6 @@
 import * as React from "react"
 
-import { graphql, Link } from "gatsby"
+import { graphql, Link, navigate } from "gatsby"
 
 import Layout from "../../components/layout"
 import Navbar from "../../components/navbar"
@@ -14,12 +14,14 @@ const PostCard = ({ post }) => {
   const { contentTitle, slug } = post
   return (
     <li>
-      <article className={styles.postCard}>
+      <article className={styles.postCard} onClick={() => navigate(slug)}>
         <TreeIcon />
         <div className={styles.cardBodyContainer}>
           <header>
             <h2 className={styles.postCardTitle}>
-              <Link to={slug} rel="bookmark">{contentTitle}</Link>
+              {/* Keep a link for semantics and to encourage Gatsby to
+                  preload assets at that link */}
+              <Link to={slug}>{contentTitle}</Link>
             </h2>
           </header>
           <footer>
