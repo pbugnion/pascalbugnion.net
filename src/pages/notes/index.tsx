@@ -43,7 +43,9 @@ export default ({ data }) => {
       <main>
         <div className={`container content-container ${styles.maxWidthContainer}`}>
           <PageHeader>Digital garden</PageHeader>
-          Something something something
+          <p className={styles.explanationParagraph}>
+            A collection of notes on topics that interest me, specially engineering leadership, programming, product management, and knowledge management. Unlike a blog, I revisit notes as my thinking changes.
+          </p>
           <div>
             <ol className={styles.postList}>
               {posts.map(post => <PostCard post={post} />)}

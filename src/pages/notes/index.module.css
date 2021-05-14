@@ -62,6 +62,15 @@
     list-style-type: none;
 }
 
+.explanationParagraph {
+    max-width: 700px;
+    font-family: "Open Sans", sans-serif;
+    color: #444;
+    font-size: 16px;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
 /* Disable the xl- part of boostrap */
 @media (min-width: 992px) {
   .maxWidthContainer {
