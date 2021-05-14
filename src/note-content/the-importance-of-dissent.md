@@ -1,5 +1,6 @@
 ---
 contentTitle: How dissent leads to better performing teams
+slug: /note/importance-of-dissent
 ---
 
 The word _team_ brings up images of harmony, of saccharine smiles, of vigorous agreement, and of people striving towards a common goal in concert.

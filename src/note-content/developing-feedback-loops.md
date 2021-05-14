@@ -1,5 +1,6 @@
 ---
 contentTitle: Developing feedback loops as a people leader
+slug: /note/developing-feedback-loops
 ---
 
 Management is a wicked learning environment (todo link). Learning mechanisms, like deliberate practice, are ineffective. It can be very hard to draw concrete conclusions from specific events. For instance, why did Rob leave? Is it because I mis-managed that conversation? Probably, but there were other factors. This tangled web of cause and effect makes it hard to improve.

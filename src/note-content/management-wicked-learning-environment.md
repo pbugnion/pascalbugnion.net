@@ -1,5 +1,6 @@
 ---
 contentTitle: The limitation of deliberate practice in people leadership
+slug: /note/limitation-deliberate-practice-in-leadership
 ---
 
 "Deliberate practice" is in vogue [^1]. The only thing standing between you and greatness is, apparently, several thousand hours of practice. Just look at Ben Hogan, a golfer who spent hours practicing his swing and eventually became really good[^2]. I love turnkey recipes for greatness as much as anyone, so I'm sold. 

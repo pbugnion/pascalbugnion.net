@@ -1,0 +1,79 @@
+.postCard {
+    clear: both;
+    background: #fff;
+    margin: 0 0 20px 0;
+    overflow: hidden;
+    padding: 15px 15px 15px 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0px 1px 2px 0px #ccc;
+
+    display: flex;
+    flex-direction: row;
+
+    transition: box-shadow 200ms ease-in-out;
+    font-family: "Open Sans", sans-serif;
+}
+
+.postCard:hover {
+    box-shadow: 0px 3px 8px 0px #ccc;
+    border-left: 3px solid green;
+    padding: 15px 15px 15px 18px;
+    cursor: pointer;
+}
+
+.postCard svg {
+    transition: fill 200ms ease-in-out;
+}
+
+.postCard:hover svg {
+    fill: green;
+}
+
+.cardBodyContainer {
+    margin-left: 20px;
+}
+
+.postCardTitle {
+    font-size: 18px;
+    font-weight: 100;
+    margin-top: 5px;
+    margin-bottom: 0;
+    color: #444;
+}
+
+.postCard:hover .postCardTitle a {
+    color: green;
+    text-decoration: none;
+}
+
+.postCardTitle a {
+    color: inherit;
+}
+    
+
+.postCardDate {
+    font-size: 14px;
+    font-style: italic;
+    color: #666;
+}
+
+.postList {
+    padding: 0;
+    list-style-type: none;
+}
+
+.explanationParagraph {
+    max-width: 700px;
+    font-family: "Open Sans", sans-serif;
+    color: #444;
+    font-size: 16px;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+/* Disable the xl- part of boostrap */
+@media (min-width: 992px) {
+  .maxWidthContainer {
+    max-width: 960px;
+  }
+}

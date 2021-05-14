@@ -1,5 +1,6 @@
 ---
 contentTitle: Hire great people but don't just get out of their way
+slug: /note/dont-just-hire-great-people
 ---
 
 A common management bromide is "hire great people and get out of their way". But just hiring great people isn't enough. Important work will fall through the cracks and won't get done, or multiple people will work on the same thing.

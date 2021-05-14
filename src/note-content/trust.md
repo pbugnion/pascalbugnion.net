@@ -1,5 +1,6 @@
 ---
 contentTitle: How does trust work?
+slug: /note/what-is-trust
 ---
 
 Trust is the foundation of healthy work relationships. Team leads need to gain the trust of ICs, employees need to trust the wider organisation, ICs need to trust other ICs in their team. Without trust, the organisation descends into politics and backchannels and it all just becomes so stressful.

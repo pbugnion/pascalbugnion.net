@@ -1,26 +1,26 @@
 const path = require("path");
 
-const createBlogPages = async ({ graphql, actions }) => {
+const createNotesPages = async ({ graphql, actions }) => {
   const { createPage } = actions;
   const result = await graphql(`
-    query MyQuery {
-      allMarkdownRemark {
-        edges {
-          node {
-            frontmatter {
-              slug
-            }
-            html
-          }
-        }
-      }
-    }
+     query MyQuery {
+       allMarkdownRemark {
+         edges {
+           node {
+             frontmatter {
+               slug
+             }
+             html
+           }
+         }
+       }
+     }
   `);
-
+  
   result.data.allMarkdownRemark.edges.forEach(({ node }) => {
     createPage({
       path: node.frontmatter.slug,
-      component: path.resolve("./src/templates/blog-post/index.tsx"),
+      component: path.resolve("./src/templates/note/index.tsx"),
       context: {
         slug: node.frontmatter.slug,
       },
@@ -72,5 +72,5 @@ const createRedirectAboutContact = async({actions}) => {
 exports.createPages = async ({ graphql, actions }) => {
   await createHtmlRedirects({actions})
   await createRedirectAboutContact({actions})
-  await createBlogPages({ graphql, actions });
+  await createNotesPages({ graphql, actions });
 };
