@@ -23,7 +23,7 @@ const PostCard = ({ post }) => {
             </h2>
           </header>
           <footer>
-            <abbr className={styles.postCardDate}>10th January 2021</abbr>
+            <abbr className={styles.postCardDate}>Last modified 10th January 2021</abbr>
           </footer>
         </div>
       </article>
