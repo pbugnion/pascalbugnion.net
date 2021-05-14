@@ -6,6 +6,8 @@ import Layout from "../../components/layout"
 import Navbar from "../../components/navbar"
 import PageHeader from "../../components/page-header"
 
+import TreeIcon from "./TreeIcon"
+
 import styles from "./index.module.css"
 
 const PostCard = ({ post }) => {
@@ -13,14 +15,17 @@ const PostCard = ({ post }) => {
   return (
     <li>
       <article className={styles.postCard}>
-        <header>
-          <h2 className={styles.postCardTitle}>
-            <Link to={slug} rel="bookmark">{contentTitle}</Link>
-          </h2>
-        </header>
-        <footer>
-          <abbr className={styles.postCardDate}>10th January 2021</abbr>
-        </footer>
+        <TreeIcon />
+        <div className={styles.cardBodyContainer}>
+          <header>
+            <h2 className={styles.postCardTitle}>
+              <Link to={slug} rel="bookmark">{contentTitle}</Link>
+            </h2>
+          </header>
+          <footer>
+            <abbr className={styles.postCardDate}>10th January 2021</abbr>
+          </footer>
+        </div>
       </article>
     </li>
   )

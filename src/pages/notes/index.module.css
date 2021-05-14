@@ -3,14 +3,22 @@
     background: #fff;
     margin: 0 0 20px 0;
     overflow: hidden;
-    padding: 20px 20px 5px 20px;
+    padding: 20px 20px 10px 20px;
     border: 1px solid #ccc;
     box-shadow: 0px 3px 8px 0px #ccc;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.cardBodyContainer {
+    margin-left: 20px;
 }
 
 .postCardTitle {
     font-size: 22px;
     font-weight: 100;
+    margin-bottom: 0;
 }
 
 .postCardTitle a {
