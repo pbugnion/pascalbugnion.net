@@ -34,7 +34,7 @@ Sociological research suggests leaders have the potential to [elicit pro-social 
 
 How you role model will depend on the values your organisation holds, but broadly, you should behave as you want your team members to behave: show accountability and ownership for the work of the team, pass on credit but shoulder blame, empower your team members, encourage discussions and seek consensus, promote rational discourse.
 
-![](./manager-1.jpg)
+![](./images/manager-1.jpg)
 
 ## Be the interface between the team and the organisation
 
