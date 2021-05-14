@@ -1,6 +1,6 @@
 ---
 contentTitle: How organisations indoctrinate members
-slug: organisation-expressing-uncertainty
+slug: /note/organisation-expressing-uncertainty
 ---
 
 Members of an organisation normally express greater confidence in the organisation's direction of travel than an outsider with the same information would. Said another way, organisations are very vulnerable to some amount of groupthink.

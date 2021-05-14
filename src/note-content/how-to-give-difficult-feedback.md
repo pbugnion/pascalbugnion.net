@@ -1,6 +1,6 @@
 ---
 contentTitle: How to give difficult feedback
-slug: how-to-give-difficult-feedback
+slug: /note/how-to-give-difficult-feedback
 ---
 
 Employees who get feedback regularly do better[^1]. And yet, giving constructive feedback, either during coaching or evaluation feedback (todo link to types of feedback), is one of the most difficult parts of a manager's job[^2].

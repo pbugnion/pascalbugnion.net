@@ -1,6 +1,6 @@
 ---
 contentTitle: Creating a supportive feedback environment
-slug: supportive-feedback-environment
+slug: /note/supportive-feedback-environment
 ---
 
 Employees who get more feedback (link to three types of feedback) perform better [^1]. Employees normally welcome feedback because it reduces uncertainty and can help them improve. But they are often reluctant to actually ask for feedback because:
