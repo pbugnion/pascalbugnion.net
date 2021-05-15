@@ -34,7 +34,7 @@ const PostCard = ({ post }) => {
 }
 
 export default ({ data }) => {
-  const posts = data.allMarkdownRemark.nodes.map(post => post.frontmatter).slice(0, 6)
+  const posts = data.allMdx.nodes.map(post => post.frontmatter).slice(0, 6)
   return (
     <Layout>
       <header>
@@ -59,7 +59,7 @@ export default ({ data }) => {
 
 export const query = graphql`
   query BlogPostIndexQuery {
-    allMarkdownRemark(filter: {
+    allMdx(filter: {
       frontmatter: {
         onTOC: {
           eq: "yes"

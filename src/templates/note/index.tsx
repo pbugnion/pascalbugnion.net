@@ -1,6 +1,7 @@
 import * as React from "react"
 import { graphql } from "gatsby"
 import { Helmet } from "react-helmet"
+import { MDXRenderer } from "gatsby-plugin-mdx"
 
 import Layout from "../../components/layout"
 import Navbar from "../../components/navbar"
@@ -10,7 +11,7 @@ import styles from "./index.module.css"
 import pageStyles from "../../styles/page.module.css"
 
 export default ({ data }) => {
-  const { frontmatter, html } = data.markdownRemark
+  const { frontmatter, body } = data.mdx
   return (
     <Layout>
       <Helmet>
@@ -27,7 +28,9 @@ export default ({ data }) => {
             <div className={styles.lastUpdatedDate}>
               Last updated on the 21st January 2021.
             </div>
-            <div className={styles.articleEntryContent} dangerouslySetInnerHTML={{ __html: html }} />
+            <div className={styles.articleEntryContent}>
+              <MDXRenderer>{body}</MDXRenderer>
+            </div>
           </div>
         </div>
       </main>
@@ -37,8 +40,8 @@ export default ({ data }) => {
 
 export const query = graphql`
   query($slug: String!) {
-    markdownRemark(frontmatter: { slug: {eq: $slug }}) {
-      html
+    mdx(frontmatter: { slug: {eq: $slug }}) {
+      body
       frontmatter {
         contentTitle
       }

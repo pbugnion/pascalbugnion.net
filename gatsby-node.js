@@ -4,20 +4,19 @@ const createNotesPages = async ({ graphql, actions }) => {
   const { createPage } = actions;
   const result = await graphql(`
      query MyQuery {
-       allMarkdownRemark {
+       allMdx {
          edges {
            node {
              frontmatter {
                slug
              }
-             html
            }
          }
        }
      }
   `);
   
-  result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+  result.data.allMdx.edges.forEach(({ node }) => {
     createPage({
       path: node.frontmatter.slug,
       component: path.resolve("./src/templates/note/index.tsx"),
