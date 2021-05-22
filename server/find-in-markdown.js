@@ -44,6 +44,6 @@ function containsInternalReference(markdown, slug) {
 } 
 
 module.exports = {
-  findInMarkdown,
+  getInternalReferences,
   containsInternalReference
 }
