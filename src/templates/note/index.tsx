@@ -12,6 +12,8 @@ import pageStyles from "../../styles/page.module.css"
 
 export default ({ data }) => {
   const { frontmatter, body } = data.mdx
+  const inboundNotes = data.mdx.InboundReferences.map(
+    ref => ref.frontmatter.contentTitle)
   return (
     <Layout>
       <Helmet>
@@ -31,6 +33,12 @@ export default ({ data }) => {
             <div className={styles.articleEntryContent}>
               <MDXRenderer>{body}</MDXRenderer>
             </div>
+            <hr />
+            <div>
+              <ul>
+                {inboundNotes.map(note => <li>{note}</li>)}
+              </ul>
+            </div>
           </div>
         </div>
       </main>
@@ -44,6 +52,11 @@ export const query = graphql`
       body
       frontmatter {
         contentTitle
+      }
+      InboundReferences {
+        frontmatter {
+          contentTitle
+        }
       }
     }
   }
