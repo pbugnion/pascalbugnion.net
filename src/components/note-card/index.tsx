@@ -6,7 +6,14 @@ import TreeIcon from "./TreeIcon"
 
 import styles from "./index.module.css"
 
-const NoteCard = ({ post }) => {
+export interface NoteCardProps {
+  post: {
+    contentTitle: string,
+    slug: string
+  }
+}
+
+const NoteCard = ({ post }: NoteCardProps) => {
   const { contentTitle, slug } = post
   return (
     <li>
