@@ -6,6 +6,7 @@ import { MDXRenderer } from "gatsby-plugin-mdx"
 import Layout from "../../components/layout"
 import Navbar from "../../components/navbar"
 import PageHeader from "../../components/page-header"
+import NoteList from "../../components/note-list"
 
 import styles from "./index.module.css"
 import pageStyles from "../../styles/page.module.css"
@@ -13,7 +14,11 @@ import pageStyles from "../../styles/page.module.css"
 export default ({ data }) => {
   const { frontmatter, body } = data.mdx
   const inboundNotes = data.mdx.InboundReferences.map(
-    ref => ref.frontmatter.contentTitle)
+    ref => ({
+      contentTitle: ref.frontmatter.contentTitle,
+      slug: ref.frontmatter.slug
+    })
+  )
   return (
     <Layout>
       <Helmet>
@@ -35,9 +40,7 @@ export default ({ data }) => {
             </div>
             <hr />
             <div>
-              <ul>
-                {inboundNotes.map(note => <li>{note}</li>)}
-              </ul>
+              <NoteList notes={inboundNotes} />
             </div>
           </div>
         </div>
@@ -56,6 +59,7 @@ export const query = graphql`
       InboundReferences {
         frontmatter {
           contentTitle
+          slug
         }
       }
     }

@@ -1,15 +1,4 @@
 
-.postCardDate {
-    font-size: 14px;
-    font-style: italic;
-    color: #666;
-}
-
-.postList {
-    padding: 0;
-    list-style-type: none;
-}
-
 .explanationParagraph {
     max-width: 700px;
     font-family: "Open Sans", sans-serif;

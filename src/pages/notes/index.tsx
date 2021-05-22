@@ -5,7 +5,7 @@ import { graphql, Link, navigate } from "gatsby"
 import Layout from "../../components/layout"
 import Navbar from "../../components/navbar"
 import PageHeader from "../../components/page-header"
-import NoteCard from "../../components/note-card"
+import NoteList from "../../components/note-list"
 
 
 import styles from "./index.module.css"
@@ -24,9 +24,7 @@ export default ({ data }) => {
             A collection of notes on topics that interest me, specially engineering leadership, programming, product management, and knowledge management. Unlike a blog, I revisit notes as my thinking changes.
           </p>
           <div>
-            <ol className={styles.postList}>
-              {posts.map(post => <NoteCard post={post} key={post.slug} />)}
-            </ol>
+            <NoteList notes={posts} />
           </div>
         </div>
       </main>
