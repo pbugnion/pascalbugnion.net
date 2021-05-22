@@ -10,7 +10,8 @@ export interface NoteCardProps {
   post: {
     contentTitle: string,
     slug: string
-  }
+  };
+  key?: string
 }
 
 const NoteCard = ({ post }: NoteCardProps) => {
