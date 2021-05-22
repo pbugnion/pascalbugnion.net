@@ -17,7 +17,7 @@ function getInternalReferences(string) {
   const unique = new Set()
 
   let match;
-  while (match = regex.exec(markdown)) {
+  while (match = regexp.exec(cleanedMarkdown)) {
     const [, name] = match;
     if (name) {
       unique.add(name);

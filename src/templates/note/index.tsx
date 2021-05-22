@@ -12,13 +12,21 @@ import styles from "./index.module.css"
 import pageStyles from "../../styles/page.module.css"
 
 export default ({ data }) => {
-  const { frontmatter, body } = data.mdx
-  const inboundNotes = data.mdx.InboundReferences.map(
-    ref => ({
-      contentTitle: ref.frontmatter.contentTitle,
-      slug: ref.frontmatter.slug
-    })
-  )
+  const {
+    frontmatter,
+    body,
+    InboundReferences,
+    OutboundReferences
+  } = data.mdx
+  const relatedNotes = []
+  const existingSlugs = new Set<string>()
+  InboundReferences.concat(OutboundReferences).forEach(({ frontmatter }) => {
+    const { slug } = frontmatter
+    if (!existingSlugs.has(slug)) {
+      existingSlugs.add(slug)
+      relatedNotes.push(frontmatter)
+    }
+  })
   return (
     <Layout>
       <Helmet>
@@ -41,7 +49,7 @@ export default ({ data }) => {
             <hr />
             <div className={styles.relatedNotes}>
               <h2 className={styles.relatedNotesHeader}>Related notes</h2>
-              <NoteList notes={inboundNotes} />
+              <NoteList notes={relatedNotes} />
             </div>
           </div>
         </div>
@@ -58,6 +66,12 @@ export const query = graphql`
         contentTitle
       }
       InboundReferences {
+        frontmatter {
+          contentTitle
+          slug
+        }
+      }
+      OutboundReferences {
         frontmatter {
           contentTitle
           slug
