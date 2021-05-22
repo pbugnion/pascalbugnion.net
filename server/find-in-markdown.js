@@ -11,36 +11,27 @@ function cleanupMarkdown(markdown) {
 }
 
 function getInternalReferences(string) {
-  const md = cleanupMarkdown(string);
+  const cleanedMarkdown = cleanupMarkdown(string);
 
-  const references = findInMarkdown(
-    md,
-    new RegExp("\\[[^\\]]+\\]\\(([^\\)]+)\\)", "ig")
-  )
-
-  return references;
-};
-
-function findInMarkdown(markdown, regex) {
-  const unique = new Set();
+  const regexp = new RegExp("\\[[^\\]]+\\]\\(([^\\)]+)\\)", "ig")
+  const unique = new Set()
 
   let match;
-  while ((match = regex.exec(markdown))) {
+  while (match = regex.exec(markdown)) {
     const [, name] = match;
     if (name) {
       unique.add(name);
     }
   }
-
+  
   return Array.from(unique);
-}
+};
 
 function containsInternalReference(markdown, slug) {
-  cleanedMarkdown = cleanupMarkdown(markdown)
-  const reg = new RegExp(
+  const cleanedMarkdown = cleanupMarkdown(markdown)
+  const regexp = new RegExp(
     `\\[[^\\]]+\\]\\(${slug}\\)`, "ig")
-  const results = findInMarkdown(cleanedMarkdown, reg)
-  return results ? true : false;
+  return regexp.test(cleanedMarkdown)
 } 
 
 module.exports = {

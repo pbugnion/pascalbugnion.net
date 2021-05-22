@@ -111,12 +111,12 @@ exports.createResolvers = ({ createResolvers }) => {
         type: "[Mdx!]!",
         resolve(source, args, context, info) {
           const allNodes = context.nodeModel.getAllNodes({ type: "Mdx" })
-          allRelevantNodes = allNodes.filter(node =>
-            containsInternalReference(
+          allRelevantNodes = allNodes.filter(node => {
+            return containsInternalReference(
               node.internal.content,
               source.frontmatter.slug
             )
-          )
+          })
           return allRelevantNodes
         }
       }
