@@ -11,7 +11,7 @@ import NoteCard from "../../components/note-card"
 import styles from "./index.module.css"
 
 export default ({ data }) => {
-  const posts = data.allMdx.nodes.map(post => post.frontmatter).slice(0, 6)
+  const posts: Array<{ contentTitle: string, slug: string }> = data.allMdx.nodes.map(post => post.frontmatter).slice(0, 6)
   return (
     <Layout>
       <header>
@@ -25,7 +25,7 @@ export default ({ data }) => {
           </p>
           <div>
             <ol className={styles.postList}>
-              {posts.map(post => <NoteCard post={post} />)}
+              {posts.map(post => <NoteCard post={post} key={post.slug} />)}
             </ol>
           </div>
         </div>
