@@ -1,6 +1,11 @@
 const path = require("path");
 const { GraphQLString, GraphQLList } = require("gatsby/graphql")
 
+const {
+  getInternalReferences,
+  containsInternalReference
+} = require("./server/find-in-markdown")
+
 const createNotesPages = async ({ graphql, actions }) => {
   const { createPage } = actions;
   const result = await graphql(`
@@ -75,41 +80,6 @@ exports.createPages = async ({ graphql, actions }) => {
   await createNotesPages({ graphql, actions });
 };
 
-function findInMarkdown(markdown, regex) {
-  const unique = new Set();
-
-  let match;
-  while ((match = regex.exec(markdown))) {
-    const [, name] = match;
-    if (name) {
-      unique.add(name);
-    }
-  }
-
-  return Array.from(unique);
-}
-
-REGEX_FENCED_CODE_BLOCK = /^( {0,3}|\t)```[^`\r\n]*$[\w\W]+?^( {0,3}|\t)``` *$/gm;
-
-
-function cleanupMarkdown(markdown) {
-  const replacer = (foundStr) => foundStr.replace(/[^\r\n]/g, "");
-  return markdown
-    .replace(REGEX_FENCED_CODE_BLOCK, replacer) //// Remove fenced code blocks
-    .replace(/<!--[\W\w]+?-->/g, replacer) //// Remove comments
-    .replace(/^---[\W\w]+?(\r?\n)---/, replacer); //// Remove YAML front matter
-}
-
-const getReferences = (string) => {
-  const md = cleanupMarkdown(string);
-
-  const references = findInMarkdown(
-    md,
-    new RegExp("\\[[^\\]]+\\]\\(([^\\)]+)\\)", "ig")
-  )
-
-  return references;
-};
 
 exports.createResolvers = ({ createResolvers }) => {
   const resolvers = {
@@ -117,7 +87,8 @@ exports.createResolvers = ({ createResolvers }) => {
       OutboundReferences: {
         type: "[Mdx!]!",
         resolve(source, args, context, info) {
-          const allReferences = getReferences(source.internal.content)
+          const allReferences = getInternalReferences(
+            source.internal.content)
           const internalReferences = allReferences.filter(
             ref => ref.startsWith("/notes/"))
           const res = context.nodeModel.runQuery({
@@ -140,12 +111,12 @@ exports.createResolvers = ({ createResolvers }) => {
         type: "[Mdx!]!",
         resolve(source, args, context, info) {
           const allNodes = context.nodeModel.getAllNodes({ type: "Mdx" })
-          allRelevantNodes = allNodes.filter(node => {
-            cleanedMarkdown = cleanupMarkdown(node.internal.content)
-            const reg = new RegExp(`\\[[^\\]]+\\]\\(${source.frontmatter.slug}\\)`, "ig")
-            const results = findInMarkdown(cleanedMarkdown, reg)
-            return results ? true : false;
-          })
+          allRelevantNodes = allNodes.filter(node =>
+            containsInternalReference(
+              node.internal.content,
+              source.frontmatter.slug
+            )
+          )
           return allRelevantNodes
         }
       }
