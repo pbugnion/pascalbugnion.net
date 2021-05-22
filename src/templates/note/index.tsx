@@ -39,7 +39,8 @@ export default ({ data }) => {
               <MDXRenderer>{body}</MDXRenderer>
             </div>
             <hr />
-            <div>
+            <div className={styles.relatedNotes}>
+              <h2 className={styles.relatedNotesHeader}>Related notes</h2>
               <NoteList notes={inboundNotes} />
             </div>
           </div>
