@@ -143,9 +143,7 @@ exports.createResolvers = ({ createResolvers }) => {
           allRelevantNodes = allNodes.filter(node => {
             cleanedMarkdown = cleanupMarkdown(node.internal.content)
             const reg = new RegExp(`\\[[^\\]]+\\]\\(${source.frontmatter.slug}\\)`, "ig")
-            console.log(reg)
             const results = findInMarkdown(cleanedMarkdown, reg)
-            console.log(results)
             return results ? true : false;
           })
           return allRelevantNodes
