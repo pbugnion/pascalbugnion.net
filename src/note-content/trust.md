@@ -1,17 +1,20 @@
 ---
 contentTitle: How does trust work?
 slug: /note/what-is-trust
+onTOC: yes
+lastUpdatedDate: 2021-06-12
+createdDate: 2021-06-06
 ---
 
 Trust is the foundation of healthy work relationships. Team leads need to gain the trust of ICs, employees need to trust the wider organisation, ICs need to trust other ICs in their team. Without trust, the organisation descends into politics and backchannels and it all just becomes so stressful.
 
 So what is trust? Why do we trust some people and not others? How can I get more trust? How can I fix trust issues in a team?
 
-It turns out a fair amount has been written about trust in the management and psychology literature [^2].
+It turns out a fair amount has been written about trust in the management and psychology literature [^1].
 
 ## Trust encourages vulnerability
 
-Interpersonal trust [^1] is how willing the trustor is to make themselves vulnerable to the actions of the trustee, with the expectation that the trustee will behave in a particular way, even without the trustor watching.
+Interpersonal trust [^2] is how willing the trustor is to make themselves vulnerable to the actions of the trustee, with the expectation that the trustee will behave in a particular way, even without the trustor watching.
 
 For instance, when you, as a team lead, delegate a piece of work, you put yourself in a position of vulnerability to the IC you are delegating to by giving away the responsibility for a task, but keeping accountability (i.e. you look bad if the task is done badly). The expectation is that the IC will do a good job.
 
@@ -21,7 +24,7 @@ Similarly, when an IC does a task you delegated to them, they put themselves in 
 
 The most commonly accepted model of interpersonal trust is the ABI model. It suggests that you trust individuals based on their _ability_, _benevolence_, and _integrity_.
 
-TODO Picture of ABI model?
+<!-- TODO Picture of ABI model? -->
 
 ### Ability
 
@@ -51,9 +54,7 @@ Similarly, an IC will trust you when you delegate a task to them if, in the past
 
 ## How can I use this?
 
-Trust issues are hard to talk about, because trust is so associated with vulnerability. Thinking about trust issues in terms of ability, benevolence, and integrity helped me identify and talk about problematic behaviours in a more constructive way.
+Trust issues are hard to talk about, because trust is so associated with vulnerability. I have found that having a mental model of trust and a vocabulary to talk about my problems trusting a colleague help engage with trust issues in a more constructive way.
 
-TODO: something about self-reinforcement?
-
-[^1]: Trust between two individuals. Trust between individuals and groups, such as between a team lead and the team as a whole, are more complicated
-[^2]: ref to paper?
+[^1]: Mayer, Roger C., James H. Davis, and F. David Schoorman. ‘An Integrative Model of Organizational Trust’. The Academy of Management Review 20, no. 3 (July 1995): 709. https://doi.org/10.2307/258792.
+[^2]: Trust between two individuals. Trust between individuals and groups, such as between a team lead and the team as a whole, are more complicated
