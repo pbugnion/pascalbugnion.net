@@ -10,11 +10,9 @@
 }
 
 .articleContainer {
-    font-size : 22px ;
-    padding-top: 2em;
+    padding-top: 3em;
     padding-bottom : 2em ;
     max-width : 800px;
-    font-family: 'EB Garamond', serif;
 }
 
 .blogNavbarContainer {
@@ -26,6 +24,13 @@
     margin-bottom: 1.5em;
     font-size: 14px;
     font-style: italic;
+    color: #666;
+    font-family: "Open Sans", sans-serif;
+}
+
+.articleEntryContent {
+    font-family: 'EB Garamond', serif;
+    font-size : 22px ;
 }
 
 .articleEntryContent code {
@@ -57,4 +62,14 @@
 
 .articleEntryContent h2 {
     padding-top: 0.4em;
+}
+
+.relatedNotes {
+    padding-top: 1.5em;
+    font-family: "Open Sans", sans-serif;
+}
+
+.relatedNotesHeader {
+    margin-bottom: 0.8em;
+    text-align: center;
 }

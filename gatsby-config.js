@@ -3,17 +3,17 @@ module.exports = {
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sharp",
     {
-      resolve: `gatsby-transformer-remark`,
+      resolve: "gatsby-plugin-mdx",
       options: {
-        plugins: [
+        gatsbyRemarkPlugins: [
           {
-            resolve: `gatsby-remark-prismjs`,
+            resolve: "gatsby-remark-prismjs",
             options: {
               noInlineHighlight: true,
             },
           },
           {
-            resolve: `gatsby-remark-images`,
+            resolve: "gatsby-remark-images",
             options: {
                 maxWidth: 800,
                 wrapperStyle: "display:block;margin-top:1em;margin-bottom:1em;"
@@ -22,6 +22,7 @@ module.exports = {
           "gatsby-remark-copy-linked-files",
           "gatsby-plugin-catch-links",
         ],
+        extensions: [".md", ".mdx"]
       },
     },
     {

@@ -1,16 +1,32 @@
 import * as React from "react"
 import { graphql } from "gatsby"
 import { Helmet } from "react-helmet"
+import { MDXRenderer } from "gatsby-plugin-mdx"
 
 import Layout from "../../components/layout"
 import Navbar from "../../components/navbar"
 import PageHeader from "../../components/page-header"
+import NoteList from "../../components/note-list"
 
 import styles from "./index.module.css"
 import pageStyles from "../../styles/page.module.css"
 
 export default ({ data }) => {
-  const { frontmatter, html } = data.markdownRemark
+  const {
+    frontmatter,
+    body,
+    InboundReferences,
+    OutboundReferences
+  } = data.mdx
+  const relatedNotes = []
+  const existingSlugs = new Set<string>()
+  InboundReferences.concat(OutboundReferences).forEach(({ frontmatter }) => {
+    const { slug } = frontmatter
+    if (!existingSlugs.has(slug)) {
+      existingSlugs.add(slug)
+      relatedNotes.push(frontmatter)
+    }
+  })
   return (
     <Layout>
       <Helmet>
@@ -27,7 +43,14 @@ export default ({ data }) => {
             <div className={styles.lastUpdatedDate}>
               Last updated on the 21st January 2021.
             </div>
-            <div className={styles.articleEntryContent} dangerouslySetInnerHTML={{ __html: html }} />
+            <div className={styles.articleEntryContent}>
+              <MDXRenderer>{body}</MDXRenderer>
+            </div>
+            <hr />
+            <div className={styles.relatedNotes}>
+              <h2 className={styles.relatedNotesHeader}>Related notes</h2>
+              <NoteList notes={relatedNotes} />
+            </div>
           </div>
         </div>
       </main>
@@ -37,10 +60,22 @@ export default ({ data }) => {
 
 export const query = graphql`
   query($slug: String!) {
-    markdownRemark(frontmatter: { slug: {eq: $slug }}) {
-      html
+    mdx(frontmatter: { slug: {eq: $slug }}) {
+      body
       frontmatter {
         contentTitle
+      }
+      InboundReferences {
+        frontmatter {
+          contentTitle
+          slug
+        }
+      }
+      OutboundReferences {
+        frontmatter {
+          contentTitle
+          slug
+        }
       }
     }
   }

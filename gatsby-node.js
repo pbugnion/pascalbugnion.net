@@ -1,23 +1,28 @@
 const path = require("path");
+const { GraphQLString, GraphQLList } = require("gatsby/graphql")
+
+const {
+  getInternalReferences,
+  containsInternalReference
+} = require("./server/find-in-markdown")
 
 const createNotesPages = async ({ graphql, actions }) => {
   const { createPage } = actions;
   const result = await graphql(`
      query MyQuery {
-       allMarkdownRemark {
+       allMdx {
          edges {
            node {
              frontmatter {
                slug
              }
-             html
            }
          }
        }
      }
   `);
   
-  result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+  result.data.allMdx.edges.forEach(({ node }) => {
     createPage({
       path: node.frontmatter.slug,
       component: path.resolve("./src/templates/note/index.tsx"),
@@ -74,3 +79,48 @@ exports.createPages = async ({ graphql, actions }) => {
   await createRedirectAboutContact({actions})
   await createNotesPages({ graphql, actions });
 };
+
+
+exports.createResolvers = ({ createResolvers }) => {
+  const resolvers = {
+    Mdx: {
+      OutboundReferences: {
+        type: "[Mdx!]!",
+        resolve(source, args, context, info) {
+          const allReferences = getInternalReferences(
+            source.internal.content)
+          const internalReferences = allReferences.filter(
+            ref => ref.startsWith("/notes/"))
+          const res = context.nodeModel.runQuery({
+            query: {
+              filter: {
+                frontmatter: {
+                  slug: { in: internalReferences }
+                }
+              }
+            },
+            type: "Mdx",
+            firstOnly: false
+          })
+          return res.then(posts => 
+            posts === null ? [] : posts
+          )
+        }
+      },
+      InboundReferences: {
+        type: "[Mdx!]!",
+        resolve(source, args, context, info) {
+          const allNodes = context.nodeModel.getAllNodes({ type: "Mdx" })
+          allRelevantNodes = allNodes.filter(node => {
+            return containsInternalReference(
+              node.internal.content,
+              source.frontmatter.slug
+            )
+          })
+          return allRelevantNodes
+        }
+      }
+    }
+  }
+  createResolvers(resolvers)
+}
