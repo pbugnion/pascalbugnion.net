@@ -6,7 +6,7 @@ lastUpdatedDate: 2021-06-12
 onTOC: yes
 ---
 
-The benefits of delegation are often phrased in terms of time savings for the person delegating. But that misses the point. In fact, delegating well often requires a substantial time investment, at least at the start (todo link to "salvaging a project you delegated").
+The benefits of delegation are often phrased in terms of time savings for the person delegating. But that misses the point. In fact, delegating well often requires a substantial time investment, [at least at the start](/note/salvaging-delegated-project).
 
 The reason to delegate is for the positive effects both on the person you are delegating to and on the wider team.
 

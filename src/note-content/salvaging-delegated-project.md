@@ -1,9 +1,12 @@
 ---
 contentTitle: Salvaging a project you delegated
 slug: /note/salvaging-delegated-project
+onTOC: yes
+lastUpdatedDate: 2021-06-10
+createdDate: 2021-04-29
 ---
 
-You are trying to be a good team lead, so you delegate. When a big, important task lands on your desk, you delegate it, knowing that it will be empowering for the IC you delegate it to. But, even as you hand over responsibility for doing the task, you remain accountable for its successful completion to the wider organisation. So if the task doesn't get done well enough, it will reflect badly on you.
+You are trying to be a good team lead, [so you delegate](/note/delegating-benefits). When a big, important task lands on your desk, you delegate it, knowing that it will be empowering for the IC you delegate it to. But, even as you hand over responsibility for doing the task, you remain accountable for its successful completion to the wider organisation. So if the task doesn't get done well enough, it will reflect badly on you.
 
 As the task progresses, you start getting that sinking feeling. The IC doesn't seem to understand what they're supposed to be doing. Progress is sporadic, and lots of energy is wasted in avenues that prove to be dead-ends. In your catch-up, the IC asks questions that don't seem relevant. And you're so busy with a hundred other things that you only check in once a week.
 
