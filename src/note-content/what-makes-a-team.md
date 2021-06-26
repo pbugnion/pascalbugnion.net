@@ -1,6 +1,6 @@
 ---
 contentTitle: What makes a team?
-slug: /note/what-makes-a-team
+slug: /notes/what-makes-a-team
 ---
 
 Most of us intuitively understand the idea of a team. The word brings up mental images of harmony, together-ness, maybe even motivational posters with people holding hands. Bleugh. 

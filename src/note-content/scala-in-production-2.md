@@ -1,7 +1,7 @@
 ---
 contentTitle: Scala in production — making your codebase more approachable
 pageTitle: Data diversions | making your codebase more approachable
-slug: /note/scala-in-production-2
+slug: /notes/scala-in-production-2
 createdDate: 2019-01-09
 lastUpdatedDate: 2019-01-09
 summary: Four suggestions to make it easier to onboard new joiners and facilitate knowledge transfer on a Scala codebase.

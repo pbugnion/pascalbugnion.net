@@ -1,7 +1,7 @@
 ---
 contentTitle: "Editor hacking: how I learnt to stop worrying and love my emacs configuration"
 pageTitle: "Data diversions | Editor hacking"
-slug: /note/editor-hacking
+slug: /notes/editor-hacking
 createdDate: 2020-01-05
 lastUpdatedDate: 2020-01-05
 summary: Spending time mastering your text editor and customizing it to fit your needs is time well spent. It can reduce sources of friction in your workflow and generally increase your enjoyment of programming.
