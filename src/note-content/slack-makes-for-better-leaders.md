@@ -1,7 +1,7 @@
 ---
 contentTitle: How slack time makes for better leaders
 pageTitle: Data diversions | How slack time makes for better leaders
-slug: /note/slack-makes-better-leaders
+slug: /notes/slack-makes-better-leaders
 createdDate: 2021-01-26
 lastUpdatedDate: 2021-06-12
 summary: Time pressure turns us into jerks. Leaders who prioritise time affluence take better decisions and develop better relationships with their teams. How can we prioritise having enough time?
@@ -37,7 +37,7 @@ Feeling time affluent at work is important for everyone, but it’s particularly
 
 ## Good leaders have enough time
 
-[Effective leaders](/blog/making-yourself-useful-as-a-middle-manager) will take the time to listen actively to their colleagues and their team. They will spend time being strategic and sharpening the saw.
+[Effective leaders](/notes/making-yourself-useful-as-a-middle-manager) will take the time to listen actively to their colleagues and their team. They will spend time being strategic and sharpening the saw.
 
 ### Time to listen
 

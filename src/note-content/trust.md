@@ -1,6 +1,6 @@
 ---
 contentTitle: How does trust work?
-slug: /note/what-is-trust
+slug: /notes/what-is-trust
 onTOC: yes
 lastUpdatedDate: 2021-06-12
 createdDate: 2021-06-06

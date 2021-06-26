@@ -1,7 +1,7 @@
 ---
 contentTitle: Managing multiple AWS credentials with pass
 pageTitle: "Data diversions | Managing AWS credentials with pass"
-slug: /note/managing-aws-credentials-with-pass
+slug: /notes/managing-aws-credentials-with-pass
 createdDate: 2020-01-21
 lastUpdatedDate: 2020-01-22
 summary: Unix pass offers a lightweight way to easily and securely manage multiple sets of AWS credentials.

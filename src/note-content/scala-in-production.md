@@ -1,7 +1,7 @@
 ---
 contentTitle: Scala in production — four conventions for safer programs
 pageTitle: "Data diversions | Four conventions for safer Scala programs"
-slug: /note/scala-in-production
+slug: /notes/scala-in-production
 createdDate: 2019-01-06
 lastUpdatedDate: 2019-01-06
 summary: Four conventions that make Scala programs safer and easier to maintain.

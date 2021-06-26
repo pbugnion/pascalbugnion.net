@@ -1,6 +1,6 @@
 ---
 contentTitle: The three types of feedback
-slug: /note/types-of-feedback
+slug: /notes/types-of-feedback
 ---
 
 In [this episode](https://www.gayleallen.net/cm-183-therese-huston-on-getting-feedback-right/) of Gayle Allen's podcast "Curious minds at work", [Therese Huston](https://www.theresehuston.com/about) breaks feedback down into three different types [^1]:
