@@ -18,18 +18,18 @@ const NoteCard = ({ post }: NoteCardProps) => {
   const { contentTitle, slug } = post
   return (
     <li>
-      <article className={styles.postCard} onClick={() => navigate(slug)}>
+      <article className={styles.noteCard} onClick={() => navigate(slug)}>
         <TreeIcon />
-        <div className={styles.cardBodyContainer}>
+        <div className={styles.noteCardBodyContainer}>
           <header>
-            <h2 className={styles.postCardTitle}>
+            <h2 className={styles.noteCardTitle}>
               {/* Keep a link for semantics and to encourage Gatsby to
                   preload assets at that link */}
               <Link to={slug}>{contentTitle}</Link>
             </h2>
           </header>
           <footer>
-            <abbr className={styles.postCardDate}>Last modified 10th January 2021</abbr>
+            <abbr className={styles.noteCardDate}>Last modified 10th January 2021</abbr>
           </footer>
         </div>
       </article>
