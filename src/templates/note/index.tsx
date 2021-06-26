@@ -11,6 +11,16 @@ import NoteList from "../../components/note-list"
 import styles from "./index.module.css"
 import pageStyles from "../../styles/page.module.css"
 
+import type { NoteListProps } from "../../components/note-list"
+
+const RelatedNotes = ({ relatedNotes }: NoteListProps) => (
+  <div className={styles.relatedNotes}>
+    <h2 className={styles.relatedNotesHeader}>Related notes</h2>
+    <NoteList notes={relatedNotes} />
+  </div>
+)
+
+
 export default ({ data }) => {
   const {
     frontmatter,
@@ -46,11 +56,12 @@ export default ({ data }) => {
             <div className={styles.articleEntryContent}>
               <MDXRenderer>{body}</MDXRenderer>
             </div>
-            <hr />
-            <div className={styles.relatedNotes}>
-              <h2 className={styles.relatedNotesHeader}>Related notes</h2>
-              <NoteList notes={relatedNotes} />
-            </div>
+            {relatedNotes.length > 0 && (
+              <>
+                <hr />
+                <RelatedNotes relatedNotes={relatedNotes} />
+              </>
+            )}
           </div>
         </div>
       </main>
