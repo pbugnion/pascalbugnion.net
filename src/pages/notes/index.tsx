@@ -11,7 +11,7 @@ import NoteList from "../../components/note-list"
 import styles from "./index.module.css"
 
 export default ({ data }) => {
-  const posts: Array<{ contentTitle: string, slug: string }> = data.allMdx.nodes.map(post => post.frontmatter).slice(0, 6)
+  const posts: Array<{ contentTitle: string, slug: string }> = data.allMdx.nodes.map(post => post.frontmatter)
   return (
     <Layout>
       <header>
