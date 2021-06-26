@@ -26,7 +26,7 @@ const SiteNavbar = ({ containerAdditionalStyles }: NavbarProps) => {
           <Nav>
             <NavbarInternalLink to="/code">Code</NavbarInternalLink>
             <Nav.Link className={styles.topNavLink} href="http://scala4datascience.com">Book</Nav.Link>
-            <NavbarInternalLink to="/blog">Blog</NavbarInternalLink>
+            <NavbarInternalLink to="/notes">Digital Garden</NavbarInternalLink>
             <NavbarInternalLink to="/contact">About</NavbarInternalLink>
           </Nav>
         </Navbar.Collapse>
