@@ -41,7 +41,7 @@ export default ({ data }) => {
           <div className={`container ${styles.articleContainer}`}>
             <PageHeader>{frontmatter.contentTitle}</PageHeader>
             <div className={styles.lastUpdatedDate}>
-              Last updated on the 21st January 2021.
+              Last updated on {frontmatter.lastUpdatedDate}.
             </div>
             <div className={styles.articleEntryContent}>
               <MDXRenderer>{body}</MDXRenderer>
@@ -64,6 +64,7 @@ export const query = graphql`
       body
       frontmatter {
         contentTitle
+        lastUpdatedDate(formatString: "Do MMMM YYYY")
       }
       InboundReferences {
         frontmatter {

@@ -11,7 +11,7 @@ import NoteList from "../../components/note-list"
 import styles from "./index.module.css"
 
 export default ({ data }) => {
-  const posts: Array<{ contentTitle: string, slug: string }> = data.allMdx.nodes.map(post => post.frontmatter)
+  const posts: Array<{ contentTitle: string, slug: string, lastUpdatedDate: string }> = data.allMdx.nodes.map(post => post.frontmatter)
   return (
     <Layout>
       <header>
@@ -45,6 +45,7 @@ export const query = graphql`
         frontmatter {
           slug
           contentTitle
+          lastUpdatedDate(formatString: "Do MMMM YYYY")
         }
       }
     }

@@ -9,13 +9,14 @@ import styles from "./index.module.css"
 export interface NoteCardProps {
   post: {
     contentTitle: string,
-    slug: string
+    slug: string,
+    lastUpdatedDate: string
   };
   key?: string
 }
 
 const NoteCard = ({ post }: NoteCardProps) => {
-  const { contentTitle, slug } = post
+  const { contentTitle, slug, lastUpdatedDate } = post
   return (
     <li>
       <article className={styles.noteCard} onClick={() => navigate(slug)}>
@@ -29,7 +30,7 @@ const NoteCard = ({ post }: NoteCardProps) => {
             </h2>
           </header>
           <footer>
-            <abbr className={styles.noteCardDate}>Last modified 10th January 2021</abbr>
+            <abbr className={styles.noteCardDate}>Last modified {lastUpdatedDate}</abbr>
           </footer>
         </div>
       </article>
