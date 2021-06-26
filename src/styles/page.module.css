@@ -8,15 +8,6 @@
     font-weight : 400 ;
 }
 
-#page h2 {
-    /* font-weight : 400 ; */
-    padding-bottom : 0.3em ;
-}
-
-/* #page a { */
-/*     color: #428bca; */
-/* } */
-
 #page :global(.lead) {
     font-size : 1.2em ;
 }
