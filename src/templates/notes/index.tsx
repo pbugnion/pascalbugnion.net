@@ -5,7 +5,7 @@ import { MDXRenderer } from "gatsby-plugin-mdx"
 
 import Layout from "../../components/layout"
 import Navbar from "../../components/navbar"
-import PageHeader from "../../components/page-header"
+import * as PageHeader from "../../components/page-header"
 import NoteList from "../../components/note-list"
 
 import styles from "./index.module.css"
@@ -49,7 +49,11 @@ export default ({ data }) => {
       <main>
         <div className={styles.bodyContainer}>
           <div className={`container ${styles.articleContainer}`}>
-            <PageHeader>{frontmatter.contentTitle}</PageHeader>
+            <PageHeader.Container>
+              <PageHeader.Title>
+                {frontmatter.contentTitle}
+              </PageHeader.Title>
+            </PageHeader.Container>
             <div className={styles.lastUpdatedDate}>
               Last updated on {frontmatter.lastUpdatedDate}.
             </div>
