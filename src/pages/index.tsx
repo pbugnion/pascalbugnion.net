@@ -13,14 +13,14 @@ const NavbarInternalLink = ({to, children}) => (
 
 const LandingNavbar = () => {
     return (
-        <Navbar expand="sm" id={styles.landingNavbar} variant="dark">
+        <Navbar expand="md" id={styles.landingNavbar} variant="dark">
             <Navbar.Brand as={Link} to="/" className={styles.landingNavbarBrand}>Pascal Bugnion</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-collapse-toggle-landing" className={styles.landingNavbarToggle} />
             <Navbar.Collapse id="landing-navbar-collapse-toggle-landing" className="justify-content-end">
                 <Nav>
                     <NavbarInternalLink to="/code">Code</NavbarInternalLink>
                     <Nav.Link href="http://www.scala4datascience.com/" className={styles.landingNavLink}>Book</Nav.Link>
-                    <NavbarInternalLink to="/blog">Blog</NavbarInternalLink>
+                    <NavbarInternalLink to="/notes">Digital Garden</NavbarInternalLink>
                     <NavbarInternalLink to="/contact">About</NavbarInternalLink>
                 </Nav>
             </Navbar.Collapse>
