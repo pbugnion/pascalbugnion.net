@@ -15,7 +15,7 @@ export default ({ data }) => {
   return (
     <Layout>
       <header>
-        <Navbar containerAdditionalStyles={[]} />
+        <Navbar containerAdditionalStyles={[styles.maxWidthContainer]} />
       </header>
       <main>
         <div className={`container content-container ${styles.maxWidthContainer}`}>
