@@ -10,7 +10,15 @@ const createNotesPages = async ({ graphql, actions }) => {
   const { createPage } = actions;
   const result = await graphql(`
      query MyQuery {
-       allMdx {
+       allMdx(
+         filter: {
+           frontmatter: {
+             onTOC: {
+               eq: "yes"
+             }
+           }
+         }
+       ) {
          edges {
            node {
              frontmatter {
