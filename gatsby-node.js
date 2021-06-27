@@ -37,18 +37,19 @@ const createHtmlRedirects = async({ actions }) => {
   const baseRules = [
     ["/code.html", "/code/"],
     ["/contact.html", "/contact/"],
+    ["/blog", "/notes/"]
   ]
-  const blogRules = [
+  const oldBlogRedirects = [
     ["editor-hacking-how-i-learnt-to-stop-worrying-and-love-my-emacs-configuration.html", "editor-hacking"],
     ["flow-types-for-generators-and-coroutines.html", "flow-typing-generators-coroutines"],
-    ["how-frustrating-is-your-programming-language.html", "frustrating-programming-language"],
     ["making-yourself-useful-as-a-middle-manager.html", "making-yourself-useful-as-a-middle-manager"],
     ["managing-multiple-aws-credentials-with-pass.html", "managing-aws-credentials-with-pass"],
     ["scala-in-production-four-conventions-for-safer-programs.html", "scala-in-production"],
     ["scala-in-production-making-your-codebase-more-approachable.html", "scala-in-production-2"],
-    ["scraping-apis-with-akka-streams-part-2.html", "scraping-apis-with-akka-streams-2"],
-    ["scraping-apis-with-akka-streams.html", "scraping-apis-with-akka-streams"],
-    ["web-apis-with-scala-and-plotly.html", "plotly-as-lightweight-database"]
+  ]
+
+  const newBlogRedirects = [
+    "slack-makes-better-leaders"
   ]
 
   const {createRedirect} = actions
@@ -57,10 +58,34 @@ const createHtmlRedirects = async({ actions }) => {
     createRedirect({fromPath, toPath, isPermanent: true})
   })
 
-  blogRules.forEach(([fromFragment, toFragment]) => {
-    const fromPath = `/blog/${fromFragment}`
-    const toPath = `/blog/${toFragment}`
-    createRedirect({fromPath, toPath, isPermanent: true})
+  oldBlogRedirects.forEach(([fromFragment, toFragment]) => {
+    const oldBlogPath = `/blog/${fromFragment}`
+    const newBlogPath = `/blog/${toFragment}` // before conversion to digital garden
+    const newNotesPath = `/notes/${toFragment}`
+
+    // from old HTML blog to notes
+    createRedirect({
+      fromPath: oldBlogPath,
+      toPath: newNotesPath,
+      isPermanent: true
+    })
+
+    // from blog to notes
+    createRedirect({
+      fromPath: newBlogPath,
+      toPath: newNotesPath,
+      isPermanent: true
+    })
+  })
+
+  newBlogRedirects.forEach(fragment => {
+    const blogPath = `/blog/${fragment}`
+    const notesPath = `/notes/${fragment}`
+    createRedirect({
+      fromPath: blogPath,
+      toPath: notesPath,
+      isPermanent: true
+    })
   })
 }
 
