@@ -4,7 +4,7 @@ import { graphql, Link, navigate } from "gatsby"
 
 import Layout from "../../components/layout"
 import Navbar from "../../components/navbar"
-import PageHeader from "../../components/page-header"
+import * as PageHeader from "../../components/page-header"
 import NoteList from "../../components/note-list"
 
 
@@ -19,10 +19,12 @@ export default ({ data }) => {
       </header>
       <main>
         <div className={`container content-container ${styles.maxWidthContainer}`}>
-          <PageHeader>Digital garden</PageHeader>
-          <p className={styles.explanationParagraph}>
-            A collection of notes on topics that interest me, specially engineering leadership, programming, product management, and knowledge management. Unlike a blog, I revisit notes as my thinking changes.
-          </p>
+          <PageHeader.Container>
+            <PageHeader.Title>Digital garden</PageHeader.Title>
+            <PageHeader.Description>
+            A collection of notes on engineering leadership, programming, product management, and knowledge management. Unlike a blog, I revisit notes as my thinking changes.
+            </PageHeader.Description>
+          </PageHeader.Container>
           <div>
             <NoteList notes={posts} />
           </div>

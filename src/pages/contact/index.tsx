@@ -5,7 +5,7 @@ import OverlayTrigger from 'react-bootstrap/OverlayTrigger'
 
 import Layout from "../../components/layout"
 import Navbar from "../../components/navbar"
-import PageHeader from "../../components/page-header"
+import * as PageHeader from "../../components/page-header"
 import StyledAnchor, {anchorStyle} from "../../components/styled-anchor"
 
 import headshot from "./images/Headshot-Pascal-1.jpg"
@@ -56,7 +56,11 @@ export default () => {
       </header>
       <main>
         <div className={`container content-container ${styles.maxWidthContainer}`}>
-          <PageHeader>About me</PageHeader>
+          <PageHeader.Container>
+            <PageHeader.Title>
+              About me
+            </PageHeader.Title>
+          </PageHeader.Container>
           <div className="row">
             <div className={`col-md-7 col-lg-8 ${styles.contactText}`}>
               <p>

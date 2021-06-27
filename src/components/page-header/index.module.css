@@ -2,10 +2,19 @@
 
 .pageHeader {
     border-bottom: 1px solid #eee;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     padding-bottom: 9px;
 }
 
-.pageHeader h1 {
+.pageHeaderTitle {
     font-size: 2.3rem;
+}
+
+.pageHeaderDescription {
+    max-width: 600px;
+    font-family: "Open Sans", sans-serif;
+    color: #444;
+    font-size: 16px;
+    margin-top: 1em;
+    /* margin-bottom: 2em; */
 }
