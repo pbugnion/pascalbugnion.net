@@ -36,13 +36,19 @@ export default ({ data }) => {
 
 export const query = graphql`
   query BlogPostIndexQuery {
-    allMdx(filter: {
-      frontmatter: {
-        onTOC: {
-          eq: "yes"
-        }
+    allMdx(
+      filter: {
+        frontmatter: {
+          onTOC: {
+            eq: "yes"
+          }
+        },
       }
-    }) {
+      sort: {
+        fields: [frontmatter___lastUpdatedDate]
+        order: DESC
+      }
+    ) {
       nodes {
         frontmatter {
           slug
