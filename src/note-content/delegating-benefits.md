@@ -2,7 +2,7 @@
 contentTitle: Delegation also benefits the people delegated to
 slug: /notes/delegating-benefits
 createdDate: 2021-04-10
-lastUpdatedDate: 2021-06-12
+lastUpdatedDate: 2021-06-20
 onTOC: yes
 ---
 

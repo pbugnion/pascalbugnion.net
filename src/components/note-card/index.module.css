@@ -24,6 +24,7 @@
 
 .noteCard svg {
     transition: fill 200ms ease-in-out;
+    flex-shrink: 0;
 }
 
 .noteCard:hover svg {
