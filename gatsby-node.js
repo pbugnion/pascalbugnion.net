@@ -25,7 +25,7 @@ const createNotesPages = async ({ graphql, actions }) => {
   result.data.allMdx.edges.forEach(({ node }) => {
     createPage({
       path: node.frontmatter.slug,
-      component: path.resolve("./src/templates/note/index.tsx"),
+      component: path.resolve("./src/templates/notes/index.tsx"),
       context: {
         slug: node.frontmatter.slug,
       },
