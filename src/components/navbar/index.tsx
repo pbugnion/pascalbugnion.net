@@ -18,7 +18,7 @@ export interface NavbarProps {
 
 const SiteNavbar = ({ containerAdditionalStyles }: NavbarProps) => {
   return (
-    <Navbar expand="sm" variant="light" fixed="top" id={styles.topNavbar}>
+    <Navbar expand="md" variant="light" fixed="top" id={styles.topNavbar}>
       <Container className={containerAdditionalStyles.join(" ")}>
         <Navbar.Brand as={Link} to="/" className={styles.topNavbarBrand}>Pascal Bugnion</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-collapse-toggle" className={styles.topNavbarToggle} />
