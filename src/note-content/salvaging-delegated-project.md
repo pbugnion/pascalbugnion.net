@@ -18,9 +18,9 @@ No! This instinctual reaction is so disempowering, not just for the IC but for t
 
 The right way to fix the problem is to spend more time with the IC. This task is important, so clear your schedule. Delegate other things to make time, or let some things drop. Use the time to set up working sessions where you and the IC work together on components of the task. These working sessions are great for communicating context and goals. And working together with someone is great for building trust.
 
-If these working sessions aren't enough and progress remains too slow, work with the IC to split the work into pieces and identify other team members who can help with each piece. Resist the urge to break the work down and distribute it yourself. Instead, help the IC ask for help, e.g. by being cc'd in email or Slack messages that ask for help. Make sure the IC feels in control of splitting out the work and distributing it.
+If these working sessions aren't enough and progress remains too slow, work with the IC to split the work into pieces and identify other team members who can help with each piece. Resist the urge to break the work down and distribute it yourself. Instead, help the IC ask for help. Make sure the IC feels in control of splitting out the work and distributing it.
 
 Yes, this is almost certainly slower than fixing the problem yourself. So, to be able to do this, you need to both catch the problem early enough, and have enough [slack time](/notes/slack-makes-better-leaders) in your schedule to address this properly.
 
-The rewards are huge: the IC will feel like they've turned what was clearly a difficult task into a success, and they will trust you to help them in the future. In turn, this increased trust means they are more likely to seek feedback in the future, leading to virtuous cycles where you can fix problems early, leading to more successes that engender even more trust.
+The rewards are huge: the IC will feel like they've turned what was clearly a difficult task into a success, and they will [trust](/notes/what-is-trust) you to help them in the future. In turn, this increased trust means they are more likely to seek feedback in the future, leading to virtuous cycles where you can fix problems early, leading to more successes that engender even more trust.
 

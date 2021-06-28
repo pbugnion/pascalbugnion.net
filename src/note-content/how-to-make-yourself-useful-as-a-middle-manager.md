@@ -32,7 +32,9 @@ Someone in a team lead position will typically act as role model for team member
 
 Sociological research suggests leaders have the potential to [elicit pro-social behaviour in their followers](https://www.sciencedirect.com/science/article/pii/S0167268118302063). This is a double-edged sword: you will find that people also [emulate behaviours you would rather they did not](https://www.sciencedirect.com/science/article/abs/pii/S1053535708001157). You should be cognisant of this and use it to build a high-performing team. 
 
-How you role model will depend on the values your organisation holds, but broadly, you should behave as you want your team members to behave: show accountability and ownership for the work of the team, pass on credit but shoulder blame, empower your team members, encourage discussions and seek consensus, promote rational discourse.
+How you role model will depend on the values your organisation holds, but broadly, you should behave as you want your team members to behave: show accountability and ownership for the work of the team, pass on credit but shoulder blame, empower your team members, encourage discussions and seek consensus, build [trust](/notes/what-is-trust), promote rational discourse.
+
+Being a good role model requires being able to bring your best self to work. After all, if you aren't proud of who you are at work, you are not going to inspire anyone. I have found that the most common failure mode is a [lack of time](/notes/slack-makes-better-leaders): when I feel time-poor, I am more likely to feel under pressure and model the wrong behaviour.
 
 ![](./images/manager-1.jpg)
 
@@ -40,7 +42,7 @@ How you role model will depend on the values your organisation holds, but broadl
 
 You want team members to leverage their knowledge to take decisions that are in the best interest of the company. To do this well, they have to know what the company expects from the team and how the team fits in the company. As a team lead, your role is to communicate this context to allow team members to make decisions. 
 
-This contrasts with the traditional image of managers taking decisions and workers executing: where possible, you want to give team members the right context and let them make the decisions.
+This contrasts with the traditional image of managers taking decisions and workers executing: where possible, you want to [give team members the right context](/notes/dont-just-hire-great-people) and let them make the decisions.
 
 What if you aren't sure of the company vision, or how your team helps deliver it? Often, you will have a general idea, but there will be outstanding questions that are unclear. Company strategies are imperfect documents and often out-of-date, specially if the company is changing rapidly. You and your team will often be best placed to make those clarifications, since you are closest to the ground. Work with your team to create a proposal for clarification and seek feedback from the leadership.
 
