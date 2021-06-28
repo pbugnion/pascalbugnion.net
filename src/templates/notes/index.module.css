@@ -1,0 +1,75 @@
+.bodyContainer {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    padding: 0;
+    margin: 0;
+    overflow-y: scroll;
+}
+
+.articleContainer {
+    padding-top: 3em;
+    padding-bottom : 2em ;
+    max-width : 800px;
+}
+
+.blogNavbarContainer {
+    max-width: 800px;
+}
+
+.lastUpdatedDate {
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    font-size: 14px;
+    font-style: italic;
+    color: #666;
+    font-family: "Open Sans", sans-serif;
+}
+
+.articleEntryContent {
+    font-family: 'EB Garamond', serif;
+    font-size : 22px ;
+}
+
+.articleEntryContent code {
+    color: #555;
+    font-size: 75%;
+}
+
+
+.articleEntryContent blockquote {
+    border-left: 4px solid #eee;
+    padding-left: 2em;
+    font-size: 0.9em;
+}
+
+.articleEntryContent pre {
+    padding: 9.5px;
+    margin: 0 0 1rem;
+    font-size: 13px;
+    line-height: 1.43;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.articleEntryContent pre code {
+    color: #555;
+    font-size: 100%;
+}
+
+.articleEntryContent h2 {
+    padding-top: 0.4em;
+}
+
+.relatedNotes {
+    padding-top: 1.5em;
+    font-family: "Open Sans", sans-serif;
+}
+
+.relatedNotesHeader {
+    margin-bottom: 0.8em;
+    text-align: center;
+}

@@ -5,7 +5,8 @@ import OverlayTrigger from 'react-bootstrap/OverlayTrigger'
 
 import Layout from "../../components/layout"
 import Navbar from "../../components/navbar"
-import PageHeader from "../../components/page-header"
+import * as PageHeader from "../../components/page-header"
+import StyledAnchor, {anchorStyle} from "../../components/styled-anchor"
 
 import headshot from "./images/Headshot-Pascal-1.jpg"
 import mailIcon from "./images/mail-icon.png"
@@ -29,7 +30,7 @@ const ContactEntryLink = ({ iconContent, href, title, value }) => {
             <span className={styles.contactKey} {...triggerHandler}>
               <img src={iconContent} height="36" width="36" alt={title} />
             </span>
-            <a href={href} ref={ref} {...triggerHandler}>
+            <a href={href} ref={ref} className={anchorStyle} {...triggerHandler}>
               {value}
             </a>
           </>
@@ -55,20 +56,24 @@ export default () => {
       </header>
       <main>
         <div className={`container content-container ${styles.maxWidthContainer}`}>
-          <PageHeader>About me</PageHeader>
+          <PageHeader.Container>
+            <PageHeader.Title>
+              About me
+            </PageHeader.Title>
+          </PageHeader.Container>
           <div className="row">
             <div className={`col-md-7 col-lg-8 ${styles.contactText}`}>
               <p>
                 I am a software engineering technical lead.
               </p>
               <p>
-                I build tools for data science and machine learning. I live in London and work at <a href="https://faculty.ai/">Faculty</a>, as part of the <a href="https://faculty.ai/products-services/platform/">Faculty Platform</a> team.
+                I build tools for data science and machine learning. I live in London and work at <StyledAnchor href="https://faculty.ai/">Faculty</StyledAnchor>, as part of the <StyledAnchor href="https://faculty.ai/products-services/platform/">Faculty Platform</StyledAnchor> team.
               </p>
               <p>
-                Outside of my day job, I am a contributor to open source, specially in the Jupyter and Plotly ecosystems. I am a core contributor to <a href="https://jupyter.org/widgets">Jupyter widgets</a> and the main author of <a href="/code.html">several Python libraries</a>.
+                Outside of my day job, I am a contributor to open source, specially in the Jupyter and Plotly ecosystems. I am a core contributor to <StyledAnchor href="https://jupyter.org/widgets">Jupyter widgets</StyledAnchor> and the main author of <StyledAnchor href="/code.html">several Python libraries</StyledAnchor>.
               </p>
               <p>
-                I hold a PhD from Cambridge University in <a href="https://www.tcm.phy.cam.ac.uk/people/staff.html">theoretical solid state physics</a>, working on <a href="https://en.wikipedia.org/wiki/Quantum_Monte_Carlo">quantum Monte Carlo</a> methods.
+                I hold a PhD from Cambridge University in <StyledAnchor href="https://www.tcm.phy.cam.ac.uk/people/staff.html">theoretical solid state physics</StyledAnchor>, working on <StyledAnchor href="https://en.wikipedia.org/wiki/Quantum_Monte_Carlo">quantum Monte Carlo</StyledAnchor> methods.
               </p>
             </div>
             <div className={`col-md-5 col-lg-4 order-first order-md-last ${styles.headshotImgContainer}`}>

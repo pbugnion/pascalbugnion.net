@@ -1,0 +1,8 @@
+
+
+/* Disable the xl- part of boostrap */
+@media (min-width: 992px) {
+  .maxWidthContainer {
+    max-width: 960px;
+  }
+}

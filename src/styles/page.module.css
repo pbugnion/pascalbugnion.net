@@ -8,15 +8,6 @@
     font-weight : 400 ;
 }
 
-#page h2 {
-    font-weight : 400 ;
-    padding-bottom : 0.3em ;
-}
-
-#page a {
-    color: #428bca;
-}
-
 #page :global(.lead) {
     font-size : 1.2em ;
 }
@@ -25,8 +16,4 @@
     padding-top: 110px;
     font-size : 18px ;
     padding-bottom : 2em ;
-}
-
-#page :global(.link-array) a + a {
-    padding: 1rem;
 }

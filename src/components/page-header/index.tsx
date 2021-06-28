@@ -2,12 +2,22 @@ import * as React from "react"
 
 import styles from "./index.module.css"
 
-const PageHeader = ({children}) => {
+export const Container = ({children}) => {
     return (
         <div className={styles.pageHeader}>
-            <h1>{children}</h1>
+            {children}
         </div>
     )
 }
 
-export default PageHeader;
+export const Title = ({children}) => {
+  return (
+    <h1 className={styles.pageHeaderTitle}>{children}</h1>
+  )
+}
+
+export const Description = ({children}) => {
+  return (
+    <p className={styles.pageHeaderDescription}>{children}</p>
+  )
+}
