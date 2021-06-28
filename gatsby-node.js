@@ -62,10 +62,6 @@ const createHtmlRedirects = async({ actions }) => {
 
   const {createRedirect} = actions
 
-  baseRules.forEach(([fromPath, toPath]) => {
-    createRedirect({fromPath, toPath, isPermanent: true})
-  })
-
   oldBlogRedirects.forEach(([fromFragment, toFragment]) => {
     const oldBlogPath = `/blog/${fromFragment}`
     const newBlogPath = `/blog/${toFragment}` // before conversion to digital garden
@@ -94,6 +90,12 @@ const createHtmlRedirects = async({ actions }) => {
       toPath: notesPath,
       isPermanent: true
     })
+  })
+
+  // these need to come last since /blog overrides some of the
+  // more specific redirects.
+  baseRules.forEach(([fromPath, toPath]) => {
+    createRedirect({fromPath, toPath, isPermanent: true})
   })
 }
 
