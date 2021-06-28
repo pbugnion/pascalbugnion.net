@@ -85,12 +85,14 @@ export const query = graphql`
         frontmatter {
           contentTitle
           slug
+          lastUpdatedDate(formatString: "Do MMMM YYYY")
         }
       }
       OutboundReferences {
         frontmatter {
           contentTitle
           slug
+          lastUpdatedDate(formatString: "Do MMMM YYYY")
         }
       }
     }
