@@ -1,4 +1,5 @@
 import * as React from "react"
+import { Helmet } from "react-helmet"
 
 import Collapse from "react-bootstrap/Collapse"
 import Button from "react-bootstrap/Button"
@@ -163,6 +164,13 @@ const JupyterLabSqlCard = () => (
 export default () => {
   return (
     <Layout>
+      <Helmet>
+        <title>Pascal Bugnion</title>
+        <meta
+          name="description"
+          content="Pascal Bugnion is a data engineering technical lead. This hosts his musings on data, software, and team leadership."
+        />
+      </Helmet>
       <CanvasBackground>
         <header>
           <Navbar />
