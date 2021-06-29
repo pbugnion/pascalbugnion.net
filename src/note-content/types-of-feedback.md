@@ -18,6 +18,9 @@ People who get more praise probably do better[^2]. Praise from someone they trus
 
 Praising a little often is better than generic feedback once every six months. I try to send messages on Slack when I notice someone doing something well, or in response to a good piece of work. Since the aim of appreciation feedback is improving motivation and recognising good work, it is more important to give the feedback than to dissect exactly why a piece of work was good.
 
+![](./images/types-of-feedback-1.png)
+<!-- Photo by Kaidi Guo on Unsplash -->
+
 ## Coaching
 
 Coaching feedback is aimed at helping a report improve. It is often delivered as part regular discussions with a trusted mentor. I have weekly or fortnightly discussions with a small number of people I'm directly responsible for coaching. 
