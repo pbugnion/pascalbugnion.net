@@ -5,7 +5,9 @@ lastUpdatedDate: 2021-06-29
 onTOC: yes
 ---
 
-In [this episode](https://www.gayleallen.net/cm-183-therese-huston-on-getting-feedback-right/) of Gayle Allen's podcast "Curious minds at work", [Therese Huston](https://www.theresehuston.com/about) breaks feedback down into three different types [^1]:
+I played Skyrim for the first time this weekend[^1], and I'm so addicted! One of the reasons video games provide such good escapism is the clear feedback between a decision and its result. In contrast, modern day knowledge work is hard to navigate: there are no clear metrics for success and it's hard to know whether any given decision was right or wrong until months later<!--todo link to wicked env-->. This makes it hard for employees to improve.
+
+The most effective way to mitigate this is to set up mechanisms that give employees frequent feedback. But not all feedback serves the same purpose. I have found the following breakdown of feedback types useful[^2]:
 - appreciation: giving praise for good work, with the aim of improving motivation and giving recognition.
 - coaching: feedback that aims to make someone improve, regardless of where they currently stand.
 - evaluation: feedback aimed at highlighting where somebody is with respect to a particular yardstick. How is their probation going? How are they doing with respect to the promotion they want?
@@ -14,7 +16,7 @@ To grow, employees need all three types of feedback. What follows is a worked ex
 
 ## Appreciation
 
-People who get more praise probably do better[^2]. Praise from someone they trust will probably make them feel recognised and give a sense of impact. 
+People who get more praise probably do better[^3]. Praise from someone they trust will probably make them feel recognised and give a sense of impact. 
 
 Praising a little often is better than generic feedback once every six months. I try to send messages on Slack when I notice someone doing something well, or in response to a good piece of work. Since the aim of appreciation feedback is improving motivation and recognising good work, it is more important to give the feedback than to dissect exactly why a piece of work was good.
 
@@ -45,6 +47,8 @@ Having different mechanisms <!--todo (link to coach and judge) --> for evaluatio
 
 Giving appreciation, coaching, and evaluation feedback helps make sure people are recognised, that they know what they're doing well and that they have the information they need to improve.
 
-[^1]: Therese Huston references the [book](https://www.amazon.co.uk/Thanks-Feedback-Science-Receiving-Well-ebook/dp/B00F10Z4GO/ref=sr_1_1?adgrpid=56821596167&dchild=1&gclid=CjwKCAjwvMqDBhB8EiwA2iSmPJzELUjsnZ5Mn7Y-J67DraUhwpDPV3Hilels4wyyJLI5VDJfcjZB_xoC000QAvD_BwE&hvadid=259026782040&hvdev=c&hvlocphy=1006886&hvnetw=g&hvqmt=e&hvrand=14230738361810692791&hvtargid=kwd-299406212293&hydadcr=18490_1817273&keywords=thanks+for+the+feedback&qid=1618125050&sr=8-1) "Thanks for the Feedback: The Science and Art of Receiving Feedback Well" by Douglas Stone and Sheila Heene.
-[^2]: There is a [some evidence](https://hbr.org/2013/03/the-ideal-praise-to-criticism) of a correlation between teams that do well and the amount of praise they receive. The paper that reports this (Losada, Marcial, and Emily Heaphy. ‘The Role of Positivity and Connectivity in the Performance of Business Teams: A Nonlinear Dynamics Model’. American Behavioral Scientist 47, no. 6 (1 February 2004): 740–65. https://doi.org/10.1177/0002764203260208.
+[^1]: I know, I know, it came out like 10 years ago.
+[^2]: I came across this breakdown in [this episode](https://www.gayleallen.net/cm-183-therese-huston-on-getting-feedback-right/) of Gayle Allen's great podcast "Curious minds at work", where she talks to [Therese Huston](https://www.theresehuston.com/about). In the episode,
+Therese Huston references the [book](https://www.amazon.co.uk/Thanks-Feedback-Science-Receiving-Well-ebook/dp/B00F10Z4GO/ref=sr_1_1?adgrpid=56821596167&dchild=1&gclid=CjwKCAjwvMqDBhB8EiwA2iSmPJzELUjsnZ5Mn7Y-J67DraUhwpDPV3Hilels4wyyJLI5VDJfcjZB_xoC000QAvD_BwE&hvadid=259026782040&hvdev=c&hvlocphy=1006886&hvnetw=g&hvqmt=e&hvrand=14230738361810692791&hvtargid=kwd-299406212293&hydadcr=18490_1817273&keywords=thanks+for+the+feedback&qid=1618125050&sr=8-1) "Thanks for the Feedback: The Science and Art of Receiving Feedback Well" by Douglas Stone and Sheila Heene.
+[^3]: There is a [some evidence](https://hbr.org/2013/03/the-ideal-praise-to-criticism) of a correlation between teams that do well and the amount of praise they receive. The paper that reports this (Losada, Marcial, and Emily Heaphy. ‘The Role of Positivity and Connectivity in the Performance of Business Teams: A Nonlinear Dynamics Model’. American Behavioral Scientist 47, no. 6 (1 February 2004): 740–65. https://doi.org/10.1177/0002764203260208.
 ) is largely discredited, because the authors adopted an overly simplistic model of human behaviour. Disentangling correlation from causation is obviously difficult: do teams that do well get praise, or do they do well because they get praised? Going beyond just praise, there is clear evidence that team members that get more feedback do better, as described in Whitaker, Brian, Jason Dahling, and Paul Levy. ‘The Development of a Feedback Environment and Role Clarity Model of Job Performance’. Journal of Management 33 (1 August 2007): 570–91. https://doi.org/10.1177/0149206306297581.
