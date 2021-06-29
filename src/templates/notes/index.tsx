@@ -1,6 +1,9 @@
 import * as React from "react"
-import { graphql } from "gatsby"
+
+import { graphql, Link } from "gatsby"
 import { Helmet } from "react-helmet"
+
+import { MDXProvider } from "@mdx-js/react"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 
 import Layout from "../../components/layout"
@@ -19,6 +22,23 @@ const RelatedNotes = ({ relatedNotes }: NoteListProps) => (
     <NoteList notes={relatedNotes} />
   </div>
 )
+
+
+const NotesAnchor = ({ href, ...props }) => {
+  if (href.startsWith("/")) {
+    return <Link data-link-internal to={href} {...props} />
+  } else {
+    return (
+      <a
+        data-link-external
+        href={href}
+        target="_blank"
+        rel="noopener noreferrer nofollow"
+        {...props}
+      />
+    )
+  }
+}
 
 
 export default ({ data }) => {
@@ -58,7 +78,9 @@ export default ({ data }) => {
               Last updated on {frontmatter.lastUpdatedDate}.
             </div>
             <div className={styles.articleEntryContent}>
-              <MDXRenderer>{body}</MDXRenderer>
+              <MDXProvider components={{a: NotesAnchor}}>
+                <MDXRenderer>{body}</MDXRenderer>
+              </MDXProvider>
             </div>
             {relatedNotes.length > 0 && (
               <>
