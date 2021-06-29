@@ -1,4 +1,5 @@
 import * as React from "react"
+import { Helmet } from "react-helmet"
 
 import { graphql, Link, navigate } from "gatsby"
 
@@ -14,6 +15,13 @@ export default ({ data }) => {
   const posts: Array<{ contentTitle: string, slug: string, lastUpdatedDate: string }> = data.allMdx.nodes.map(post => post.frontmatter)
   return (
     <Layout>
+      <Helmet>
+        <title>Data diversions | Pascal Bugnion's digital garden</title>
+        <meta
+          name="description"
+          content="This is Pascal Bugnion's personal blog: a collection of notes on engineering leadership, programming, product management, and knowledge management."
+        />
+      </Helmet>
       <header>
         <Navbar containerAdditionalStyles={[styles.maxWidthContainer]} />
       </header>
@@ -22,7 +30,7 @@ export default ({ data }) => {
           <PageHeader.Container>
             <PageHeader.Title>Digital garden</PageHeader.Title>
             <PageHeader.Description>
-            A collection of notes on engineering leadership, programming, product management, and knowledge management. Unlike a blog, I revisit notes as my thinking changes.
+              A collection of notes on engineering leadership, programming, product management, and knowledge management. Unlike a blog, I revisit notes as my thinking changes.
             </PageHeader.Description>
           </PageHeader.Container>
           <div>

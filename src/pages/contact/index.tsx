@@ -51,6 +51,13 @@ const ContactEntryEmail = () => {
 export default () => {
   return (
     <Layout>
+      <Helmet>
+        <title>Pascal Bugnion</title>
+        <meta
+          name="description"
+          content="Pascal Bugnion is a data engineering technical lead. This page shows how to contact him."
+        />
+      </Helmet>
       <header>
         <Navbar containerAdditionalStyles={[styles.maxWidthContainer]} />
       </header>
