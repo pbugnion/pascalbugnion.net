@@ -1,7 +1,7 @@
 ---
 contentTitle: The three types of feedback
 slug: /notes/types-of-feedback
-lastUpdatedDate: 2021-06-29
+lastUpdatedDate: 2021-07-02
 onTOC: yes
 ---
 
@@ -41,7 +41,7 @@ When receiving evaluation feedback, the employee will care predominantly about f
 - there is a clear definition of the yardstick by which they are being measured. For instance, the employee should have a good understanding of the expectation for passing their probation. An accurate, detailed performance framework helps define how success is measured. It also provides a vocabulary that can be used in coaching conversations.
 - there is an objective mechanism for evaluating the employee's performance against this yardstick. At Faculty, to make sure the assessment against the framework is fair, a panel of (typically 3) trusted senior members of each team situates each individual. A panel helps ensure we have both broad coverage of people's skills and mutual accountability for decisions.
 
-Having different mechanisms <!--todo (link to coach and judge) --> for evaluation feedback and coaching helps both givers and receivers of feedback distinguish between the two. It also allows the coach to build trust by showing they care personally about their report, while the panel delivering evaluation feedback can build trust by demonstrating integrity.
+Having [different mechanisms for evaluation feedback and coaching](/notes/split-coach-judge-role) helps both givers and receivers of feedback distinguish between the two. It also allows the coach to build trust by showing they care personally about their report, while the panel delivering evaluation feedback can build trust by demonstrating integrity.
 
 ----
 
