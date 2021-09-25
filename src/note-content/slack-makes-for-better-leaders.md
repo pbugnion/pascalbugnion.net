@@ -3,7 +3,7 @@ contentTitle: How slack time makes for better leaders
 pageTitle: Data diversions | How slack time makes for better leaders
 slug: /notes/slack-makes-better-leaders
 createdDate: 2021-01-26
-lastUpdatedDate: 2021-06-12
+lastUpdatedDate: 2021-09-25
 summary: Time pressure turns us into jerks. Leaders who prioritise time affluence take better decisions and develop better relationships with their teams. How can we prioritise having enough time?
 onTOC: yes
 ---
@@ -75,7 +75,7 @@ Beyond short-term fixes, the most effective way to feel time affluent has been t
 
 Explicit scheduling also lets me prioritise time affluence against getting particular tasks done. In practice, this means explicitly scheduling “slack” time in my schedule. I schedule time blocks that are not allocated to a task. If unexpected things come up, as always happens, I use up my slack time, rather than this extra task tipping me into feeling overwhelmed. This also encourages more delegation.
 
-Besides more deliberate planning and scheduling slack time, there are several other tools to feel more time affluent. In this excellent [blog post](https://smallbigideas.substack.com/p/a-proactive-approach-to-time-scarcity-1771e000bf91), [Padmini](https://smallbigideas.substack.com/) talks about protected time blocks, a zero-based budgeting approach to scheduling meetings, and the effectiveness of delegating. These have all helped me get my schedule under control.
+Besides more deliberate planning and scheduling slack time, there are several other tools to feel more time affluent. In this excellent [blog post](https://smallbigideas.substack.com/p/a-proactive-approach-to-time-scarcity-1771e000bf91), [Padmini](https://smallbigideas.substack.com/) talks about protected time blocks, a zero-based budgeting approach to scheduling meetings, and the [effectiveness of delegating](/notes/delegating-benefits). These have all helped me get my schedule under control.
 
 ## Conclusion
 
