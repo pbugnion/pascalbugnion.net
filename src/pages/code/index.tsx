@@ -63,7 +63,7 @@ const GmapsCard = () => (
       gmaps has been downloaded over <StyledAnchor href="https://anaconda.org/conda-forge/gmaps">130,000 times</StyledAnchor> using conda alone. It has over 600 stars on GitHub.
         </p>
     <div className={styles.linkArray}>
-      <StyledAnchor href="https://github.com/pbugion/gmaps">GitHub</StyledAnchor>
+      <StyledAnchor href="https://github.com/pbugnion/gmaps">GitHub</StyledAnchor>
       <StyledAnchor href="https://jupyter-gmaps.readthedocs.io">Documentation</StyledAnchor>
     </div>
   </Card>
