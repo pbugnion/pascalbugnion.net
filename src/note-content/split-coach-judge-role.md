@@ -1,7 +1,7 @@
 ---
 contentTitle: Why managers shouldn't be both coach and judge
 slug: /notes/split-coach-judge-role
-lastUpdatedDate: 2021-07-03
+lastUpdatedDate: 2021-10-02
 onTOC: yes
 ---
 
@@ -33,6 +33,6 @@ At [Faculty](https://faculty.ai), everybody has a "mentor" responsible for coach
 
 Performance reviews are done by the team lead, with input from a (typically 3 person) panel. The team lead and members of the panel then have the role of judge. The panel helps make sure there is enough coverage of the entire team's activities, and increases the sense of fairness.
 
-Mentors tend to develop long-lived, high-trust relationships with their mentees. They act as a sounding board for ideas, as a first point of contact to raise grievances, and as an escape hatch for [vents](https://randsinrepose.com/archives/the-update-the-vent-and-the-disaster/). This dual model has, at least in my team, been highly successful.
+Mentors tend to develop long-lived, high-trust relationships with their mentees. They act as a sounding board for ideas, as a first point of contact to raise grievances, as an escape hatch for [vents](https://randsinrepose.com/archives/the-update-the-vent-and-the-disaster/), and, ideally, [advocate for their mentee](/notes/mentorship-is-not-enough) with team or company leadership. This dual model has, at least in my team, been highly successful.
 
 [^1]: https://hbr.org/2019/10/are-you-sugarcoating-your-feedback-without-realizing-it
