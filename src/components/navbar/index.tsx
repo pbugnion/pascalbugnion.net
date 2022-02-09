@@ -6,7 +6,7 @@ import Container from "react-bootstrap/Container"
 import Navbar from "react-bootstrap/Navbar"
 import Nav from "react-bootstrap/Nav"
 
-import styles from "./index.module.css"
+import * as styles from "./index.module.css"
 
 const NavbarInternalLink = ({ to, children }) => (
   <Nav.Link as={Link} to={to} className={styles.topNavLink}>{children}</Nav.Link>

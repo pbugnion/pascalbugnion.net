@@ -11,8 +11,8 @@ import Navbar from "../../components/navbar"
 import * as PageHeader from "../../components/page-header"
 import NoteList from "../../components/note-list"
 
-import styles from "./index.module.css"
-import pageStyles from "../../styles/page.module.css"
+import * as styles from "./index.module.css"
+import * as pageStyles from "../../styles/page.module.css"
 
 import type { NoteListProps } from "../../components/note-list"
 
@@ -78,14 +78,14 @@ export default ({ data }) => {
               Last updated on {frontmatter.lastUpdatedDate}.
             </div>
             <div className={styles.articleEntryContent}>
-              <MDXProvider components={{a: NotesAnchor}}>
+              <MDXProvider components={{ a: NotesAnchor }}>
                 <MDXRenderer>{body}</MDXRenderer>
               </MDXProvider>
             </div>
             {relatedNotes.length > 0 && (
               <>
-                <hr />
-                <RelatedNotes relatedNotes={relatedNotes} />
+              <hr />
+              <RelatedNotes relatedNotes={relatedNotes} />
               </>
             )}
           </div>

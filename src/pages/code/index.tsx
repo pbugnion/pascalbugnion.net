@@ -14,7 +14,7 @@ import facultyPlatformImage from "./images/faculty-platform.png"
 import dbcImage from "./images/dbc.png"
 import jupyterWidgetsImage from "./images/wealth_of_nations.png"
 
-import styles from "./index.module.css"
+import * as styles from "./index.module.css"
 
 type CardProps = {
   heading: string,
