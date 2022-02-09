@@ -155,4 +155,4 @@ object S3AccessService {
 
 These conventions have worked well for us because each mitigates a real pain that we felt before adopting it. They may well not apply to you. Finally, while having a clear set of conventions is useful, they result in incremental improvements. A good team is good because of the people and the team dynamics, not the tools they use or the conventions they adopt. 
 
-[Next post &#8608;](/blog/scala-in-production-2)
+[Next post &#8608;](/notes/scala-in-production-2)
