@@ -9,11 +9,11 @@ hasLatex: true
 
 _Warning: this is very early-stage content_
 
-Statistics tends to evoke painful memories of retrieving coloured balls from a bag, or throwing dice, or flipping coins. Like much of mathematical education, these problems are all very artificial: it's not obvious how they help us day-to-day. Because they are so artificial, they miss the point.
+Statistics tends to evoke painful memories of retrieving coloured balls from a bag, or throwing dice, or flipping coins. Like much of mathematical education, these problems are all very artificial: it's not obvious how they help us day-to-day. Because they are so artificial, they miss the point of what statistics is.
 
 Statistics is really the study of decision-making under uncertainty. When our brain evaluates questions like "should I take an umbrella with me?" or "given that I have a fever, am I likely to have Covid?", it intuitively knows how to handle uncertainty to make sensible decisions. Statistics takes this intuition, gives it a firm logical footing, makes it more quantitative, and turns it into concrete algorithms (or at least, formulae) that we can put into software.
 
-Bayesian statistics, in particular, gives us a framework for understanding how much to update our beliefs when we are presented with a new piece of evidence. For instance, let's say I wake up this morning with a fever. My brain will naturally think about Covid. But how much should I update whether I believe I have Covid based on my fever? Bayesian statistics is a framework for updating our belief (do I have Covid?) based on new evidence (I have a fever).
+Bayesian statistics, in particular, gives us a framework for understanding how much to update our beliefs when we are presented with a new piece of evidence. For instance, let's say I wake up this morning with a fever. My brain will naturally think about Covid. But how much should I update whether I believe I have Covid based on my fever? Bayesian statistics tells us how.
 
 ![](./images/bayesian-statistics-diagram.png)
 
@@ -21,7 +21,7 @@ Bayesian statistics, in particular, gives us a framework for understanding how m
 
 Unlike the statistics taught in school, Bayesian statistics assumes I already have some knowledge about whether I have Covid or not, before observing that I have a fever. For instance, if I spent yesterday evening hanging out with a friend who later tested positive, I might think there's a decent chance I have Covid. On the other hand, if I recovered two weeks ago, my natural immunity would make it unlikely I'd catch Covid again.
 
-In Bayesian statistics, the degree of confidence we have in our belief before having observed the new data is called the prior. When we make decisions about the world, we use this prior information and combine it with the new evidence to create an updated belief.
+In Bayesian statistics, the degree of confidence we have in our belief before having observed the new data is called the prior. When we make decisions, we use this prior information and combine it with the new evidence to create an updated belief.
 
 ## The weight of evidence
 
