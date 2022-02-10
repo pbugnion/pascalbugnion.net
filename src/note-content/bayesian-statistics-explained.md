@@ -7,6 +7,8 @@ onTOC: yes
 hasLatex: true
 ---
 
+_Warning: this is very early-stage content_
+
 Statistics tends to evoke painful memories of retrieving coloured balls from a bag, or throwing dice, or flipping coins. Like much of mathematical education, these problems are all very artificial: it's not obvious how they help us day-to-day. Because they are so artificial, they miss the point.
 
 Statistics is really the study of decision-making under uncertainty. When our brain evaluates questions like "should I take an umbrella with me?" or "given that I have a fever, am I likely to have Covid?", it intuitively knows how to handle uncertainty to make sensible decisions. Statistics takes this intuition, gives it a firm logical footing, makes it more quantitative, and turns it into concrete algorithms (or at least, formulae) that we can put into software.
