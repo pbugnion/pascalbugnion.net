@@ -5,6 +5,12 @@ module.exports = {
     {
       resolve: "gatsby-plugin-mdx",
       options: {
+        remarkPlugins: [
+          require("remark-math")
+        ],
+        rehypePlugins: [
+          require("rehype-katex")
+        ],
         gatsbyRemarkPlugins: [
           {
             resolve: "gatsby-remark-prismjs",
@@ -15,8 +21,8 @@ module.exports = {
           {
             resolve: "gatsby-remark-images",
             options: {
-                maxWidth: 800,
-                wrapperStyle: "display:block;margin-top:1em;margin-bottom:1em;"
+              maxWidth: 800,
+              wrapperStyle: "display:block;margin-top:1em;margin-bottom:1em;"
             },
           },
           "gatsby-remark-copy-linked-files",
