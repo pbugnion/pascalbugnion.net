@@ -20,7 +20,6 @@ module.exports = {
             },
           },
           "gatsby-remark-copy-linked-files",
-          "gatsby-plugin-catch-links",
         ],
         extensions: [".md", ".mdx"]
       },
@@ -54,6 +53,6 @@ module.exports = {
         protocol: "https",
         hostname: "pascalbugnion.net"
       }
-    }
+    },
   ],
 };
