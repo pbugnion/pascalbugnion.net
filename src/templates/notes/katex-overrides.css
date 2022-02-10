@@ -1,0 +1,5 @@
+
+/* Avoid Katex fonts looking huge */
+.katex {
+    font-size: 0.9em !important;
+}

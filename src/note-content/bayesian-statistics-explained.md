@@ -4,6 +4,7 @@ slug: /notes/bayesian-statistics-explained
 createdDate: 2022-02-08
 lastUpdatedDate: 2022-02-08
 onTOC: yes
+hasLatex: true
 ---
 
 Statistics tends to evoke painful memories of retrieving coloured balls from a bag, or throwing dice, or flipping coins. Like much of mathematical education, these problems are all very artificial: it's not obvious how they help us day-to-day. Because they are so artificial, they miss the point.

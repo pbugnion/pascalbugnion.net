@@ -57,6 +57,10 @@ export default ({ data }) => {
       relatedNotes.push(frontmatter)
     }
   })
+  if (frontmatter.hasLatex) {
+    import("katex/dist/katex.min.css")
+    import("./katex-overrides.css")
+  }
   return (
     <Layout>
       <Helmet>
@@ -102,6 +106,7 @@ export const query = graphql`
       frontmatter {
         contentTitle
         lastUpdatedDate(formatString: "Do MMMM YYYY")
+        hasLatex
       }
       InboundReferences {
         frontmatter {
