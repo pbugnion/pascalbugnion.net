@@ -2,7 +2,7 @@
 contentTitle: "How to be less wrong: an intuitive introduction to Bayesian statistics"
 slug: /notes/bayesian-statistics-explained
 createdDate: 2022-02-08
-lastUpdatedDate: 2022-02-08
+lastUpdatedDate: 2022-02-10
 onTOC: yes
 hasLatex: true
 ---
@@ -13,7 +13,7 @@ Statistics is really the study of decision-making under uncertainty. When our br
 
 Bayesian statistics, in particular, gives us a framework for understanding how much to update our beliefs when we are presented with a new piece of evidence. For instance, let's say I wake up this morning with a fever. My brain will naturally think about Covid. But how much should I update whether I believe I have Covid based on my fever? Bayesian statistics is a framework for updating our belief (do I have Covid?) based on new evidence (I have a fever).
 
-TODO diagram
+![](./images/bayesian-statistics-diagram.png)
 
 ## Prior information
 
