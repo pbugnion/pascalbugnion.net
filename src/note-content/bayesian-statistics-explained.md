@@ -31,10 +31,36 @@ If I have Covid, I will almost certainly have a fever. However, on any given day
 
 Thus, the observation that I have a fever will strongly reinforce any prior belief I have Covid, but probably not enough to overwhelm that prior belief. For instance, if I hung out with a Covid-positive person yesterday, and now I have a fever, I'll conclude I almost certainly have Covid. However, if I recovered two weeks ago, I'd certainly think there was a chance I'd caught Covid again, but I wouldn't be 100% sure.
 
-## What does this look like in maths?
+## What does this look like as an equation?
 
-# $2 + 2$
+Bayesian statistics combines a prior belief with some piece of evidence to give an updated belief. The amount of weight given to the evidence is "how much more likely is it that I observe this evidence if my belief is true, compared to observing it by random chance?".
 
-$5 + 3$
+Mathematically, we typically express confidence in a belief as probabilities. Thus, the probability $P(\textrm{I have Covid})$ just means the degree of confidence I have in the belief "I have Covid". Quantitatively, the amount that I should update my belief in having Covid after observing that I have a fever is:
 
-$5 + 4$
+$$
+\begin{aligned}
+& \hspace{-2 em} P(\textrm{I have Covid after observing I have a fever}) = \\ & \quad \textrm{weight of evidence} \times P(\textrm{I have Covid prior to observing I have a fever})
+\end{aligned}
+$$
+
+
+And $\textrm{strength of evidence}$ is how much more likely am I to have a fever given I have Covid than by random chance.
+$$
+  \textrm{weight of evidence} = \frac{P(\textrm{I have a fever given I have Covid})}{P(\textrm{I have a fever in general})}
+$$
+
+The more general version is:
+$$
+P(\textrm{updated belief}) = \textrm{weight of evidence} \times P(\textrm{prior belief})
+$$
+
+with:
+
+$$
+  \textrm{weight of evidence} = \frac{P(\textrm{seeing this evidence if my belief is true})}{P(\textrm{seeing this evidence in general})}
+  $$
+
+## Why is this useful?
+Automation is removing much of the drudge work. Since computers can process information much faster than humans, pushing decision-making into software allows making decisions at a much greater level of granularity. But getting computers to make decisions on our behalf is only useful if they are able to make the right decision.
+
+Bayesian statistics, by algorithmising the human decision-making process, allows the development of machine learning techniques that are closer to how we make decisions, and that make it easier to blend human and machine intelligence.
