@@ -70,4 +70,4 @@ A post on convention would be incomplete without Emerson's quote:
 
 Sometimes, breaking a convention is justified. Team members should be familiar with why a convention exists so they know when they can break it.
 
-[&#8606; Previous post](/blog/scala-in-production)
+[&#8606; Previous post](/notes/scala-in-production)

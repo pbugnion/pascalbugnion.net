@@ -2,7 +2,7 @@ import * as React from "react"
 
 import NoteCard from "../note-card"
 
-import styles from "./index.module.css"
+import * as styles from "./index.module.css"
 
 export interface NoteListProps {
   notes: Array<{ contentTitle: string, slug: string }>

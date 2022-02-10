@@ -14,7 +14,7 @@ import facultyPlatformImage from "./images/faculty-platform.png"
 import dbcImage from "./images/dbc.png"
 import jupyterWidgetsImage from "./images/wealth_of_nations.png"
 
-import styles from "./index.module.css"
+import * as styles from "./index.module.css"
 
 type CardProps = {
   heading: string,
@@ -60,7 +60,7 @@ const GmapsCard = () => (
       Visualize your data using heatmaps or symbols and overlay it with GeoJSON.
         </p>
     <p>
-      gmaps has been downloaded over <StyledAnchor href="https://anaconda.org/conda-forge/gmaps">130,000 times</StyledAnchor> using conda alone. It has over 600 stars on GitHub.
+      gmaps has been downloaded over <StyledAnchor href="https://anaconda.org/conda-forge/gmaps">250,000 times</StyledAnchor> using conda alone. It has over 700 stars on GitHub.
         </p>
     <div className={styles.linkArray}>
       <StyledAnchor href="https://github.com/pbugnion/gmaps">GitHub</StyledAnchor>

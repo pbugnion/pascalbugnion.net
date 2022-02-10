@@ -7,7 +7,7 @@ import OverlayTrigger from 'react-bootstrap/OverlayTrigger'
 import Layout from "../../components/layout"
 import Navbar from "../../components/navbar"
 import * as PageHeader from "../../components/page-header"
-import StyledAnchor, {anchorStyle} from "../../components/styled-anchor"
+import StyledAnchor, { anchorStyle } from "../../components/styled-anchor"
 
 import headshot from "./images/Headshot-Pascal-1.jpg"
 import mailIcon from "./images/mail-icon.png"
@@ -16,7 +16,7 @@ import githubIcon from "./images/github-icon.png"
 import twitterIcon from "./images/twitter-icon.png"
 import stackOverflowIcon from "./images/stackoverflow-icon.png"
 
-import styles from "./index.module.css"
+import * as styles from "./index.module.css"
 
 const ContactEntryLink = ({ iconContent, href, title, value }) => {
   return (
@@ -28,12 +28,12 @@ const ContactEntryLink = ({ iconContent, href, title, value }) => {
       >
         {({ ref, ...triggerHandler }) => (
           <>
-            <span className={styles.contactKey} {...triggerHandler}>
-              <img src={iconContent} height="36" width="36" alt={title} />
-            </span>
-            <a href={href} ref={ref} className={anchorStyle} {...triggerHandler}>
-              {value}
-            </a>
+          <span className={styles.contactKey} {...triggerHandler}>
+            <img src={iconContent} height="36" width="36" alt={title} />
+          </span>
+          <a href={href} ref={ref} className={anchorStyle} {...triggerHandler}>
+            {value}
+          </a>
           </>
         )}
       </OverlayTrigger>

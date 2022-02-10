@@ -4,7 +4,7 @@ import { Link, navigate } from "gatsby"
 
 import TreeIcon from "./TreeIcon"
 
-import styles from "./index.module.css"
+import * as styles from "./index.module.css"
 
 export interface NoteCardProps {
   post: {

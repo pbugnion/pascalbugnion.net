@@ -8,8 +8,7 @@ import Navbar from "../../components/navbar"
 import * as PageHeader from "../../components/page-header"
 import NoteList from "../../components/note-list"
 
-
-import styles from "./index.module.css"
+import * as styles from "./index.module.css"
 
 export default ({ data }) => {
   const posts: Array<{ contentTitle: string, slug: string, lastUpdatedDate: string }> = data.allMdx.nodes.map(post => post.frontmatter)

@@ -1,22 +1,22 @@
 import * as React from "react"
 
-import styles from "./index.module.css"
+import * as styles from "./index.module.css"
 
-export const Container = ({children}) => {
-    return (
-        <div className={styles.pageHeader}>
-            {children}
-        </div>
-    )
+export const Container = ({ children }) => {
+  return (
+    <div className={styles.pageHeader}>
+      {children}
+    </div>
+  )
 }
 
-export const Title = ({children}) => {
+export const Title = ({ children }) => {
   return (
     <h1 className={styles.pageHeaderTitle}>{children}</h1>
   )
 }
 
-export const Description = ({children}) => {
+export const Description = ({ children }) => {
   return (
     <p className={styles.pageHeaderDescription}>{children}</p>
   )
