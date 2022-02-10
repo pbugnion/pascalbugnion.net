@@ -25,7 +25,7 @@ const RelatedNotes = ({ relatedNotes }: NoteListProps) => (
 
 
 const NotesAnchor = ({ href, ...props }) => {
-  if (href.startsWith("/")) {
+  if (href.startsWith("/") || href.startsWith("#")) {
     return <Link data-link-internal to={href} {...props} />
   } else {
     return (
