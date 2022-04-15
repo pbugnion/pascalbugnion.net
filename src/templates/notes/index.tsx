@@ -42,8 +42,9 @@ const NotesAnchor = ({ href, ...props }) => {
 
 const Footnote = ({ idName, children }) => (
   <aside className={styles.footnoteContainer}>
-    <label htmlFor={idName} className={styles.footnoteNumber}></label>
-    <span className={styles.footnote}>{children}</span>
+    <label className="footnote-number" htmlFor="ex"></label>
+    <input type="checkbox" className="margin-toggle" id="ex" />
+    <span className="footnote">{children}</span>
   </aside >
 )
 
