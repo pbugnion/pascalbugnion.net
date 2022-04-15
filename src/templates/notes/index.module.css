@@ -64,6 +64,14 @@
     padding-top: 0.4em;
 }
 
+.articleEntryContent a {
+    text-decoration: none;
+}
+
+.articleEntryContent a:hover {
+    text-decoration: underline;
+}
+
 .relatedNotes {
     padding-top: 1.5em;
     font-family: "Open Sans", sans-serif;
