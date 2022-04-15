@@ -40,6 +40,13 @@ const NotesAnchor = ({ href, ...props }) => {
   }
 }
 
+const Footnote = ({ idName, children }) => (
+  <aside className={styles.footnoteContainer}>
+    <label htmlFor={idName} className={styles.footnoteNumber}></label>
+    <span className={styles.footnote}>{children}</span>
+  </aside >
+)
+
 
 export default ({ data }) => {
   const {
@@ -82,7 +89,7 @@ export default ({ data }) => {
               Last updated on {frontmatter.lastUpdatedDate}.
             </div>
             <div className={styles.articleEntryContent}>
-              <MDXProvider components={{ a: NotesAnchor }}>
+              <MDXProvider components={{ a: NotesAnchor, Footnote }}>
                 <MDXRenderer>{body}</MDXRenderer>
               </MDXProvider>
             </div>

@@ -5,7 +5,7 @@ lastUpdatedDate: 2021-10-02
 onTOC: yes
 ---
 
-I recently came across the distinction between _mentoring_ someone and _sponsoring_ them[^1]. When you mentor someone, you typically give them advice and feedback in private. But sponsoring someone takes this a step further: you explicitly advocate for them in front of senior leaders of the company. [Herminia Ibarra](https://herminiaibarra.com/), a professor of organizational behaviour, describes a sponsor as _"someone who has power and will use it for you"_.
+I recently came across the distinction between _mentoring_ someone and _sponsoring_ them<Footnote idName="1">I came across the concept in [Mike Crittenden's blog](https://critter.blog/2021/09/06/minorities-are-over-mentored-and-under-sponsored/). Much of this post is inspired by [Lara Hogan's blog](https://larahogan.me/blog/what-sponsorship-looks-like/) and HBR articles by Herminia Ibarra [Why men still get more promotion than women](https://hbr.org/2010/09/why-men-still-get-more-promotions-than-women) and [A Lack of Sponsorship Is Keeping Women from Advancing into Leadership](https://hbr.org/2019/08/a-lack-of-sponsorship-is-keeping-women-from-advancing-into-leadership).</Footnote>. When you mentor someone, you typically give them advice and feedback in private. But sponsoring someone takes this a step further: you explicitly advocate for them in front of senior leaders of the company. [Herminia Ibarra](https://herminiaibarra.com/), a professor of organizational behaviour, describes a sponsor as _"someone who has power and will use it for you"_.
 
 ## Sponsorship is hard to do ...
 
@@ -35,7 +35,6 @@ Over time, as you gain confidence, you can gradually move up the ladder from men
 
 Looking back, I haven't advocated for people as much as I ought to have done. Too often, I have just provided advice in private, but not explicitly advocated in public. But every time I have stuck my neck out on behalf of someone else, it's been worth it.
 
-[^1]: I came across the concept in [Mike Crittenden's blog](https://critter.blog/2021/09/06/minorities-are-over-mentored-and-under-sponsored/). Much of this post is inspired by [Lara Hogan's blog](https://larahogan.me/blog/what-sponsorship-looks-like/) and HBR articles by Herminia Ibarra [Why men still get more promotion than women](https://hbr.org/2010/09/why-men-still-get-more-promotions-than-women) and [A Lack of Sponsorship Is Keeping Women from Advancing into Leadership](https://hbr.org/2019/08/a-lack-of-sponsorship-is-keeping-women-from-advancing-into-leadership).
 [^2]: From [A Lack of Sponsorship Is Keeping Women from Advancing into Leadership](https://hbr.org/2019/08/a-lack-of-sponsorship-is-keeping-women-from-advancing-into-leadership).
 
 <!-- ## Sponsorship and minority groups -->
