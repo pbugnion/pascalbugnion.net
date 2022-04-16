@@ -40,7 +40,7 @@ const NotesAnchor = ({ href, ...props }) => {
   }
 }
 
-const Footnote = ({ children }) => {
+const Sidenote = ({ children }) => {
   const inputId = React.useId()
   return (
     <aside className={styles.footnoteContainer}>
@@ -93,7 +93,7 @@ export default ({ data }) => {
               Last updated on {frontmatter.lastUpdatedDate}.
             </div>
             <div className={styles.articleEntryContent}>
-              <MDXProvider components={{ a: NotesAnchor, Footnote }}>
+              <MDXProvider components={{ a: NotesAnchor, Sidenote }}>
                 <MDXRenderer>{body}</MDXRenderer>
               </MDXProvider>
             </div>
