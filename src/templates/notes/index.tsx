@@ -40,13 +40,16 @@ const NotesAnchor = ({ href, ...props }) => {
   }
 }
 
-const Footnote = ({ idName, children }) => (
-  <aside className={styles.footnoteContainer}>
-    <label className="footnote-number" htmlFor="ex"></label>
-    <input type="checkbox" className="margin-toggle" id="ex" />
-    <span className="footnote">{children}</span>
-  </aside >
-)
+const Footnote = ({ children }) => {
+  const inputId = React.useId()
+  return (
+    <aside className={styles.footnoteContainer}>
+      <label className="footnote-number" htmlFor={inputId}></label>
+      <input type="checkbox" className="margin-toggle" id={inputId} />
+      <span className="footnote">{children}</span>
+    </aside>
+  )
+}
 
 
 export default ({ data }) => {
