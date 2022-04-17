@@ -6,9 +6,9 @@ const Sidenote = ({ children }) => {
   const inputId = React.useId()
   return (
     <aside className={styles.footnoteContainer}>
-      <label className="footnote-number" htmlFor={inputId}></label>
-      <input type="checkbox" className="margin-toggle" id={inputId} />
-      <span className="footnote">{children}</span>
+      <label className={styles.footnoteNumber} htmlFor={inputId}></label>
+      <input type="checkbox" className={styles.marginToggle} id={inputId} />
+      <span className={styles.footnote}>{children}</span>
     </aside>
   )
 }

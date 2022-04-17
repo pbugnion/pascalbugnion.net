@@ -3,7 +3,7 @@
     display: inline;
 }
 
-.footnoteContainer :global(.footnote) {
+.footnoteContainer .footnote {
     float: right;
     clear: right;
     position: relative;
@@ -14,33 +14,33 @@
     opacity: 0.8;
 }
 
-.footnoteContainer :global(.footnote):before {
+.footnoteContainer .footnote:before {
     content: counter(footnote);
     vertical-align: super;
     font-size: 80%;
     padding-right: 0.7em;
 }
 
-.footnoteContainer :global(.footnote-number) {
+.footnoteContainer .footnoteNumber {
     counter-increment: footnote;
 }
 
-.footnoteContainer :global(.footnote-number):after {
+.footnoteContainer .footnoteNumber:after {
     content: counter(footnote);
     vertical-align: super;
     font-size: 60%;
 }
 
-.footnoteContainer :global(input.margin-toggle) {
+.footnoteContainer .marginToggle {
     display: none;
 }
 
 @media (max-width: 1420px) {
-    .footnoteContainer :global(.footnote) {
+    .footnoteContainer .footnote {
         display: none;
     }
 
-    .footnoteContainer :global(.margin-toggle):checked + :global(.footnote) {
+    .footnoteContainer .marginToggle:checked + .footnote {
         display: block;
         float: left;
         position: relative;
@@ -50,7 +50,7 @@
         margin-right: 0;
     }
 
-    .footnoteContainer :global(.footnote-number):after {
+    .footnoteContainer .footnoteNumber:after {
         content: "⊕";
         font-size: inherit;
         vertical-align: inherit;
@@ -58,12 +58,11 @@
         padding-rigth: 0.2em;
     }
 
-    .footnoteContainer :global(.footnote-number):hover {
+    .footnoteContainer .footnoteNumber:hover {
         cursor: pointer;
     }
         
-
-    .footnoteContainer :global(.footnote):before {
+    .footnoteContainer .footnote:before {
         content: none;
     }
 }
