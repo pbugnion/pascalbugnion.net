@@ -21,7 +21,7 @@ If you are in a position where you are expected to behave fairly towards a set o
 
 That's why it is so important to [split the coach and judge role](/notes/split-coach-judge-role). As long as you are responsible for both, the mixed incentives will stop you from feeling totally comfortable sponsoring someone. But if you are explicitly recognized as their coach, with no conflicting incentives, it becomes much easier to publicly advocate for them.
 
-Even when you have no conflicting incentives that get in the way of sponsoring someone, building sufficient mutual trust to unequivocally advocate for them takes time. But sponsorship doesn't have to be all or nothing. In fact, Herminia Ibarra outlines a spectrum from pure mentorship all the way to sponsorship[^2]:
+Even when you have no conflicting incentives that get in the way of sponsoring someone, building sufficient mutual trust to unequivocally advocate for them takes time. But sponsorship doesn't have to be all or nothing. In fact, Herminia Ibarra outlines a spectrum from pure mentorship all the way to sponsorship<Sidenote>From [HBR: A Lack of Sponsorship Is Keeping Women from Advancing into Leadership](https://hbr.org/2019/08/a-lack-of-sponsorship-is-keeping-women-from-advancing-into-leadership).</Sidenote>:
 
 - *mentor* by providing advice, feedback, and coaching, privately.
 - *strategize* by sharing information about upcoming projects or work that might help them gain visibility, and working with them to think through how to best take advantage of these opportunities. Of course, this shouldn't involve sharing confidential information, but you, as a sponsor, will typically have more context on the organisation than the person you are sponsoring.
@@ -34,8 +34,6 @@ Over time, as you gain confidence, you can gradually move up the ladder from men
 ## ... and totally worth it
 
 Looking back, I haven't advocated for people as much as I ought to have done. Too often, I have just provided advice in private, but not explicitly advocated in public. But every time I have stuck my neck out on behalf of someone else, it's been worth it.
-
-[^2]: From [A Lack of Sponsorship Is Keeping Women from Advancing into Leadership](https://hbr.org/2019/08/a-lack-of-sponsorship-is-keeping-women-from-advancing-into-leadership).
 
 <!-- ## Sponsorship and minority groups -->
 
