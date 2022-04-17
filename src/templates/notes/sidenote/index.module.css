@@ -22,9 +22,6 @@
     padding-right: 0.7em;
 }
 
-.footnoteContainer .footnoteNumber {
-}
-
 .footnoteContainer .footnoteNumber:after {
     content: counter(footnote);
     vertical-align: super;
