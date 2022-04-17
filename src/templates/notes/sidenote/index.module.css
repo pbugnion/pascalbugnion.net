@@ -1,10 +1,10 @@
 
-.footnoteContainer {
+.sidenoteContainer {
     display: inline;
-    counter-increment: footnote;
+    counter-increment: sidenote;
 }
 
-.footnoteContainer .footnote {
+.sidenoteContainer .sidenote {
     float: right;
     clear: right;
     position: relative;
@@ -15,29 +15,29 @@
     opacity: 0.8;
 }
 
-.footnoteContainer .footnote:before {
-    content: counter(footnote);
+.sidenoteContainer .sidenote:before {
+    content: counter(sidenote);
     vertical-align: super;
     font-size: 80%;
     padding-right: 0.7em;
 }
 
-.footnoteContainer .footnoteNumber:after {
-    content: counter(footnote);
+.sidenoteContainer .sidenoteNumber:after {
+    content: counter(sidenote);
     vertical-align: super;
     font-size: 60%;
 }
 
-.footnoteContainer .marginToggle {
+.sidenoteContainer .marginToggle {
     display: none;
 }
 
 @media (max-width: 992px) {
-    .footnoteContainer .footnote {
+    .sidenoteContainer .sidenote {
         display: none;
     }
 
-    .footnoteContainer .marginToggle:checked + .footnote {
+    .sidenoteContainer .marginToggle:checked + .sidenote {
         display: block;
         float: left;
         position: relative;
@@ -47,7 +47,7 @@
         margin-right: 0;
     }
 
-    .footnoteContainer .footnoteNumber:after {
+    .sidenoteContainer .sidenoteNumber:after {
         content: "⊕";
         font-size: inherit;
         vertical-align: inherit;
@@ -55,11 +55,11 @@
         padding-rigth: 0.2em;
     }
 
-    .footnoteContainer .footnoteNumber:hover {
+    .sidenoteContainer .sidenoteNumber:hover {
         cursor: pointer;
     }
         
-    .footnoteContainer .footnote:before {
+    .sidenoteContainer .sidenote:before {
         content: none;
     }
 }
