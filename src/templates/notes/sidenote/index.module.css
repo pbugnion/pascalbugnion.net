@@ -1,14 +1,15 @@
 
 .footnoteContainer {
     display: inline;
+    counter-increment: footnote;
 }
 
 .footnoteContainer .footnote {
     float: right;
     clear: right;
     position: relative;
-    margin-right: -38%;
-    width: 33%;
+    margin-right: -53%;
+    width: 45%;
     padding-top: 0;
     font-size: 16px;
     opacity: 0.8;
@@ -22,7 +23,6 @@
 }
 
 .footnoteContainer .footnoteNumber {
-    counter-increment: footnote;
 }
 
 .footnoteContainer .footnoteNumber:after {
@@ -35,7 +35,7 @@
     display: none;
 }
 
-@media (max-width: 1420px) {
+@media (max-width: 992px) {
     .footnoteContainer .footnote {
         display: none;
     }

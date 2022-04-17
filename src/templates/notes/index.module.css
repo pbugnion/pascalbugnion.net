@@ -12,11 +12,31 @@
 .articleContainer {
     padding-top: 3em;
     padding-bottom : 2em ;
-    max-width : 800px;
+    padding-left: 10%;
+    width: 65%;
+    max-width : 1400px;
+    margin-left: 0;
+    margin-right: auto;
+    counter-reset: footnote 0;
 }
 
 .blogNavbarContainer {
     max-width: 800px;
+    margin-left: 10%;
+}
+
+@media (max-width: 992px) {
+    .articleContainer {
+        padding-left: 15px;
+        padding-right: 15px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .blogNavbarContainer {
+        margin-left: auto;
+    }
 }
 
 .lastUpdatedDate {
