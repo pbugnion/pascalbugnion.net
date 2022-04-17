@@ -11,6 +11,8 @@ import Navbar from "../../components/navbar"
 import * as PageHeader from "../../components/page-header"
 import NoteList from "../../components/note-list"
 
+import Sidenote from "./sidenote"
+
 import * as styles from "./index.module.css"
 import * as pageStyles from "../../styles/page.module.css"
 
@@ -39,18 +41,6 @@ const NotesAnchor = ({ href, ...props }) => {
     )
   }
 }
-
-const Sidenote = ({ children }) => {
-  const inputId = React.useId()
-  return (
-    <aside className={styles.footnoteContainer}>
-      <label className="footnote-number" htmlFor={inputId}></label>
-      <input type="checkbox" className="margin-toggle" id={inputId} />
-      <span className="footnote">{children}</span>
-    </aside>
-  )
-}
-
 
 export default ({ data }) => {
   const {

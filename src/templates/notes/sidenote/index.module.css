@@ -1,0 +1,69 @@
+
+.footnoteContainer {
+    display: inline;
+}
+
+.footnoteContainer :global(.footnote) {
+    float: right;
+    clear: right;
+    position: relative;
+    margin-right: -38%;
+    width: 33%;
+    padding-top: 0;
+    font-size: 16px;
+    opacity: 0.8;
+}
+
+.footnoteContainer :global(.footnote):before {
+    content: counter(footnote);
+    vertical-align: super;
+    font-size: 80%;
+    padding-right: 0.7em;
+}
+
+.footnoteContainer :global(.footnote-number) {
+    counter-increment: footnote;
+}
+
+.footnoteContainer :global(.footnote-number):after {
+    content: counter(footnote);
+    vertical-align: super;
+    font-size: 60%;
+}
+
+.footnoteContainer :global(input.margin-toggle) {
+    display: none;
+}
+
+@media (max-width: 1420px) {
+    .footnoteContainer :global(.footnote) {
+        display: none;
+    }
+
+    .footnoteContainer :global(.margin-toggle):checked + :global(.footnote) {
+        display: block;
+        float: left;
+        position: relative;
+        clear: both;
+        width: 95%;
+        margin-left: 2em;
+        margin-right: 0;
+    }
+
+    .footnoteContainer :global(.footnote-number):after {
+        content: "⊕";
+        font-size: inherit;
+        vertical-align: inherit;
+        padding-left: 0.2em;
+        padding-rigth: 0.2em;
+    }
+
+    .footnoteContainer :global(.footnote-number):hover {
+        cursor: pointer;
+    }
+        
+
+    .footnoteContainer :global(.footnote):before {
+        content: none;
+    }
+}
