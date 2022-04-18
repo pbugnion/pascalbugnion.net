@@ -22,7 +22,7 @@
 
 .blogNavbarContainer {
     max-width: 800px;
-    margin-left: 10%;
+    margin-left: calc(10% - 15px);
 }
 
 @media (max-width: 992px) {
