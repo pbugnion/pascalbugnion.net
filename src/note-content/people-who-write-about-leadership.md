@@ -3,7 +3,7 @@ contentTitle: People who write about leadership are rarely leaders themselves
 slug: /notes/people-who-write-about-leadership
 ---
 
-Most people who write about management or leadership are not leaders. In fact, the main activity of most people who write about management is to write about management[^1].
+Most people who write about management or leadership are not leaders. In fact, the main activity of most people who write about management is to write about management<Footnote>hello</Footnote>.
 
 This happens for two reasons: 
 1. people who offer coaching services to managers or leaders are incentivized to write a lot to come across as experts.

@@ -1,0 +1,66 @@
+
+.sidenoteContainer {
+    display: inline;
+    counter-increment: sidenote;
+}
+
+.sidenoteContainer .sidenote {
+    float: right;
+    clear: right;
+    position: relative;
+    margin-right: -53%;
+    width: 45%;
+    padding-top: 0;
+    font-size: 16px;
+    opacity: 0.8;
+    padding-bottom: 1.5rem;
+}
+
+.sidenoteContainer .sidenote:before {
+    content: counter(sidenote);
+    vertical-align: super;
+    font-size: 80%;
+    padding-right: 0.7em;
+}
+
+.sidenoteContainer .sidenoteNumber:after {
+    content: counter(sidenote);
+    vertical-align: super;
+    font-size: 60%;
+}
+
+.sidenoteContainer .marginToggle {
+    display: none;
+}
+
+@media (max-width: 992px) {
+    .sidenoteContainer .sidenote {
+        display: none;
+    }
+
+    .sidenoteContainer .marginToggle:checked + .sidenote {
+        display: block;
+        float: left;
+        position: relative;
+        clear: both;
+        width: 95%;
+        margin-left: 2em;
+        margin-right: 0;
+    }
+
+    .sidenoteContainer .sidenoteNumber:after {
+        content: "⊕";
+        font-size: inherit;
+        vertical-align: inherit;
+        padding-left: 0.2em;
+        padding-rigth: 0.2em;
+    }
+
+    .sidenoteContainer .sidenoteNumber:hover {
+        cursor: pointer;
+    }
+        
+    .sidenoteContainer .sidenote:before {
+        content: none;
+    }
+}
