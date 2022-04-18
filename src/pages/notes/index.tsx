@@ -22,7 +22,7 @@ export default ({ data }) => {
         />
       </Helmet>
       <header>
-        <Navbar containerAdditionalStyles={[styles.blogNavbarContainer]} />
+        <Navbar containerAdditionalStyles={[styles.maxWidthContainer]} />
       </header>
       <main>
         <div className={`container content-container ${styles.maxWidthContainer}`}>
