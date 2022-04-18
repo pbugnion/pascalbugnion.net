@@ -10,7 +10,7 @@ onTOC: yes
 
 Time pressure turns us into jerks.
 
-In one of my favourite psychology experiments[^1], students training to be priests at the Theological Seminary in Princeton were asked to prepare a brief talk on the [Good Samaritan](https://en.wikipedia.org/wiki/Parable_of_the_Good_Samaritan). They were then told to walk to a building across campus to deliver that talk.
+In one of my favourite psychology experiments<Sidenote>The study is reported in Darley, John M., and C. Daniel Batson. ‘“From Jerusalem to Jericho”: A Study of Situational and Dispositional Variables in Helping Behavior’. Journal of Personality and Social Psychology 27, no. 1 (1973): 100–108. https://doi.org/10.1037/h0034449. I first heard about it in the excellent Happiness Lab podcast.</Sidenote>, students training to be priests at the Theological Seminary in Princeton were asked to prepare a brief talk on the [Good Samaritan](https://en.wikipedia.org/wiki/Parable_of_the_Good_Samaritan). They were then told to walk to a building across campus to deliver that talk.
 
 As they walked across campus, an actor simulated having a fit in their path, giving the prospective priest a chance to re-enact the exact story they were about to deliver a sermon on. The fit occurred in a narrow alleyway, so the students had to either help the victim or literally step over them to go give their talk.
 
@@ -41,7 +41,7 @@ Feeling time affluent at work is important for everyone, but it’s particularly
 
 ### Time to listen
 
-Time poor people tend to be less present[^2]: it's hard to be fully present in your one on one when you know you have ten other meetings to go to, and that you desperately need to finish that presentation too.
+Time poor people tend to be less present<Sidenote>Kasser, Tim, and Kennon M. Sheldon. ‘Time Affluence as a Path toward Personal Happiness and Ethical Business Practice: Empirical Evidence from Four Studies’. Journal of Business Ethics 84, no. 2 (1 January 2009): 243–55. https://doi.org/10.1007/s10551-008-9696-1.</Sidenote>: it's hard to be fully present in your one on one when you know you have ten other meetings to go to, and that you desperately need to finish that presentation too.
 
 90% of good people management is building [trusting relationships](/notes/what-is-trust). Having strong, high-trust relationships with colleagues and reports means that they are more likely to come to you early with problems or issues, giving you a chance to catch situations before they become Situations. Feedback you give is more likely to be accepted positively when people trust you’re looking after their best interest.
 
@@ -51,7 +51,7 @@ Building trust requires being present. You need to show up and listen actively t
 
 ### Time to be strategic
 
-Time poor managers spend less time being strategic. Taking the time to critically assess how your team is doing or how the organisation could be improved is important, but never urgent. It’s going to be one of the first things that doesn't get done if your schedule becomes too packed. Over time, your work descends into purely tactical, low quality work, effectively becoming a glorified switchboard operator[^3].
+Time poor managers spend less time being strategic. Taking the time to critically assess how your team is doing or how the organisation could be improved is important, but never urgent. It’s going to be one of the first things that doesn't get done if your schedule becomes too packed. Over time, your work descends into purely tactical, low quality work, effectively becoming a glorified switchboard operator<Sidenote>Credit for that phrase goes to Cal Newport in this [deep questions podcast](https://www.calnewport.com/podcast/), episode 35.</Sidenote>.
 
 ### Time to learn
 
@@ -83,13 +83,5 @@ The good samaritan experiment shows that time pressure makes us act in ways we r
 
 So next time you sign up to do just that one extra thing, or next time you think you can’t possibly delegate that task, consider the cost: feeling time affluent will make you more present, make better decisions and lead to happier teams.
 
-*I'd love to hear feedback on this post. [Contact me](/contact) on [Twitter](https://twitter.com/pascalbugnion) or via email and let me know what was helpful and what wasn't.*
-
 *Thanks to [Padmini Pyapali](https://smallbigideas.substack.com/) for feedback on the draft, and to my colleagues at [Faculty](https://faculty.ai) for inspiring the narrative.*
 
-
-[^1]: The study is reported in Darley, John M., and C. Daniel Batson. ‘“From Jerusalem to Jericho”: A Study of Situational and Dispositional Variables in Helping Behavior’. Journal of Personality and Social Psychology 27, no. 1 (1973): 100–108. https://doi.org/10.1037/h0034449. I first heard about it in the excellent Happiness Lab podcast.
-
-[^2]: Kasser, Tim, and Kennon M. Sheldon. ‘Time Affluence as a Path toward Personal Happiness and Ethical Business Practice: Empirical Evidence from Four Studies’. Journal of Business Ethics 84, no. 2 (1 January 2009): 243–55. https://doi.org/10.1007/s10551-008-9696-1.
-
-[^3]: Credit for that phrase goes to Cal Newport in this [deep questions podcast](https://www.calnewport.com/podcast/), episode 35. 

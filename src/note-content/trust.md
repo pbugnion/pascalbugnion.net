@@ -10,7 +10,7 @@ Trust is the foundation of healthy work relationships. Team leads need to gain t
 
 So what is trust? Why do we trust some people and not others? How can I get more trust? How can I fix trust issues in a team?
 
-It turns out a fair amount has been written about trust in the management and psychology literature [^1]. I'll try and summarise what we know about _interpersonal trust_[^2].
+It turns out a fair amount has been written about trust in the management and psychology literature<Sidenote>Mayer, Roger C., James H. Davis, and F. David Schoorman. ‘An Integrative Model of Organizational Trust’. The Academy of Management Review 20, no. 3 (July 1995): 709. https://doi.org/10.2307/258792.</Sidenote>. I'll try and summarise what we know about _interpersonal trust_<Sidenote>Trust between two individuals. Trust between individuals and groups, such as between a team lead and the team as a whole, are more complicated</Sidenote>.
 
 ## Trust encourages vulnerability
 
@@ -56,5 +56,3 @@ Similarly, an IC will trust you when you delegate a task to them if, in the past
 
 Trust issues are hard to talk about, because trust is so associated with vulnerability. Having a mental model of trust and a vocabulary to talk about my problems trusting a colleague help engage with trust issues in a more constructive way.
 
-[^1]: Mayer, Roger C., James H. Davis, and F. David Schoorman. ‘An Integrative Model of Organizational Trust’. The Academy of Management Review 20, no. 3 (July 1995): 709. https://doi.org/10.2307/258792.
-[^2]: Trust between two individuals. Trust between individuals and groups, such as between a team lead and the team as a whole, are more complicated
