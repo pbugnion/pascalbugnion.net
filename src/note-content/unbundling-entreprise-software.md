@@ -13,7 +13,7 @@ For bundling to be an effective proposition, it requires some barrier that makes
 
 For supermarkets, the barrier is physical distance and the cost of real estate: it's nicer for the customer to get everything in one place, and relatively close to their home. But as the online purchasing of groceries increases, this barrier weakens. It's much easier for niche players to distribute their goods. This explain the introduction of lots of specialised providers of items that have, traditionally, been the purview of supermarkets, like [Gousto](https://www.gousto.co.uk/).
 
-![](./images/unbundling-entreprise-software-1.jpg)
+![Photo by Konstantin Kleine on Unsplash](./images/unbundling-entreprise-software-1.jpg)
 
 ## What does this have to do with entreprise software?
 
