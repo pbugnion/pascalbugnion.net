@@ -36,4 +36,5 @@ Data changes are, by contrast, not self-documenting. I can't easily tell whether
 Thus, data changes are not, by themselves, self-documenting. It's only when they can be linked back to the generating process that we can make sense of them.
 
 ## So what?
+
 The modern entreprise will get increasingly automated. Data versioning will be critical to automation happening safely. But blindly cargo-culting metaphors from code versioning will get in the way.
