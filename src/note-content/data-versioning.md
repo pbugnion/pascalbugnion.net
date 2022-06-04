@@ -38,3 +38,5 @@ Thus, data changes are not, by themselves, self-documenting. It's only when they
 ## So what?
 
 The modern entreprise will get increasingly automated. Data versioning will be critical to automation happening safely. But blindly cargo-culting metaphors from code versioning will get in the way.
+
+In [the next post](/notes/data-versioning-linked-to-runs), we will explore practical implementations of a data versioning system fit for AI powered organisations.
