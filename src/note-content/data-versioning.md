@@ -18,6 +18,8 @@ Version control also enables collaboration. Features like branching, merging, an
 
 The main value of source control is _not_ auditability. Sure, `git blame` and `git bisect` can tell us when a regression was introduced. But even if those weren't available, people would still use version control for code.
 
+![](./images/data-versioning-1.png)
+
 ## And what about data?
 
 Version control for data is different. Data scientists don't collaborate on a dataset. They might use it as input, or tweak the process that generates it, but they aren't *manually* editing the data in the same way they might edit code. Data is a byproduct of some process.
