@@ -18,6 +18,8 @@ Version control also enables collaboration. Features like branching, merging, an
 
 The main value of source control is _not_ auditability. Sure, `git blame` and `git bisect` can tell us when a regression was introduced. But even if those weren't available, people would still use version control for code.
 
+![](./images/data-versioning-1.png)
+
 ## And what about data?
 
 Version control for data is different. Data scientists don't collaborate on a dataset. They might use it as input, or tweak the process that generates it, but they aren't *manually* editing the data in the same way they might edit code. Data is a byproduct of some process.
@@ -27,9 +29,9 @@ So why version data? There are three common reasons:
 - to enable downstream consumers to develop pipelines that use this data. Having a fixed version of the dataset, rather than one that changes over time, makes it much easier to develop and test the code you're writing.
 - the data versions themselves may hold interesting content: they paint a picture of how that dataset changed over time, which may inform how the context in which the organisation operates changes over time. Being able to run longitudinal studies across versions helps understand the time evolution of that data. Take, for instance, our automated forecasting system: running longitudinal studies against past forecasts allows us to back-test the quality of the forecasts.
 
-## Self-documentation
+## Data is not self-documenting
 
-Code changes are self-documenting. By reading the diff between two code versions, I can understand the difference between the versisons. This is enhanced through the addition of metadata linked to the change, through commit messages or pull request descriptions.
+Code changes are self-documenting. By reading the diff between two code versions, I can understand the difference between the versions. This is enhanced through the addition of metadata linked to the change, through commit messages or pull request descriptions.
 
 Data changes are, by contrast, not self-documenting. I can't easily tell whether the difference between two versions of a dataset arise from differences in the data they were generated from, or the code that was used for the transformation etc. To make sense of the difference between two data versions, I need access to information beyond the dataset: what version of the code was used to create this version? What happened during the generation process? What parameters or options were passed to the process generating the data? What versions of the upstream datasets were used as input?
 
@@ -37,4 +39,6 @@ Thus, data changes are not, by themselves, self-documenting. It's only when they
 
 ## So what?
 
-The modern entreprise will get increasingly automated. Data versioning will be critical to automation happening safely. But blindly cargo-culting metaphors from code versioning will get in the way.
+The modern entreprise will get increasingly automated. [Data versioning will be critical to automation happening safely](https://faculty.ai/tech-blog/machine-learning-systems-should-use-data-aware-orchestrators/). But blindly cargo-culting metaphors from code versioning will get in the way.
+
+In [the next post](/notes/data-versioning-linked-to-runs), we will explore practical implementations of a data versioning system fit for AI powered organisations.
