@@ -1,25 +1,25 @@
 ---
-contentTitle: Data versioning for decision intelligence software
+contentTitle: Data versioning for AI powered organisations
 slug: /notes/data-versioning-linked-to-runs
 createdDate: 2022-06-04
 lastUpdatedDate: 2022-06-04
 onTOC: yes
 ---
 
-Data versioning is a critical component of safe intelligent software systems. But how should we version data? We can't just assign a version number to a particular dataset, like we would for a code repository, because data is not [self-documenting](/notes/data-versioning-not-git-for-data): seeing the diff between two different versions of a CSV won't help me audit how that CSV was generated, or really understand the difference between these two versions.
+Data versioning is a critical component of safe intelligent software systems. But how should we version data? We can't just assign a version number to a particular dataset, like we would for a code repository, because [data is not self-documenting](/notes/data-versioning-not-git-for-data): seeing the diff between two different versions of a CSV won't help me audit how that CSV was generated, or really understand the difference between these two versions<Sidenote>Before the [hordes of CSV haters](https://donatstudios.com/CSV-An-Encoding-Nightmare) swoop down on me, replace CSV with some compressed binary format like Parquet or Avro in the previous sentence: the resulting diff is even less interpretable.</Sidenote>.
 
 ## What should our data versioning system enable?
 
 When versioning data, [we care about](/notes/data-versioning-not-git-for-data):
 - reproducibility and auditability: understanding how the data was generated
-- enabling downstream consumers by giving them visibility over how the data changes
+- enabling downstream consumers by giving them visibility over how the data changes and allowing them to develop and test against fixed versions of the data<Sidenote>Developing data pipelines is hard enough without having to wonder whether the reason my pipeline is broken is due to an upstream change in the data, or because of some change I made in my code.</Sidenote>
 - running longitudinal studies to understand how the data changes over time
 
 How can we implement a data versioning system that supports this? Let's imagine we want to understand how a specific version of a dataset was generated. We want to be able to:
-- retrieve a specific, pinned version of a dataset, for auditability, and to enable downstream consumers who can develop and test based on a specific version<Sidenote>Developing data pipelines is hard enough without having to wonder whether the reason my pipeline is broken is due to an upstream change in the data, or because of some change I made in my code.</Sidenote>.
-- retrieve the logs of the process that generated this version, to audit what happened during the data generation process. This helps both auditability and allows downstream consumers to understand why their inputs are different.
+- retrieve a specific, pinned version of a dataset, for auditability, and to enable downstream consumers who can develop and test based on a specific version.
+- retrieve the logs of the run that generated this data version, to audit what happened. This helps both auditability and allows downstream consumers to understand how their inputs are changing.
 - retrieve the particular version of the code for that process and the environment that code ran in (e.g. a specific Docker image), so we can understand the process and reproduce it.
-- retrieve the parameters for that run, for auditability, reproducibility, and running longitudinal studies
+- retrieve the parameters for that run, for auditability, reproducibility, and for running longitudinal studies
 - retrieve the input datasets and their specific versions, for auditability and so we can reproduce a specific run exactly.
 
 ## How should we implement it?
