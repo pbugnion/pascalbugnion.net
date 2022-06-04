@@ -1,5 +1,5 @@
 ---
-contentTitle: Data versions should be linked to runs of the generating process
+contentTitle: Data versioning for decision intelligence software
 slug: /notes/data-versioning-linked-to-runs
 createdDate: 2022-06-04
 lastUpdatedDate: 2022-06-04
