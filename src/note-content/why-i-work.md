@@ -2,7 +2,7 @@
 contentTitle: Why I work
 slug: /notes/why-i-work
 createdDate: 2022-06-08
-lastUpdatedDate: 2022-06-10
+lastUpdatedDate: 2022-06-12
 onTOC: yes
 ---
 
