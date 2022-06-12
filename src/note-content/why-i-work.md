@@ -15,7 +15,7 @@ and good design enhances agility._"</Sidenote>.
 
 I still get the same pleasure now that I am in more of a technical lead role, and thus less viscerally connected to the construction process. It's less immediate, but equally fulfilling.
 
-## Building things is more fun when shared
+## ... and building things is more fun when it's shared
 
 While building things by myself is fun, it's so much better when I can share the process of building things with thoughtful, open-minded colleagues that share the same goals. One of my great joys at work is collaborating on designing a feature or on solving a problem, getting to a solution together, and then building that solution together. I see work as predominantly social: the pleasure I get is from having positive social interactions and feeling part of a group. The work itself guarantees alignment and [trust](/notes/what-is-trust): I know the people I collaborate with share the same goals as me. It also provides an endless source of topics to collaborate on.
 
