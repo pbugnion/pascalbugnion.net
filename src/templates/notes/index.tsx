@@ -12,6 +12,7 @@ import * as PageHeader from "../../components/page-header"
 import NoteList from "../../components/note-list"
 
 import Sidenote from "./sidenote"
+import FullWidthImage from "./full-width-image"
 
 import * as styles from "./index.module.css"
 import * as pageStyles from "../../styles/page.module.css"
@@ -83,7 +84,7 @@ export default ({ data }) => {
               Last updated on {frontmatter.lastUpdatedDate}.
             </div>
             <div className={styles.articleEntryContent}>
-              <MDXProvider components={{ a: NotesAnchor, Sidenote }}>
+              <MDXProvider components={{ a: NotesAnchor, Sidenote, FullWidthImage }}>
                 <MDXRenderer>{body}</MDXRenderer>
               </MDXProvider>
             </div>
