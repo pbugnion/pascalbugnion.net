@@ -10,13 +10,13 @@ Code versioning and data versioning have very different purposes. Too much of th
 
 ## Why do we version code?
 
-The primary value of code versioning is to enable experimentation and collaboration.
+We version code to enable _experimentation_ and _collaboration_.
 
-When a user creates a commit, they have a set of changes they're comfortable with. By committing, they define a fixed point to come back to when experimenting. It therefore allows free experimentation without endangering the existing code base.
+When a user creates a commit, they have a set of changes they're comfortable with. By committing, they define a fixed point to come back to when experimenting. Versioning therefore enables experimentation without endangering the existing code base.
 
-Version control also enables collaboration. Features like branching, merging, and pull requests<Sidenote>Not strictly part of version control systems, but is ubiquitous in hosted source control systems like GitHub or Gitlab.</Sidenote> allow teams to collaborate on a single code base without treading on each other's toes.
+Version control also enables collaboration. Features like branching, merging, and pull requests allow teams to collaborate on a single code base without treading on each other's toes.
 
-The main value of source control is _not_ auditability. Sure, `git blame` and `git bisect` can tell us when a regression was introduced. But even if those weren't available, people would still use version control for code.
+The main value of source control is not auditability. Sure, `git blame` and `git bisect` can tell us when a regression was introduced. But even if those weren't available, people would still use version control for code.
 
 ![](./images/data-versioning-1.png)
 
@@ -31,11 +31,13 @@ So why version data? There are three common reasons:
 
 ## Data is not self-documenting
 
-Code changes are self-documenting. By reading the diff between two code versions, I can understand the difference between the versions. This is enhanced through the addition of metadata linked to the change, through commit messages or pull request descriptions.
+Code changes are self-documenting. By reading the diff between two code versions, I can understand what changed. This is enhanced through the addition of metadata linked to the change, like commit messages or pull request descriptions.
 
-Data changes are, by contrast, not self-documenting. I can't easily tell whether the difference between two versions of a dataset arise from differences in the data they were generated from, or the code that was used for the transformation etc. To make sense of the difference between two data versions, I need access to information beyond the dataset: what version of the code was used to create this version? What happened during the generation process? What parameters or options were passed to the process generating the data? What versions of the upstream datasets were used as input?
+Data changes are, by contrast, not self-documenting. I can't easily tell whether the difference between two versions of a dataset arise from differences in the data they were generated from, or the code that was used for the transformation etc. To make sense of the difference between two versions of the same data, I need access to information beyond the dataset: what version of the code was used to create this version? What happened during the generation process? What parameters or options were passed to the process generating the data? What versions of the upstream datasets were used as input?
 
-Thus, data changes are not, by themselves, self-documenting. It's only when they can be linked back to the generating process that we can make sense of them.
+Thus, data changes are not, by themselves, self-documenting. It's only when they can be [linked back to the generating process](/notes/data-versioning-linked-to-runs) that we can make sense of them.
+
+![](./images/data-self-documenting.png)
 
 ## So what?
 
