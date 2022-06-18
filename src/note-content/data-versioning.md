@@ -2,7 +2,7 @@
 contentTitle: Stop thinking of data versioning as "git for data"
 slug: /notes/data-versioning-not-git-for-data
 createdDate: 2022-06-03
-lastUpdatedDate: 2022-06-03
+lastUpdatedDate: 2022-06-17
 onTOC: yes
 ---
 

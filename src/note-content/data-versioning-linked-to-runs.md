@@ -2,7 +2,7 @@
 contentTitle: Data versioning for AI powered organisations
 slug: /notes/data-versioning-linked-to-runs
 createdDate: 2022-06-04
-lastUpdatedDate: 2022-06-04
+lastUpdatedDate: 2022-06-18
 onTOC: yes
 ---
 
