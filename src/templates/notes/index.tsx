@@ -63,11 +63,26 @@ export default ({ data }) => {
     import("katex/dist/katex.min.css")
     import("./katex-overrides.css")
   }
+
+  const jsonSchemaMeta = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "datePublished": frontmatter.createdDate,
+    "dateModified": frontmatter.lastUpdatedDate,
+    "author": {
+      "@type": "Person",
+      "name": "Pascal Bugnion",
+      "url": "https://pascalbugnion.net",
+    },
+    "headline": frontmatter.contentTitle,
+  }
+
   return (
     <Layout>
       <Helmet>
         <title>{frontmatter.contentTitle}</title>
         <meta name="description" content={frontmatter.contentTitle} />
+        <script type="application/ld+json">{JSON.stringify(jsonSchemaMeta)}</script>
       </Helmet>
       <header>
         <Navbar containerAdditionalStyles={[styles.blogNavbarContainer]} />
