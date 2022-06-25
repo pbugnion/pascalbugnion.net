@@ -165,10 +165,10 @@ export default () => {
   return (
     <Layout>
       <Helmet>
-        <title>Pascal Bugnion</title>
+        <title>Pascal Bugnion | Software</title>
         <meta
           name="description"
-          content="Pascal Bugnion is a data engineering technical lead. This hosts his musings on data, software, and team leadership."
+          content="Software written by Pascal Bugnion."
         />
       </Helmet>
       <CanvasBackground>

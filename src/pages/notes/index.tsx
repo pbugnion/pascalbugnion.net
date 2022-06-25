@@ -15,10 +15,10 @@ export default ({ data }) => {
   return (
     <Layout>
       <Helmet>
-        <title>Data diversions | Pascal Bugnion's digital garden</title>
+        <title>Pascal Bugnion | Digital Garden</title>
         <meta
           name="description"
-          content="This is Pascal Bugnion's personal blog: a collection of notes on engineering leadership, programming, product management, and knowledge management."
+          content="Pascal Bugnion's personal digital garden: a collection of notes on engineering leadership, programming, product management, and knowledge management."
         />
       </Helmet>
       <header>
