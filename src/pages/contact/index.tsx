@@ -53,10 +53,10 @@ export default () => {
   return (
     <Layout>
       <Helmet>
-        <title>Pascal Bugnion</title>
+        <title>Pascal | Contact</title>
         <meta
           name="description"
-          content="Pascal Bugnion is a data engineering technical lead. This page shows how to contact him."
+          content="How to contact Pascal Bugnion."
         />
       </Helmet>
       <header>

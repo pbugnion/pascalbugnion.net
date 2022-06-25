@@ -36,7 +36,7 @@ export default () => {
       <title>Pascal Bugnion</title>
       <meta
         name="description"
-        content="Pascal Bugnion is a data engineering technical lead. This hosts his musings on data, software, and team leadership."
+        content="Pascal Bugnion writes about software, machine learning, and leading technical teams. Engineering lead at Faculty."
       />
     </Helmet>
     <div className={styles.backgroundImage}>
