@@ -3,6 +3,9 @@ import headshot from "../../pages/contact/images/Headshot-Pascal-1.jpg"
 
 import { Helmet } from "react-helmet"
 
+// For some reason, react-helmet disallows nesting
+// other components in the helmet.
+
 export const MainPageHelmet = ({ title, description }) => (
   <Helmet>
     <title>{title}</title>
