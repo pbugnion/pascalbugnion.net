@@ -1,11 +1,11 @@
 import * as React from "react"
-import { Helmet } from "react-helmet"
 
 import { Link } from "gatsby"
 
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 
+import { MainPageHelmet } from "../components/helmets";
 import * as styles from "./landing/index.module.css"
 
 const NavbarInternalLink = ({ to, children }) => (
@@ -31,35 +31,32 @@ const LandingNavbar = () => {
 
 export default () => {
   return (
-      <>
-    <Helmet>
-      <title>Pascal Bugnion</title>
-      <meta
-        name="description"
-        content="Pascal Bugnion writes about software, machine learning, and leading technical teams. Engineering lead at Faculty."
+    <>
+      <MainPageHelmet
+        title="Pascal Bugnion"
+        description="Pascal Bugnion writes about software, machine learning, and leading technical teams. Engineering lead at Faculty."
       />
-    </Helmet>
-    <div className={styles.backgroundImage}>
-      <div className={styles.contentContainer}>
-        <div className={styles.inside}>
-          <LandingNavbar />
-          <div className={styles.topSpacer}></div>
-          <h1 className={styles.lead}>
-            Hi. I&#8217;m Pascal.
-              </h1>
-          <div>
-            <p className={styles.descriptionParagraph}>
-              I'm a technical lead at <a href="https://faculty.ai">Faculty</a>. I build tools for data scientists.
-                </p>
-            <p className={styles.descriptionParagraph}>
-              This is my site. It has some information <Link to="/contact">about me</Link> and <Link to="/code">projects</Link> I work on, both at work in my spare time.
-                  I also sometimes <Link to="/blog">write</Link> about data science, software, and leading software teams.
-                </p>
+      <div className={styles.backgroundImage}>
+        <div className={styles.contentContainer}>
+          <div className={styles.inside}>
+            <LandingNavbar />
+            <div className={styles.topSpacer}></div>
+            <h1 className={styles.lead}>
+              Hi. I&#8217;m Pascal.
+            </h1>
+            <div>
+              <p className={styles.descriptionParagraph}>
+                I'm a technical lead at <a href="https://faculty.ai">Faculty</a>. I build tools for data scientists.
+              </p>
+              <p className={styles.descriptionParagraph}>
+                This is my site. It has some information <Link to="/contact">about me</Link> and <Link to="/code">projects</Link> I work on, both at work in my spare time.
+                I also sometimes <Link to="/blog">write</Link> about data science, software, and leading software teams.
+              </p>
+            </div>
+            <div className={styles.bottomSpacer}></div>
           </div>
-          <div className={styles.bottomSpacer}></div>
         </div>
       </div>
-    </div>
-      </>
-    )
+    </>
+  )
 }
